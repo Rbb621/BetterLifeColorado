@@ -1,0 +1,1022 @@
+:root {
+  --white: #fff;
+  --headerbackground: #212329;
+  --darkgreen: #1fcc84;
+  --contactinfohover: #948f8f;
+  --black: #333;
+  --navlinkdropdownmenu: #cbd0d7;
+  --signup: #11935d;
+  --grey: #cacaca;
+  --limegreen: #9FC088;
+  --lightbrown: #5a5a5b;
+  --lightblack: #4A4A4A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: auto;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+html,body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+section {
+  width: 100%;
+  min-height: 1000px;
+}
+
+/* === Misc. ===*/
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
+
+.component--horizontal-rule.align-center hr {
+    margin: 0 auto 40px;
+}
+
+.component--horizontal-rule .default {
+    background: var(--lightbrown);
+    height: 2px;
+    margin: 0 auto 40px;
+    max-width: 1200px;
+}
+
+hr {
+    background: var(--lightbrown);
+    border: 0;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===NavBar=== */
+
+
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--darkgreen);
+}
+
+
+
+/* ==== DROPDOWN-MENU ==== */
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--darkgreen);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
+    color: var(--darkgreen);
+}
+
+  nav .dropdown-menu {
+      min-width: 200px;
+      max-height: none;
+      padding: 0px;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      background: var(--headerbackground);
+    }
+
+
+
+/*Dropdown Menu*/
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--navlinkdropdownmenu);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .nav-link:hover {
+    color: var(--darkgreen);
+    transition: .1s;
+  }
+
+
+  nav .dropdown-menu {
+      min-width: 150px;
+      max-height: none;
+      padding: 33px 0;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      background: #212329;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      transition: ease-in .1;
+    }
+
+
+    .nav .nav-links .nav-item .dropdown-menu .nav-link {
+        justify-content: flex-start;
+        color: #a7b1c1;
+        font-weight: 400;
+        background: transparent;
+        padding: 15px 20px;
+    }
+
+/*Links*/
+
+.link {
+  color: #333;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #948f8f;
+}
+
+/* === HEADER SECTION === */
+
+.header {
+  background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+}
+
+
+.effect{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.header-text {
+  display: grid;
+  place-items: center;
+  height: 70vh;
+  font-family: 'Poppins',serif;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.header-text h1 {
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+  font-size: 5rem;
+}
+
+.box {
+  padding: 50px;
+  text-align: center;
+  font-family: Montserrat;
+  max-width: 100%;
+}
+
+.box h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.box p{
+  line-height: 2;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+
+/* ==== GOOD FAITH ESTIMATE ==== */
+
+.title-box h2 {
+  font-size: 1.5em;
+  max-width: 100%;
+  line-height: 1.3;
+}
+
+#GFE .title-box {
+  max-width: 800px;
+  margin: 0 auto 1.8125em;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+}
+
+.textbox {
+    max-width: 900px;
+    margin: 3em 3em 2em 7em;
+    padding-right: 360px;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 17px;
+}
+
+/* ===== Bullet Points ===== */
+
+#GFE .textbox ul li {
+    padding-left: 54px;
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+
+#GFE ul li:before {
+    content: '\f101';
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0 25px 0 0;
+    position: relative;
+    color: inherit;;
+  }
+
+  .contact {
+    font-size: 17px;
+    margin: 31px 29px;
+    max-width: 50ch;
+    line-height: 1.5;
+
+  }
+
+
+/* ==== STAFF INFO ==== */
+
+#staff {
+  background: var(--limegreen)
+}
+
+.container-staff {
+  margin: 20px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.insurance-header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.insurance-header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+  margin-top: 3em;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 15px;
+  font-size: 24.3px;
+  text-align: center;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: var(--headerbackground);
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  /* margin-bottom: 3em; */
+}
+
+#staff .title-box {
+  max-width: 800px;
+  margin: 0 auto 1.8125em;
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+}
+
+
+
+/* ==== INSURANCE POLICIES ==== */
+
+.container h1{
+  font-size: 50px;
+}
+
+
+.insurance {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  padding: 3rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  }
+}
+
+.insurance::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 3.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+/* === SLIDING SCALE === */
+
+.textbox-slider {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--headerbackground);
+  font-size: 17px;
+  padding: 0px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.15);
+  margin-left: auto;
+  margin-right: auto
+}
+
+.content-table thead tr {
+  background-color: var(--darkgreen);
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th, .content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid var(--contactinfohover).
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: var(--navlinkdropdownmenu);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--headerbackground);
+}
+
+
+
+/* === GOOD FAITH ESTIMATE === */
+
+.GoodFaithEstimate {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  padding: 3rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  }
+}
+
+.GoodFaithEstimate::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 3.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+
+.insurance_image {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.textbox-insurance {
+  text-align: center;
+  margin: auto;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 17px;
+  width: 100%;
+  color: var(--black);
+  max-width: 70ch;
+  font-weight: 700;
+}
+
+
+/* ===FOOTER=== */
+
+footer p {
+  line-height: .8;
+}
+
+.footer  {
+  overflow: hidden;
+  background: var(--headerbackground);
+  color: var(--white);
+  font-family: 'Montserrat';
+  padding-top: 2em;
+}
+
+/*Better Health Info*/
+.location {
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer-hours {
+  font-weight: 700;
+  line-height: 44;
+  padding-top: 1em;
+}
+
+.Details {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+
+/*Logo*/
+
+.bottomlogo {
+  height: 280px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.copyright {
+  color: var(--white);
+  text-align: center;
+}
+
+.trademark {
+  padding-left: 1rem;
+  text-align: center;
+}
+
+
+/*=== CONTACT ===*/
+
+.connect {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 35px 0px 35px;
+}
+
+.phone-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+  transition: .5s;
+}
+
+.phone-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+.computer-icon {
+  border: 2px solid var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+.email-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+
+/*Hover */
+
+.computer-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+.email-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+
+
+/*Media*/
+
+@media (max-width: 1450px) {
+
+  .textbox {
+     margin: 3em 3em 2em 7em;
+     padding: 0;
+  }
+
+
+  .insurance::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 3.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .textbox-insurance {
+    margin: 50px auto;
+  }
+
+
+  .insurance_image {
+    margin: auto 20px 0px 0;
+  }
+
+  .contact {
+    margin: 31px 120px;
+  }
+
+  .GoodFaithEstimate::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 3.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
+@media (max-width 1024px) {
+  /* .textbox {
+     margin: 3em 3em 2em 3em;
+  } */
+
+  .insurance_image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .textbox-insurance {
+    margin: 50px 120px;
+  }
+
+  #policies .textbox ul li {
+    padding-left: 54px;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+}
+
+
+
+@media (max-width: 992px) {
+
+
+  .media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /*Footer*/
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 35px 0px 30px;
+  }
+
+}
+
+/* 900px */
+
+@media (max-width: 900px) {
+
+  .header-text {
+    text-align: center;
+  }
+
+  #poilicies .title-box {
+    margin: 0px auto 0;
+  }
+}
+
+
+
+
+/* 768px */
+
+
+@media (max-width: 768px) {
+
+
+  /*Header*/
+
+  .header-text {
+    text-align: center;
+  }
+
+
+  /* ===Policies === */
+
+#policies .title-box {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+  }
+
+  .textbox {
+      font-size: 15px;
+      padding: 0px;
+      margin: 15px 0px;
+    }
+
+    .contact{
+        max-width: 60ch;
+    }
+
+
+
+
+
+/*Insurance*/
+
+  .insurance {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    display: block;
+    padding: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .insurance::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 3.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .GoodFaithEstimate {
+    font-size: 3rem;
+  }
+
+
+  /*Footer*/
+
+  .media-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+  }
+
+}
+
+
+/*Max-Width: 600px*/
+
+@media (max-width: 600px) {
+
+.GoodFaithEstimate {
+  font-size: 3rem;
+}
+
+#policies .title-box {
+  font-size: 10px;
+  padding: 0;
+}
+
+#policies .textbox {
+    margin: 21px 3px 45px -15px;
+    line-height: 1.6;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.contact {
+    max-width: 60ch;
+    padding: 0;
+    margin: 20px;
+}
+
+.textbox-insurance {
+  margin: 70px auto;
+  max-width: 47ch;
+}
+
+.insurance_image {
+  margin: 0;
+  padding: 0;
+}
+
+.GoodFaithEstimate::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 2.7rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+}
+
+
+
+@media (max-width: 472px) {
+
+
+  /*Insurance*/
+
+  .insurance {
+    font-size: 2rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+  }
+
+  .insurance::before {
+    content: "";
+    width: 13rem;
+    height: 5px;
+    bottom: 3rem;
+    background-color: var(--darkgreen);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .insurance_image {
+    padding: 0;
+    margin: 0;
+  }
+
+  /*Footer*/
+
+  .trademark {
+    text-align: center;
+  }
+
+  .connect {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 0px 48px;
+  }
+
+  .textbox-insurance {
+    margin: 100px auto;
+    max-width: 28ch;
+  }
+
+  .GoodFaithEstimate {
+    font-size: 2rem;
+  }
+
+  .GoodFaithEstimate::before {
+    content: "";
+    width: 10rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 2.7rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+}
+
+@media (max-width: 438px) {
+
+/*Header*/
+
+.header-text h1 {
+  text-align: center;
+  font-size: 3rem;
+  }
+}
+
+@media (max-width: 330px) {
+
+  .GoodFaithEstimate {
+    font-size: 1.5rem;
+  }
+
+
+  #policies .textbox {
+      margin: 25px 4px 30px -20px;
+      line-height: 1.6;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      max-width: 100%;
+      padding: 0;
+    }
+
+  .contact{
+  max-width: 25ch;
+  width: 100%;
+  }
+
+.textbox-insurance {
+  margin: 30px auto;
+  max-width: 28ch;
+  font-size: 15px;
+}
+
+
+  }

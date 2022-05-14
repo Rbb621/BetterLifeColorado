@@ -1,0 +1,854 @@
+:root {
+  --white: #fff;
+  --headerbackground: #212329;
+  --darkgreen: #1fcc84;
+  --contactinfohover: #948f8f;
+  --black: #333;
+  --navlinkdropdownmenu: #cbd0d7;
+  --signup: #11935d;
+  --grey: #cacaca;
+  --limegreen: #9FC088;
+  --lightbrown: #5a5a5b;
+  --footer: #2C3333;
+}
+
+li {
+  list-style: none;
+  margin: auto;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+html,body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+section {
+  width: 100%;
+  min-height: 1000px;
+}
+
+/* === Misc. ===*/
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
+/* ===NavBar=== */
+
+
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--darkgreen);
+}
+
+
+
+/* ==== DROPDOWN-MENU ==== */
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--darkgreen);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
+    color: var(--darkgreen);
+}
+
+  nav .dropdown-menu {
+      min-width: 200px;
+      max-height: none;
+      padding: 0px;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      background: var(--headerbackground);
+    }
+
+
+
+/* === DROPDOWN MENU === */
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--navlinkdropdownmenu);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .nav-link:hover {
+    color: var(--darkgreen);
+    transition: .1s;
+  }
+
+
+  nav .dropdown-menu {
+      min-width: 150px;
+      max-height: none;
+      padding: 33px 0;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      background: #212329;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      transition: ease-in .1;
+    }
+
+
+    .nav .nav-links .nav-item .dropdown-menu .nav-link {
+        justify-content: flex-start;
+        color: #a7b1c1;
+        font-weight: 400;
+        background: transparent;
+        padding: 15px 20px;
+    }
+
+
+
+    /* === HEADER SECTION === */
+
+    .title {
+      background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      background-attachment: fixed;
+    }
+
+    .effect{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+
+    .title-text {
+      display: grid;
+      place-items: center;
+      height: 70vh;
+      font-family: 'Poppins',serif;
+      text-transform: capitalize;
+      font-size: 50px;
+    }
+
+    .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 5rem;
+    }
+
+
+/* ==== FEELINGS INFORMATION ==== */
+
+
+#emotional-title {
+  background-image: image(feelings/feeling_title.jpg);
+}
+
+#aboutus h2 {
+  margin-bottom: 25px;
+}
+
+.img-wrap {
+  width: 100%
+}
+
+.img-wrap img {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px;
+  height: 295px;
+  width: 280px;
+  float: right;
+  position: relative;
+  background: linear-gradient(lightgreen 70%, white);
+}
+
+.feeling_description {
+  margin-left: 60px;
+}
+
+h2 {
+  padding-top: 1em;
+}
+
+.wp-block-quote {
+  padding: 0;
+  color: var(--lightbrown);
+}
+
+
+/* === SHAPES === */
+
+.smallcircle {
+    background: var(--contactinfohover);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%
+}
+
+.circle  {
+  height: 450px;
+  width: 450px;
+  position: relative;
+  border-radius: 50%;
+  background: var(--darkgreen);
+  float: left;
+}
+
+.content {
+  position: relative;
+  width: inherit;
+  height: auto;
+  top: 50%;
+  transform:translateY(-50%);
+  color: var(--headerbackground);
+}
+
+/* ==== TYPES OF ANXIETY WE TREAT ==== */
+
+.anxiety-treatment-icons {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 50px;
+}
+
+#emotional .Anxiety {
+  background: var(--limegreen);
+}
+
+#emotional .header {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: var(--white);
+  font-weight: 900;
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+.emotional_text {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+
+/* === ABOUT === */
+
+
+#emotional {
+  padding: 9.0625em 0;
+}
+
+#emotional .container {
+  padding: 0;
+  color: var(--black);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#emotional .box {
+  background: var(--white);
+  /* padding: 4.875em 20em 4.6875em 135px; */
+  position: relative;
+  min-height: 540px;
+  font-size: 18px;
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === MISC. === */
+
+
+.container {
+max-width: 1170px;
+padding: 0 20px;
+margin: 0 auto;
+}
+
+
+.text-box {
+  line-height: 1.7;
+  max-width: 37ch;
+  font-family: 'Montserrat', sans-serif;
+  padding: 9em 0 12.1875em;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-width: 1400px;
+}
+
+.image, .quoteonquote {
+  grid-row: 1 / 2;
+  align-self: center;
+}
+
+.image { grid-column: 1 / 3; }
+
+.quoteonquote {
+    grid-column: 2 / -1;
+    background: white;
+    padding: 0.65em;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 30ch;
+}
+
+#emotional, img {
+  max-width: 100%;
+  display: block;
+}
+
+/* === HEADER TITLES === */
+
+
+.header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+/* === SECTION TITLE/CONTENT === */
+
+.section-title {
+  float: right;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Poppins',sans-serif;
+  padding: 20px;
+}
+
+.section-content {
+  font-family: 'Poppins',sans-serif;
+  padding: 0px 50px;
+  line-height: 1.7;
+}
+
+
+
+
+/* ==== FOOTER ==== */
+
+footer p {
+  line-height: .8;
+}
+
+.footer  {
+  overflow: hidden;
+  background: var(--headerbackground);
+  color: var(--white);
+  font-family: 'Montserrat';
+  padding-top: 2em;
+}
+
+/* ==== BETTER HEALTH INFO ==== */
+
+.location {
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer-hours {
+  font-weight: 700;
+  line-height: 44;
+  padding-top: 1em;
+}
+
+.Details {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+
+/* ==== LOGO ==== */
+
+.bottomlogo {
+  height: 280px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* max-width: 100%; */
+}
+
+.copyright {
+  color: var(--white);
+  text-align: center;
+}
+
+.trademark {
+  padding-left: 1rem;
+  text-align: center;
+}
+
+
+/*=== CONTACT ===*/
+
+.connect {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 35px 0px 35px;
+}
+
+.phone-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+  transition: .5s;
+}
+
+.phone-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+.computer-icon {
+  border: 2px solid var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+.email-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+
+/*Hover */
+
+.computer-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+.email-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+
+/*Media*/
+
+@media (min-width: 1500px) {
+  .greeting {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1450px) {
+
+
+  .header {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    display: block;
+    padding: 3rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+  .header::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--headerbackground);
+    bottom: 2.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+}
+
+
+
+
+/*1024px*/
+
+@media (max-width: 1024px) {
+
+  /*About Us*/
+
+  #intro .box {
+    background: #fff;
+    padding: 4.875em 20em 4.6875em 135px;
+    position: relative;
+    min-height: 540px;
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* === TYPES OF ANXIETY WE TREAT === */
+
+.emotional_text {
+  font-size: 26px;
+}
+
+  }
+
+
+
+
+
+/*992px */
+
+
+@media (max-width: 992px) {
+
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .header::before {
+    content: "";
+    width: 11rem;
+    height: 5px;
+    bottom: 2rem;
+    background-color: var(--headerbackground);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+
+  /*Footer*/
+
+  .media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 35px 0px 30px;
+  }
+
+}
+
+
+
+/*768px */
+
+
+@media (max-width: 768px) {
+
+
+  /* === Welcome === */
+
+  .greeting {
+    font-size: 3.5rem;
+  }
+
+  /* === About Us === */
+
+  #intro .box {
+    background: #fff;
+    padding: 4.875em 18em 4.6875em 135px;
+    position: relative;
+    min-height: 540px;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .title-text {
+    text-align: center;
+  }
+
+  /* === TYPES OF ANXIETY WE TREAT === */
+
+
+  .anxiety-treatment-icons {
+    height: 150px;
+    width: 150px;
+  }
+
+  .emotional_text {
+    font-size: 20px;
+  }
+
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .header::before {
+    content: "";
+    width: 11rem;
+    height: 5px;
+    bottom: 2rem;
+    background-color: var(--headerbackground);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  /* ==== WE CAN HELP WITH ANXIETY -=== */
+
+  .circle {
+    grid-column: 1;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+}
+
+
+
+/*600px */
+
+
+@media (max-width: 600px) {
+
+
+.greeting {
+  font-size: 2.5rem;
+}
+
+
+.header {
+  font-size: 1.5rem;
+}
+
+.header::before {
+  content: "";
+  width: 11rem;
+  height: 5px;
+  bottom: 2rem;
+  background-color: var(--headerbackground);
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+
+/* === TYPES OF ANXIETY WE TREAT === */
+
+.emotional_text {
+  font-size: 15px;
+}
+
+.anxiety-treatment-icons {
+  height: 120px;
+  width: 120px;
+}
+
+
+  /* === FOOTER === */
+
+  .bottomlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trademark {
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 35px 0px 30px;
+  }
+}
+
+
+
+
+@media (max-width: 472px) {
+
+  .title-text h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 30px;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .header::before {
+    content: "";
+    width: 11rem;
+    height: 5px;
+    bottom: 2rem;
+    background-color: var(--headerbackground);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .smallcircle {
+      background: var(--contactinfohover);
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 20px 4px
+  }
+
+  .emotional_text {
+    font-size: 17px;
+  }
+
+  /*Footer*/
+
+  .trademark {
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 0px 48px;
+  }
+
+
+}
+
+@media (max-width: 320px) {
+
+  .smallcircle {
+      background: var(--contactinfohover);
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 20px 4px
+  }
+
+  .emotional_text {
+    font-size: 17px;
+  }
+
+  /* === TYPES OF ANXIETY WE TREAT === */
+
+  .emotional_text {
+    font-size: 19px;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+}

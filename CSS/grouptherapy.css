@@ -1,0 +1,689 @@
+:root {
+  --white: #fff;
+  --headerbackground: #212329;
+  --darkgreen: #1fcc84;
+  --contactinfohover: #948f8f;
+  --black: #333;
+  --navlinkdropdownmenu: #cbd0d7;
+  --signup: #11935d;
+  --grey: #cacaca;
+  --limegreen: #9FC088;
+  --lightbrown: #5a5a5b;
+  --footer: #2C3333;
+}
+
+li {
+  list-style: none;
+  margin: auto;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+html,body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+section {
+  width: 100%;
+  min-height: 1000px;
+}
+
+/* === Misc. ===*/
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
+
+/* .fade-in {
+  opacity: 0;
+  transition: opacity 250ms;
+} */
+
+
+/* ===NavBar=== */
+
+
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--darkgreen);
+}
+
+
+
+/* ==== DROPDOWN-MENU ==== */
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--darkgreen);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
+    color: var(--darkgreen);
+}
+
+  nav .dropdown-menu {
+      min-width: 200px;
+      max-height: none;
+      padding: 0px;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      background: var(--headerbackground);
+    }
+
+
+
+/*Dropdown Menu*/
+
+
+  .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    color: var(--navlinkdropdownmenu);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 700;
+  }
+
+  .nav-link:hover {
+    color: var(--darkgreen);
+    transition: .1s;
+  }
+
+
+  nav .dropdown-menu {
+      min-width: 150px;
+      max-height: none;
+      padding: 33px 0;
+      border-radius: 0;
+      margin: 0;
+      white-space: nowrap;
+      background: #212329;
+      border: 1px solid #36384a;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
+      flex-direction: column;
+      transition: ease-in .1;
+    }
+
+
+    .nav .nav-links .nav-item .dropdown-menu .nav-link {
+        justify-content: flex-start;
+        color: #a7b1c1;
+        font-weight: 400;
+        background: transparent;
+        padding: 15px 20px;
+    }
+
+
+
+
+    /* === HEADER SECTION === */
+
+    .grouptherapy {
+      background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),url(https://stephanieberliant.files.wordpress.com/2021/08/pexels-photo-2422290.jpeg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      background-attachment: fixed;
+    }
+
+    .effect{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+
+    .title-text {
+      display: grid;
+      place-items: center;
+      height: 70vh;
+      font-family: 'Poppins',serif;
+      text-transform: capitalize;
+      font-size: 50px;
+    }
+
+    .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 5rem;
+    }
+
+
+
+/* ==== GROUP THERAPY PAGE ==== */
+
+#Photo {
+  background-image: linear-gradient(359deg, var(--contactinfohover)  2%, rgba(0,255,66,0) 400%), url(../images/grouptherapy.jpeg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  padding: 9em 0 12.1875em;
+}
+
+ .GT1 {
+  list-style: disc;
+  font-size: 1.5rem;
+  max-width: 60ch;
+  line-height: 1.9;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.GTDetails {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: 300;
+}
+
+
+
+.header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  display: block;
+  padding: 3rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+.container_group {
+max-width: 1170px;
+padding: 0 20px;
+margin: 0 auto;
+}
+
+
+
+/* ===FOOTER=== */
+
+footer p {
+  line-height: .8;
+}
+
+.footer  {
+  overflow: hidden;
+  background: var(--headerbackground);
+  color: var(--white);
+  font-family: 'Montserrat';
+  padding-top: 2em;
+}
+
+/*Better Health Info*/
+.location {
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer-hours {
+  font-weight: 700;
+  line-height: 44;
+  padding-top: 1em;
+}
+
+.Details {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+
+/*Logo*/
+
+.bottomlogo {
+  height: 280px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.copyright {
+  color: var(--white);
+  text-align: center;
+}
+
+.trademark {
+  padding-left: 1rem;
+  text-align: center;
+}
+
+
+/*=== CONTACT ===*/
+
+.connect {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 35px 0px 35px;
+}
+
+.phone-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+  transition: .5s;
+}
+
+.phone-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+.computer-icon {
+  border: 2px solid var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+.email-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+
+  /*effects*/
+  transition: .5s;
+}
+
+
+/*Hover */
+
+.computer-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+.email-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+/*Media*/
+
+@media (min-width: 1500px) {
+  .greeting {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1450px) {
+
+/* ==== GROUP THERAPY ==== */
+
+.header {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  display: block;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+}
+
+
+
+
+/*1024px*/
+
+@media (max-width: 1024px) {
+
+/* ==== GROUP THERAPY ==== */
+
+.header {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  display: block;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+
+  }
+
+
+
+
+
+/*992px */
+
+
+@media (max-width: 992px) {
+
+  .header {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    padding: 3rem 0rem 1em;
+  }
+
+  .header::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 2.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+
+
+  /*Footer*/
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 35px 0px 30px;
+  }
+
+  .media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+/*768px */
+
+
+@media (max-width: 768px) {
+
+
+  .header {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    display: block;
+    padding: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .header::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--darkgreen);
+    bottom: 3.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+
+  /*Footer*/
+
+  .media-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+  }
+
+}
+
+
+
+/*600px */
+
+
+@media (max-width: 600px) {
+
+
+.greeting {
+  font-size: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-text h1 {
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--darkgreen);
+  bottom: 3.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+.container_group {
+    max-width: 1170px;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+
+#Photo {
+  background-position: center center;
+  padding: 0;
+}
+
+
+  /*Footer*/
+
+  .bottomlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trademark {
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 35px 0px 30px;
+  }
+}
+
+
+
+
+@media (max-width: 472px) {
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .header::before {
+    content: "";
+    width: 11rem;
+    height: 5px;
+    bottom: 3rem;
+    background-color: var(--darkgreen);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  #Photo {
+    background-position: center center;
+    padding: 0;
+  }
+
+  /*Footer*/
+
+  .trademark {
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 0px 48px;
+  }
+
+
+}
+
+@media (max-width: 320px) {
+  .title-text h1 {
+    font-size: 4rem;
+  }
+
+  .grouptherapy {
+    background-position: center;
+  }
+
+  #Photo {
+    background-position: center center;
+  }
+
+  .GT1 {
+      line-height: 1.5;
+      padding: 5px;
+      font-size: 1rem;
+  }
+
+  .group_therapy_info {
+    font-size: 1rem;
+  }
+
+  .GTDetails {
+    font-size: 1rem;
+  }
+
+  .header {
+    font-size: 1.4rem;
+  }
+
+  .header::before {
+    bottom: 2.5rem;
+    width: 8rem;
+  }
+
+
+}

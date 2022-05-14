@@ -461,6 +461,10 @@ hr {
   transition: .1s;
 }
 
+.specialink {
+  display: contents;
+}
+
 
 
 /* ==== STAFF ==== */
@@ -835,7 +839,7 @@ footer p {
 @media (max-width: 1024px) {
 
 .greeting {
-  top: 3rem;
+  font-size: 4em;
   position: relative;
 }
 
@@ -931,21 +935,6 @@ footer p {
       margin: 50px 0px 0px 10px;
       padding: 0;
   }
-
-
-  /* =====  FOOTER 992px ===== */
-
-
-  /* .media-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
-  } */
-
 }
 
 
@@ -958,6 +947,7 @@ footer p {
 
   .greeting {
     font-size: 3.5rem;
+    top: 0;
   }
 
 
@@ -1049,16 +1039,6 @@ position: relative;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
   }
-
-
-  /* ===== F00TER 768px ==== */
-
-  /* .media-icons {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 25px 0 25px;
-  } */
-
 }
 
 
@@ -1073,20 +1053,20 @@ position: relative;
 /* ==== WELCOME 600px ==== */
 
 .greeting {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   position: relative;
   top: 0;
 }
 
-.logo {
+/* .logo {
   height: 70px;
   width: 70px;
   float: left;
-}
+} */
 
 /* ==== ABOUT 600px ==== */
 
-#intro .textbox {
+/* #intro .textbox {
   padding: 0;
 }
 .grid {
@@ -1099,7 +1079,7 @@ position: relative;
 
 .component--horizontal-rule .default {
   max-width: 500px;
-}
+} */
 
 /* ==== OUR GOAL 600px ==== */
 
@@ -1146,8 +1126,11 @@ position: relative;
   margin: 50px 50px 0px 0;
 }
 
+/* === TELEHEALTH 600px === */
 
-/* ==== STAFF 600px ==== */
+.text-box {
+  margin: 0 22px;
+}
 
 
   /* ==== OFFICE 600px ==== */
@@ -1167,34 +1150,16 @@ position: relative;
   }
 
 
-
-
-
   /* ==== FOOTER 600px ==== */
 
   .media-icons {
     margin: auto;
   }
 
-  /* .bottomlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .trademark {
-    text-align: center;
-  }
-
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
   .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
-  } */
+      padding-bottom: 1rem;
+      margin: auto;
+  }
 }
 
 
@@ -1250,9 +1215,7 @@ position: relative;
 
 /* ==== INTRO ==== */
 
-.intro-paragraph {
-    /* padding: 0; */
-    /* margin: 0; */
+/* .intro-paragraph {
     font-size: 13px;
     line-height: 1.8;
     margin-left: auto;
@@ -1262,13 +1225,14 @@ position: relative;
 
 .grid {
   max-width: 35ch;
-}
+} */
 
 .component--horizontal-rule .default {
   max-width: 400px;
 }
 
-/*Office*/
+
+/* === OFFICE === */
 
 .OfficeParagraph {
   width: 100%;
@@ -1276,6 +1240,8 @@ position: relative;
   padding: 0;
   margin: 0 22px;
 }
+
+
 
 /* SPECIALTIES 472px */
 
@@ -1303,23 +1269,6 @@ position: relative;
     transform: translateX(-50%);
   }
 
-  /*Footer*/
-
-  /* .trademark {
-    text-align: center;
-  }
-
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 0px 48px;
-  } */
-
-
 }
 
 @media (max-width: 412px) {
@@ -1338,6 +1287,10 @@ position: relative;
 
   .component--horizontal-rule .default {
     max-width: 250px;
+}
+
+.TelehealthHeading {
+  font-size: 3em;
 }
 }
 
