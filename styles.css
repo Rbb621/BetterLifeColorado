@@ -406,7 +406,7 @@ hr {
 /* ==== SPECIALTIES ==== */
 
 
-#specialties .circle {
+.circle {
   height: 200px;
   width: 200px;
   display: inline-flex;
@@ -878,12 +878,26 @@ footer p {
 /* =====  SPECIALTIES 1024px ===== */
 
 #specialties .circle {
-    margin: 3em 3em;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* === TELEHEALTH 768px === */
+
+.text-box  {
+  padding: 9em 2em 12.1875em;
 }
 
 .component--horizontal-rule .default {
   max-width: 800px;
+}
+
+/* ==== FOOTER 1024px ==== */
+
+.media-icons {
+  margin: 0;
+}
 }
 
 
@@ -929,13 +943,13 @@ footer p {
     right: 0;
     margin-bottom: 2em;
 }
+
+#specialties .circle {
+    /* margin: 50px 0px 0px 10px; */
+    padding: 0;
+}
   }
 
-  #specialties .circle {
-      margin: 50px 0px 0px 10px;
-      padding: 0;
-  }
-}
 
 
 /*768px */
@@ -978,13 +992,13 @@ footer p {
     margin-right: auto;
 }
 
-.grid {
+/* .grid {
     position: static;
     top: 0;
     right: 0;
     margin-bottom: 2em;
     width: 55ch;
-}
+} */
 
 .component--horizontal-rule .default {
   max-width: 600px;
@@ -1002,6 +1016,10 @@ position: relative;
 
 
 /* ==== SPECIALTIES 768px ==== */
+
+/* .section-sp::before {
+  bottom: 87%;
+}
 
   .header {
     text-transform: uppercase;
@@ -1024,13 +1042,11 @@ position: relative;
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
-  }
+  } */
 
   #specialties .circle {
-      margin: 50px 45px 0px 10px;
-      padding: 0;
+    margin: 50px 50px 0px 0;
   }
-
 
 
   /* ==== OFFICE 768px ==== */
@@ -1039,6 +1055,7 @@ position: relative;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
   }
+
 }
 
 
@@ -1053,33 +1070,15 @@ position: relative;
 /* ==== WELCOME 600px ==== */
 
 .greeting {
-  font-size: 3.5rem;
+  font-size: 2rem;
   position: relative;
   top: 0;
 }
 
-/* .logo {
-  height: 70px;
-  width: 70px;
-  float: left;
-} */
-
-/* ==== ABOUT 600px ==== */
-
-/* #intro .textbox {
-  padding: 0;
-}
-.grid {
-    position: static;
-    top: 0;
-    right: 0;
-    margin-bottom: 2em;
-    width: 55ch;
+.button {
+  font-size: 1.2rem;
 }
 
-.component--horizontal-rule .default {
-  max-width: 500px;
-} */
 
 /* ==== OUR GOAL 600px ==== */
 
@@ -1126,6 +1125,17 @@ position: relative;
   margin: 50px 50px 0px 0;
 }
 
+.section-sp::before {
+  content: "";
+  background: var(--headerbackground);
+  position: absolute;
+  bottom: 75%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  transform: skewX(-180deg);
+}
+
 /* === TELEHEALTH 600px === */
 
 .text-box {
@@ -1165,67 +1175,15 @@ position: relative;
 
 @media (max-width: 528px) {
 
-  .section-sp::before {
-    content: "";
-    background: var(--headerbackground);
-    position: absolute;
-    bottom: 85%;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    transform: skewX(-180deg);
-  }
-
-  .section-title h2 {
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Poppins',sans-serif;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    position: relative;
-  }
-
-  .section-title h2::after {
-    content: "";
-    width: 12rem;
-    height: 5px;
-    display: block;
-    background: var(--darkgreen);
-    left: 50%;
-    bottom: 0;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
-
-  #specialties .circle {
+/* .circle {
     margin: 50px 50px 0px 0;
-}
-
-.grid {
-  max-width: 45ch;
-}
+} */
 
 }
 
 
 @media (max-width: 472px) {
 
-
-/* ==== INTRO ==== */
-
-/* .intro-paragraph {
-    font-size: 13px;
-    line-height: 1.8;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.grid {
-  max-width: 35ch;
-} */
 
 .component--horizontal-rule .default {
   max-width: 400px;
@@ -1238,14 +1196,12 @@ position: relative;
   width: 100%;
   font-size: 15px;
   padding: 0;
-  margin: 0 22px;
 }
-
 
 
 /* SPECIALTIES 472px */
 
-#specialties .circle {
+.circle {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1269,7 +1225,28 @@ position: relative;
     transform: translateX(-50%);
   }
 
+  /* === TELEHEALTH 472px === */
+
+#Telehealth {
+  background-repeat: round;
 }
+
+  .text-box  {
+    padding: 2em 0em 4.5em;
+  }
+
+  /* === OFFICE 472px === */
+
+#Office {
+  background-repeat: round;
+}
+  .text-box  {
+    padding: 2em 0em 4.5em;
+  }
+
+}
+
+
 
 @media (max-width: 412px) {
 
@@ -1277,9 +1254,29 @@ position: relative;
     margin: 0px 38px 0px 50px;
   }
 
+  #client .button {
+    font-size: 1.0rem;
+  }
+
+
+  .section-sp::before {
+    content: "";
+    background: var(--headerbackground);
+    position: absolute;
+    bottom: 85%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    transform: skewX(-180deg);
+}
+
 }
 
 @media (max-width: 330px) {
+
+#client .button {
+  font-size: 1.0rem;
+}
 
   .grid {
     max-width: 25ch;
@@ -1292,6 +1289,12 @@ position: relative;
 .TelehealthHeading {
   font-size: 3em;
 }
+
+.OfficeHeading {
+  position: relative;
+  left: 1.0rem;
+}
+
 }
 
 

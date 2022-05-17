@@ -396,9 +396,11 @@ margin: 0 auto;
 
   /* ==== WE CAN HELP WITH ANXIETY -=== */
 
-  /* .african {
-    max
-  } */
+.african {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 
 
 
@@ -469,7 +471,7 @@ footer p {
 .media-icons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 35px 0px 35px;
+  /* margin: 0px 35px 0px 35px; */
 }
 
 .phone-icon {
@@ -629,7 +631,7 @@ footer p {
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
+    margin: 0px 150px 0px 150px;
   }
 
 }
@@ -776,6 +778,11 @@ footer p {
 
 @media (max-width: 472px) {
 
+  .section-title {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+
   .title-text h1 {
     text-align: center;
     font-size: 4rem;
@@ -810,7 +817,7 @@ footer p {
     font-size: 17px;
   }
 
-  /*Footer*/
+  /* === FOOTER === */
 
   .trademark {
     text-align: center;
@@ -855,6 +862,11 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+
+  .section-title {
+    max-width: 100%;
+    font-size: 3rem;
   }
 
 }

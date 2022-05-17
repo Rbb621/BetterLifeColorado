@@ -303,6 +303,19 @@ footer p {
   transition: .2s;
 }
 
+@media (max-width: 1024px) {
+
+#about-intro .box img {
+  right: 0px;
+  max-width: 320px;
+}
+
+.media-icons {
+  margin: 0;
+}
+
+}
+
 
 
 @media (max-width:991px) {
@@ -350,5 +363,10 @@ footer p {
       margin: auto;
       padding-bottom: 1rem;
     }
+
+  #about-intro {
+    padding: 0;
+    padding-bottom: 5em;
+}
 
 }

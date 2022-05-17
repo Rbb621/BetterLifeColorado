@@ -430,6 +430,12 @@ footer p {
   transform: translateX(-50%);
 }
 
+/* === FOOTER === */
+
+.media-icons {
+  margin: 0;
+}
+
 
   }
 
@@ -518,7 +524,7 @@ footer p {
   .media-icons {
     display: flex;
     justify-content: space-between;
-    margin: 0 25px 0 25px;
+    /* margin: 0 25px 0 25px; */
   }
 
 }
@@ -599,8 +605,7 @@ footer p {
   }
 
   .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
+    margin: 0px;
   }
 }
 
@@ -640,12 +645,6 @@ footer p {
     padding-top: 1rem;
     padding-bottom: .4rem;
   }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 0px 48px;
-  }
-
 
 }
 

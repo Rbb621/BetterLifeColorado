@@ -443,9 +443,9 @@ footer p {
 }
 
 
-/*Social Media icons*/
+/*=== CONTACT ===*/
 
-.contact {
+.connect {
   text-align: center;
   font-size: 50px;
   font-weight: 900;
@@ -457,12 +457,31 @@ footer p {
   margin: 0px 35px 0px 35px;
 }
 
-.media-icon {
+.phone-icon {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 55%;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 20px;
+  transition: .5s;
+}
+
+.phone-icon:hover {
+  color: var(--contactinfohover);
+  border: 2px solid var(--contactinfohover);
+  transition: .2s;
+}
+
+
+.computer-icon {
   border: 2px solid var(--white);
   border-radius: 55%;
   font-size: 30px;
   list-style: none;
   padding: 20px 20px;
+
+  /*effects*/
   transition: .5s;
 }
 
@@ -473,13 +492,15 @@ footer p {
   font-size: 30px;
   list-style: none;
   padding: 20px 20px;
+
+  /*effects*/
   transition: .5s;
 }
 
 
 /*Hover */
 
-.media-icon:hover {
+.computer-icon:hover {
   color: var(--contactinfohover);
   border: 2px solid var(--contactinfohover);
   transition: .2s;
