@@ -328,7 +328,7 @@ hr {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    width: 80%;
-   max-width: 600px;
+   max-width: 165;
  }
 
  .image, .healing {
@@ -826,7 +826,7 @@ footer p {
 
     width: 4px;
     background-color: #45e19f;
-    height: 600px;
+    height: 165;
     right: 2em;
     position: relative;
   }
@@ -1017,36 +1017,18 @@ position: relative;
 
 /* ==== SPECIALTIES 768px ==== */
 
-/* .section-sp::before {
-  bottom: 87%;
+
+#specialties .circle {
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    height: 170px;
+    width: 170px;
 }
 
-  .header {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 3.5rem;
-    letter-spacing: 4px;
-    display: block;
-    padding: 3rem;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 3.2rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  } */
-
-  #specialties .circle {
-    margin: 50px 50px 0px 0;
-  }
+.emotional_text {
+  font-size: 28px;
+}
 
 
   /* ==== OFFICE 768px ==== */
@@ -1070,13 +1052,15 @@ position: relative;
 /* ==== WELCOME 600px ==== */
 
 .greeting {
-  font-size: 2rem;
-  position: relative;
-  top: 0;
+    font-size: 4em;
+    position: relative;
+    padding: 0;
 }
 
 .button {
   font-size: 1.2rem;
+  position: relative;
+  top: 2rem;
 }
 
 
@@ -1122,7 +1106,9 @@ position: relative;
 /* ==== SPECIALTIES 600px ==== */
 
 #specialties .circle {
-  margin: 50px 50px 0px 0;
+margin-left: auto;
+margin-right: auto;
+display: block;
 }
 
 .section-sp::before {
@@ -1135,6 +1121,10 @@ position: relative;
   right: 0%;
   transform: skewX(-180deg);
 }
+
+
+
+
 
 /* === TELEHEALTH 600px === */
 
@@ -1173,15 +1163,6 @@ position: relative;
 }
 
 
-@media (max-width: 528px) {
-
-/* .circle {
-    margin: 50px 50px 0px 0;
-} */
-
-}
-
-
 @media (max-width: 472px) {
 
 
@@ -1206,8 +1187,6 @@ position: relative;
   margin-right: auto;
   display: block;
 }
-
-  /*Insurance*/
 
   .header {
     font-size: 2rem;
@@ -1255,11 +1234,19 @@ position: relative;
   }
 
   #client .button {
-    font-size: 1.0rem;
+      font-size: 1.5rem;
+      top: 2rem;
+      position: relative;
+  }
+
+  .greeting {
+      font-size: 3em;
+      text-align: center;
+      padding: 0;
   }
 
 
-  .section-sp::before {
+ .section-sp::before {
     content: "";
     background: var(--headerbackground);
     position: absolute;
@@ -1270,17 +1257,20 @@ position: relative;
     transform: skewX(-180deg);
 }
 
+.section-title h2 {
+    font-size: 47px;
+
 }
 
 @media (max-width: 330px) {
 
-#client .button {
+/* #client .button {
   font-size: 1.0rem;
-}
+} */
 
-  .grid {
+  /* .grid {
     max-width: 25ch;
-  }
+  } */
 
   .component--horizontal-rule .default {
     max-width: 250px;

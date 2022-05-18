@@ -263,7 +263,7 @@ hr {
 /* ===== Bullet Points ===== */
 
 #GFE .textbox ul li {
-    padding-left: 54px;
+    /* padding-left: 54px; */
     position: relative;
     margin-bottom: 1.5em;
   }
@@ -414,10 +414,13 @@ hr {
 /* === SLIDING SCALE === */
 
 .textbox-slider {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--headerbackground);
-  font-size: 17px;
-  padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--headerbackground);
+    font-size: 17px;
+    padding: 0px;
+    max-width: 90ch;
+    margin: auto;
+    line-height: 1.9;
 }
 
 .content-table {
@@ -647,7 +650,7 @@ footer p {
     width: 15rem;
     height: 5px;
     background-color: var(--darkgreen);
-    bottom: 3.2rem;
+    bottom: 2.7rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
@@ -672,7 +675,7 @@ footer p {
     width: 15rem;
     height: 5px;
     background-color: var(--darkgreen);
-    bottom: 3.2rem;
+    bottom: 2.7rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
@@ -719,9 +722,10 @@ footer p {
 }
 
 @media (max-width 1024px) {
-  /* .textbox {
-     margin: 3em 3em 2em 3em;
-  } */
+
+  .textbox-slider {
+    max-width: 71ch;
+  }
 
   .insurance_image {
     margin: 0;
@@ -732,11 +736,11 @@ footer p {
     margin: 50px 120px;
   }
 
-  #policies .textbox ul li {
-    padding-left: 54px;
-    position: relative;
-    margin-bottom: 1.5em;
+.textbox {
+    margin: 3em 3em 2em 1em;
+    padding: 0;
 }
+
 }
 
 
@@ -833,7 +837,7 @@ footer p {
     width: 15rem;
     height: 5px;
     background-color: var(--darkgreen);
-    bottom: 3.2rem;
+    bottom: 2.7rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
@@ -908,6 +912,24 @@ footer p {
   transform: translateX(-50%);
 }
 
+.title-box h2 {
+  font-size: 1em;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+/* ==== STAFF ==== */
+.insurance-header {
+  font-size: 1.59em;
+}
+
+.insurance-header::before {
+  width: 9rem;
+}
+
 }
 
 
@@ -915,10 +937,10 @@ footer p {
 @media (max-width: 472px) {
 
 
-  /*Insurance*/
+  /* === INSURANCE 472px === */
 
   .insurance {
-    font-size: 2rem;
+  font-size: 1.7rem;
   margin: auto;
   display: block;
   text-align: center;
@@ -926,9 +948,9 @@ footer p {
 
   .insurance::before {
     content: "";
-    width: 13rem;
+    width: 10rem;
     height: 5px;
-    bottom: 3rem;
+    bottom: 2.7rem;
     background-color: var(--darkgreen);
     left: 50%;
     position: absolute;
@@ -941,7 +963,7 @@ footer p {
     margin: 0;
   }
 
-  /*Footer*/
+  /* === FOOTER 472px === */
 
   .trademark {
     text-align: center;
@@ -954,7 +976,7 @@ footer p {
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px 0px 48px;
+    margin: 0px;
   }
 
   .textbox-insurance {
@@ -988,12 +1010,20 @@ footer p {
   text-align: center;
   font-size: 3rem;
   }
+
+  .title-box h2 {
+    font-size: 1em;
+  }
+
+  #GFE .textbox ul li {
+    padding-left: 54px;
+}
 }
 
 @media (max-width: 330px) {
 
   .GoodFaithEstimate {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
 
