@@ -56,8 +56,8 @@ section {
 
 
 .logo {
-  height: 90px;
-  width: 90px;
+  width: 190px;
+  margin-right: 1em;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
