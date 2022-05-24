@@ -283,12 +283,14 @@ margin: 0 auto;
   max-width: 1400px;
 }
 
-.image, .quoteonquote {
+.letters, .quoteonquote {
   grid-row: 1 / 2;
   align-self: center;
 }
 
-.image { grid-column: 1 / 3; }
+.letters {
+  grid-column: 1 / 3;
+ }
 
 .quoteonquote {
   grid-column: 2 / -1;
@@ -350,8 +352,20 @@ margin: 0 auto;
 
 /* ==== FOOTER ==== */
 
+.link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
 footer p {
   line-height: .8;
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .footer  {
@@ -481,6 +495,29 @@ footer p {
   .greeting {
     text-align: center;
   }
+
+  .header {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    display: block;
+    padding: 3rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+  .header::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--headerbackground);
+    bottom: 2.2rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 1450px) {
@@ -517,6 +554,10 @@ footer p {
 /*1024px*/
 
 @media (max-width: 1024px) {
+
+.title-text h1 {
+  font-size: 3.9rem;
+}
 
   /*About Us*/
 
@@ -584,20 +625,6 @@ footer p {
     transform: translateX(-50%);
   }
 
-
-  /* .media-icons {
-    display: flex;
-    justify-content: space-between;
-  } */
-
-
-  /*Footer*/
-
-  /* .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
-  } */
-
 }
 
 
@@ -645,14 +672,14 @@ footer p {
   }
 
   .header {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .header::before {
     content: "";
-    width: 11rem;
+    width: 20rem;
     height: 5px;
-    bottom: 1rem;
+    bottom: 2rem;
     background-color: var(--headerbackground);
     left: 50%;
     position: absolute;
@@ -660,13 +687,23 @@ footer p {
     transform: translateX(-50%);
   }
 
-  /* === WHAT THE HELL SECTION 2: ==== */
+  /* === SECTION 2: ==== */
 
   .section-content {
     font-family: 'Poppins',sans-serif;
     padding: 0px 50px;
     line-height: 1.7;
   }
+
+.grid  {
+  padding: 0px 50px;
+}
+
+/* === FOOTER === */
+
+.media-icons {
+  padding-bottom: 1rem;
+}
 
 
 }
@@ -677,6 +714,26 @@ footer p {
 
 
 @media (max-width: 600px) {
+
+.footer p {
+  line-height: 1.3;
+}
+
+.grid {
+  padding: 0px 50px;
+}
+
+.quoteonquote {
+  font-size: 13px;
+}
+
+  .title-text h1 {
+    font-size: 2.9rem;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
 
 
 .greeting {
@@ -716,26 +773,6 @@ footer p {
 
   /* === FOOTER === */
 
-  /* .bottomlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .trademark {
-    text-align: center;
-  } */
-
-  /* .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
-  } */
-
   .media-icons {
     margin: auto;
   }
@@ -746,14 +783,40 @@ footer p {
 
 @media (max-width: 472px) {
 
+.treatment-icon {
+  height: 120px;
+  width: 120px;
+}
+
+h5 {
+  font-size: 0.999rem;
+}
+
   .title-text h1 {
     text-align: center;
-    font-size: 4rem;
-    padding: 30px;
+    font-size: 3rem;
+    padding: 0px;
   }
 
-  .header {
-    font-size: 2rem;
+  #treatment .header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #treament .header::before {
+    content: "";
+    width: 11rem;
+    height: 5px;
+    bottom: 2rem;
+    background-color: var(--headerbackground);
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
+  }
+
+  .section-title {
+    font-size: 2.3rem;
   }
 
   .header::before {
@@ -780,26 +843,29 @@ footer p {
     font-size: 17px;
   }
 
-  /*Footer*/
-
-  /* .trademark {
-    text-align: center;
+  .quoteonquote {
+    padding: 0.2em;
+    max-width: 30ch;
+    font-size: 11px;
   }
 
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
+  .letters {
+    height: 100px;
   }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 0px 48px;
-  } */
-
 
 }
 
 @media (max-width: 320px) {
+
+footer p {
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 15px;
+  text-align: center;
+  padding-right: 20px;
+}
 
   .smallcircle {
       background: var(--contactinfohover);
@@ -809,26 +875,28 @@ footer p {
       margin: 20px 4px
   }
 
+  /* === TYPES OF ANXIETY WE TREAT === */
+
   .emotional_text {
     font-size: 17px;
   }
 
-  /* === TYPES OF ANXIETY WE TREAT === */
-
-  .emotional_text {
-    font-size: 19px;
-  }
-
   .header {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .header::before {
     content: "";
-    width: 9rem;
+    width: 8rem;
     height: 5px;
     background-color: var(--headerbackground);
     bottom: 2rem;
+  }
+
+  .quoteonquote {
+    padding: 0.2em;
+    max-width: 30ch;
+    font-size: 10px;
   }
 }

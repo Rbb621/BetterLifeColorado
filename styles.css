@@ -41,6 +41,7 @@ section {
 .link {
   color: var(--white);
   text-decoration: none;
+  transition: .1s;
 }
 
 .link:hover {
@@ -282,8 +283,8 @@ hr {
   font-size:3em;
   font-weight:bold;
   line-height:41px;
-  padding:0 16px 0 0;
-  width:20px;
+  padding: 0px 16px 0px 16px;
+  width: 20px;
 }
 
 .quote {
@@ -600,7 +601,7 @@ margin: 0 auto;
 
 
 #Office {
-  background-image: linear-gradient(260deg, #1a89f0  2%, rgba(0,255,66,0) 200%),
+  background-image: linear-gradient(260deg, #3b4045  2%, rgba(0,255,66,0) 200%),
   url(images/Building.jpeg);
   /* background-image: linear-gradient(260deg, var(--lightbrown) 15%, rgba(0,255,66,0) 200%),
   url(images/Building.jpeg); */
@@ -634,32 +635,31 @@ margin: 0 auto;
 
 footer p {
   line-height: .8;
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .footer  {
   overflow: hidden;
   background: var(--headerbackground);
   color: var(--white);
-  font-family: 'Montserrat';
   padding-top: 2em;
 }
 
 /* ==== BETTER HEALTH INFO ==== */
 
-.location {
-  font-weight: 700;
-  line-height: 2;
-}
 
 .footer-hours {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 44;
   padding-top: 1em;
 }
 
 .Details {
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 
@@ -671,7 +671,6 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  /* max-width: 100%; */
 }
 
 .copyright {
@@ -688,9 +687,10 @@ footer p {
 /*=== CONTACT ===*/
 
 .connect {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .media-icons {

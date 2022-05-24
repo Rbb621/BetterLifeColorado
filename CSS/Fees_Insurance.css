@@ -40,7 +40,7 @@ section {
 
 /* === Misc. ===*/
 
-.link {
+.link-contact {
   color: var(--black);
   text-decoration: none;
 }
@@ -512,15 +512,27 @@ margin-top: 20px;
 
 /* ===FOOTER=== */
 
+.link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
 footer p {
   line-height: .8;
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .footer  {
   overflow: hidden;
   background: var(--headerbackground);
   color: var(--white);
-  font-family: 'Montserrat';
+  font-family: 'Poppins';
   padding-top: 2em;
 }
 
@@ -538,7 +550,7 @@ footer p {
 
 .Details {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 
@@ -568,7 +580,7 @@ footer p {
 .connect {
   text-align: center;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .media-icons {
@@ -642,6 +654,8 @@ footer p {
   .textbox {
      margin: 3em 3em 2em 7em;
      padding: 0;
+     margin-left: auto;
+     margin-right: auto;
   }
 
 

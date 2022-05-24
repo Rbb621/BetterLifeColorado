@@ -496,8 +496,20 @@ ol li, ul li {
 
 /* ==== FOOTER ==== */
 
+.link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--contactinfohover);
+}
+
 footer p {
   line-height: .8;
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .footer  {

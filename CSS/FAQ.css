@@ -148,6 +148,148 @@ li {
       background: var(--headerbackground);
     }
 
+    /* ===FOOTER=== */
+
+    .link {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .link:hover {
+      color: var(--contactinfohover);
+    }
+
+    footer p {
+      line-height: .8;
+      font-family: "Poppins";
+      font-weight: 300;
+      letter-spacing: 0.1em;
+    }
+
+    .footer  {
+      overflow: hidden;
+      background: var(--headerbackground);
+      color: var(--white);
+      font-family: 'Poppins';
+      padding-top: 2em;
+    }
+
+    /*Better Health Info*/
+    .location {
+      font-weight: 700;
+      line-height: 2;
+    }
+
+    .footer-hours {
+      font-weight: 700;
+      line-height: 44;
+      padding-top: 1em;
+    }
+
+    .Details {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+
+    /*Logo*/
+
+    .bottomlogo {
+      height: 280px;
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .copyright {
+      color: var(--white);
+      text-align: center;
+    }
+
+    .trademark {
+      padding-left: 1rem;
+      text-align: center;
+    }
+
+
+    /*=== CONTACT ===*/
+
+    .connect {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .media-icons {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 35px 0px 35px;
+    }
+
+    .phone-icon {
+      border: 2px solid var(--white);
+      color: var(--white);
+      border-radius: 55%;
+      font-size: 30px;
+      list-style: none;
+      padding: 20px 20px;
+      transition: .5s;
+    }
+
+    .phone-icon:hover {
+      color: var(--contactinfohover);
+      border: 2px solid var(--contactinfohover);
+      transition: .2s;
+    }
+
+
+    .computer-icon {
+      border: 2px solid var(--white);
+      border-radius: 55%;
+      font-size: 30px;
+      list-style: none;
+      padding: 20px 20px;
+
+      /*effects*/
+      transition: .5s;
+    }
+
+    .email-icon {
+      border: 2px solid var(--white);
+      color: var(--white);
+      border-radius: 55%;
+      font-size: 30px;
+      list-style: none;
+      padding: 20px 20px;
+
+      /*effects*/
+      transition: .5s;
+    }
+
+
+    /*Hover */
+
+    .computer-icon:hover {
+      color: var(--contactinfohover);
+      border: 2px solid var(--contactinfohover);
+      transition: .2s;
+    }
+
+    .email-icon:hover {
+      color: var(--contactinfohover);
+      border: 2px solid var(--contactinfohover);
+      transition: .2s;
+    }
+
+    /*900px */
+
+    @media (max-width: 900px) {
+      .media-icons {
+        padding-bottom: 1rem;
+      }
+    }
+
 
 
 
