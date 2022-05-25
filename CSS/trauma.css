@@ -201,12 +201,12 @@ h2 {
 
 
 .circle  {
-  height: 250px;
-  width: 250px;
+  height: 450px;
+  width: 450px;
   position: relative;
   border-radius: 50%;
   background: var(--darkgreen);
-  overflow: hidden;
+  float: left;
 }
 
 .content {
