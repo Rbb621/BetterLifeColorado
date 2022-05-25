@@ -44,10 +44,20 @@ section {
   color: var(--contactinfohover);
 }
 
-.card {
-  background: var(--headerbackground);
+.green-card {
+  background: var(--darkgreen);
   width: 450px;
   padding: 3rem;
+  margin: auto;
+  box-shadow: 60px -16px var(--headerbackground);
+}
+
+.section-content-card {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 1em;
+  text-align: center;
 }
 
 /* ==== NAVBAR ==== */
@@ -227,7 +237,7 @@ h2 {
 
 #emotional .container {
   padding: 0;
-  color: var(--black);
+  color: var(--white);
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -311,6 +321,7 @@ hr {
   font-weight: 700;
   text-align: center;
   font-family: 'Montserrat',sans-serif;
+  color: var(--headerbackground);
 }
 
 .header::before {
@@ -324,6 +335,33 @@ hr {
   border-radius: 2rem;
   transform: translateX(-50%);
 }
+
+.header-white {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2.5rem;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  color: var(--white);
+  letter-spacing: 6px;
+}
+
+.header-white::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+
 
 /* ==== SECTION #1 WHAT IS AN EATING DISORDERS ==== */
 
@@ -489,8 +527,8 @@ ol li, ul li {
   font-family: 'Poppins',sans-serif;
   padding: 0px 50px;
   line-height: 1.7;
+  color: var(--headerbackground);
 }
-
 
 
 
@@ -543,7 +581,6 @@ footer p {
 #emotional, img {
   max-width: 100%;
   display: block;
-
 }
 
 .bottomlogo {
@@ -906,13 +943,13 @@ margin: 20px 3em;
 
 .pictures {
     padding: 0;
-    height: 180px;
+    height: 225px;
     width: 350px;
     margin: auto;
 }
 
 .section-content {
-  padding: 20px;
+  padding: 15px 75px;
 }
 
 }
@@ -999,6 +1036,12 @@ margin: 20px 3em;
 
 
 @media (max-width: 472px) {
+
+  /* SECTION 1: ADDRESSING RELATIONAL CONFLICT */
+
+  .green-card {
+    width: 320px;
+  }
 
   .subtitle-text {
     padding: 7px;
@@ -1109,10 +1152,15 @@ h4 {
       font-size: 3.5rem;
     }
 
-    /* === SECTION #1 === */
 
-    .scrabble {
-      max-width: 25ch;
+    /* === SECTION #1: ADDRESSING RELATIONAL CONFLICT === */
+
+    .green-card {
+        background: var(--darkgreen);
+        width: 275px;
+        padding: 1em;
+        margin: auto;
+        box-shadow: 60px -16px var(--headerbackground);
     }
 
     .section-content-1 {

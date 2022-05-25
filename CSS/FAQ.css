@@ -150,6 +150,12 @@ li {
 
     /* ===FOOTER=== */
 
+    footer .container {
+    max-width: 1170px;
+    padding: 0 20px;
+    margin: 0 auto;
+    }
+
     .link {
       color: var(--white);
       text-decoration: none;
