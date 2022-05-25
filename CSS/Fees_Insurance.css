@@ -772,7 +772,7 @@ footer p {
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
+    margin: 0px 150px 0px 150px;
   }
 
 }
@@ -868,7 +868,7 @@ footer p {
   .media-icons {
     display: flex;
     justify-content: space-between;
-    margin: 0 25px 0 25px;
+    margin: 0 150px 0 150px;
   }
 
 }
@@ -942,6 +942,12 @@ ul {
 
 .insurance-header::before {
   width: 9rem;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 35px;
 }
 
 }

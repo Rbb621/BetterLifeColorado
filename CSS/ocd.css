@@ -613,16 +613,23 @@ footer p {
 
 @media (max-width: 992px) {
 
+  .title-text {
+    text-align: center;
+  }
+
   .header::before {
     content: "";
     width: 15rem;
     height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 3.2rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
+  }
+
+  .media-icons {
+    padding-bottom: 1rem;
+    margin: 0px 150px 0px 150px;
   }
 
 }

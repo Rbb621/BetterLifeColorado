@@ -258,7 +258,7 @@ margin: 0 auto;
   max-width: 1400px;
 }
 
-.images {
+.pictures {
   padding: 0;
 }
 
@@ -688,6 +688,12 @@ footer p {
     transform: translateX(-50%);
   }
 
+  /*SECTION #5 */
+
+.binge-list-5{
+  margin: 20px 8em;
+}
+
 }
 
 
@@ -740,44 +746,59 @@ footer p {
   transform: translateX(-50%);
 }
 
-  }
+/* FOOTER */
 
-
-
-
-
-/*992px */
-
-
-@media (max-width: 992px) {
-
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 3.2rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
-
-
-  .media-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-  /*Footer*/
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 8em 0px 10em;
-  }
-
+.media-icons {
+  margin: 0;
 }
+
+/* MISC. */
+
+.component--horizontal-rule .default {
+    max-width: 900px;
+}
+
+  }
+
+
+/* 991px */
+
+
+  @media (max-width: 991px) {
+
+    /* === MISC. === */
+
+    .header {
+      font-size: 2.5rem;
+    }
+
+    .header::before {
+      content: "";
+      width: 11rem;
+      height: 5px;
+      bottom: 2rem;
+      background-color: var(--headerbackground);
+      left: 50%;
+      position: absolute;
+      border-radius: 2rem;
+      transform: translateX(-50%);
+    }
+
+
+    /* === FOOTER === */
+
+
+    .media-icons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .media-icons {
+      padding-bottom: 1rem;
+      margin: 0px 250px 0px 250px;
+    }
+
+  }
 
 
 
@@ -831,7 +852,6 @@ footer p {
     content: "";
     width: 11rem;
     height: 5px;
-    bottom: 1rem;
     background-color: var(--headerbackground);
     left: 50%;
     position: absolute;
@@ -853,8 +873,41 @@ footer p {
     line-height: 1.7;
   }
 
+  /* SECTION #4: BINGE EATING DISORDER */
+
+  .section-content-4 {
+    padding: 0px 20px;
+  }
+
+  /* FOOTER */
 
 
+  .media-icons {
+  margin: 0px 150px 0px 150px
+}
+
+/*SECTION #5 */
+
+.binge-list-5{
+margin: 20px 3em;
+}
+
+/* MISC. */
+
+.component--horizontal-rule .default {
+    max-width: 600px;
+}
+
+.pictures {
+    padding: 0;
+    height: 180px;
+    width: 350px;
+    margin: auto;
+}
+
+.section-content {
+  padding: 20px;
+}
 
 }
 
@@ -865,11 +918,20 @@ footer p {
 
 @media (max-width: 600px) {
 
+/* === WELCOME === */
 
 .greeting {
   font-size: 2.5rem;
 }
 
+/* === MISC. === */
+
+.pictures {
+    padding: 0;
+    height: 180px;
+    width: 350px;
+    margin: auto;
+}
 
 .header {
   font-size: 1.7rem;
@@ -887,6 +949,10 @@ footer p {
   transform: translateX(-50%);
 }
 
+.section-content {
+  padding: 15px 50px;
+}
+
 
 /* === TYPES OF ANXIETY WE TREAT === */
 
@@ -900,27 +966,27 @@ footer p {
 }
 
 
-  /* === FOOTER === */
+/* === FOOTER === */
 
-  .bottomlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.bottomlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .trademark {
-    text-align: center;
-  }
+.trademark {
+  text-align: center;
+}
 
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
+.contact {
+  padding-top: 1rem;
+  padding-bottom: .4rem;
+}
 
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 7em;
-  }
+.media-icons {
+  padding-bottom: 1rem;
+  margin: 0px 35px 0px 30px;
+}
 }
 
 
@@ -939,12 +1005,12 @@ footer p {
   }
 
   .header {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .header::before {
     content: "";
-    width: 11rem;
+    width: 8rem;
     height: 5px;
     bottom: 2rem;
     background-color: var(--headerbackground);
@@ -966,7 +1032,27 @@ footer p {
     font-size: 17px;
   }
 
-  /*Footer*/
+  /* SECTION #3: */
+
+
+.section-list-3 {
+  font-size: .9em;
+  padding: 8px;
+}
+
+
+  /* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
+
+    .binge-content-sub-5 {
+      font-size: 13.3px;
+      padding: 8px 17px;
+    }
+
+    .binge-list-5 {
+      font-size: 1rem;
+    }
+
+  /* === FOOTER === */
 
   .trademark {
     text-align: center;
@@ -979,14 +1065,96 @@ footer p {
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px;
+    margin: 0px 0px 48px;
   }
+
+  /* === MISC. === */
+
+  .component--horizontal-rule .default {
+      max-width: 300px;
+  }
+
+  .pictures {
+    width: 300px;
+    margin: auto;
+    height: 150px;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+.section-content {
+  padding: 10px 50px;
+}
 
 
 }
 
 @media (max-width: 320px) {
-  .subtitle-text {
-    text-align: center;
+
+  /* === WELCOME === */
+
+    .subtitle-text {
+      text-align: center;
+    }
+
+    /* === SECTION #1 === */
+
+    .scrabble {
+      max-width: 25ch;
+    }
+
+    .section-content-1 {
+      max-width: 25ch;
+    }
+
+  /* === MISC. === */
+
+  .header {
+    font-size: 1rem;
   }
+
+  .header::before {
+    width: 5rem;
+    height: 3px;
+  }
+
+  .pictures {
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .section-content {
+    padding: 8px 25px;
+  }
+
+  .section-list-3 {
+    font-size: 14px
+    padding: 8px;
+  }
+
+/* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
+
+  .binge-content-sub-5 {
+    font-size: 13.3px;
+    padding: 8px 17px;
+  }
+
+  .binge-list-5 {
+    font-size: 1rem;
+  }
+
+
+
+
 }

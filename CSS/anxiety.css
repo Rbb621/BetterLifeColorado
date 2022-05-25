@@ -177,10 +177,6 @@ section {
 /* ==== FEELINGS INFORMATION ==== */
 
 
-#emotional-title {
-  background-image: image(feelings/feeling_title.jpg);
-}
-
 #aboutus h2 {
   margin-bottom: 25px;
 }
@@ -216,32 +212,24 @@ h2 {
 
 
 
-/* === SHAPES === */
 
-.smallcircle {
-    background: var(--contactinfohover);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%
-}
+
+
+/* ====  IS MY ANXIETY NORMAL? ==== */
+
 
 .circle  {
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
   position: relative;
   border-radius: 50%;
   background: var(--darkgreen);
-  float: left;
+  margin: auto;
+  display: block;
+  overflow: hidden;
 }
 
-.content {
-  position: relative;
-  width: inherit;
-  height: auto;
-  top: 50%;
-  transform:translateY(-50%);
-  color: var(--headerbackground);
-}
+
 
 /* ==== TYPES OF ANXIETY WE TREAT ==== */
 
@@ -265,13 +253,14 @@ h2 {
   font-family: 'Montserrat',sans-serif;
 }
 
-/* #emotional .section-title {
+#treatment .header {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  color: var(--headerbackground);
   font-weight: 900;
   font-family: 'Montserrat',sans-serif;
-} */
+}
 
 
 .emotional_text {
@@ -291,6 +280,7 @@ h2 {
 
 #emotional {
   padding: 9.0625em 0;
+  background: var(--limegreen);
 }
 
 #emotional .container {
@@ -411,7 +401,7 @@ margin: 0 auto;
 
 .section-content {
   font-family: 'Poppins',sans-serif;
-  padding: 0px 50px;
+  padding: 0px;
   line-height: 1.7;
 }
 
@@ -625,6 +615,12 @@ margin: 0 auto;
   font-size: 26px;
 }
 
+/* FOOTER */
+
+.media-icons {
+  margin: 0;
+}
+
   }
 
 
@@ -634,7 +630,7 @@ margin: 0 auto;
 /*992px */
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
   .header {
     font-size: 2.5rem;
@@ -663,7 +659,7 @@ margin: 0 auto;
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px 150px 0px 150px;
+    margin: 0px 250px 0px 250px;
   }
 
 }
@@ -676,31 +672,22 @@ margin: 0 auto;
 @media (max-width: 768px) {
 
 
-  /* === Welcome === */
+  /* === WELCOME === */
 
   .greeting {
     font-size: 3.5rem;
   }
 
-  /* === About Us === */
-
-  #intro .box {
-    background: #fff;
-    padding: 4.875em 18em 4.6875em 135px;
-    position: relative;
-    min-height: 540px;
-    font-size: 16px;
-    font-family: 'Montserrat',sans-serif;
-    line-height: 1.6;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-  }
-
   .title-text {
     text-align: center;
+    padding: 2px;
   }
 
-  /* === TYPES OF ANXIETY WE TREAT === */
+  /* SECTION #1: IS MY ANXIETY NORMAL? */
+
+
+
+  /* === SECTION #2: TYPES OF ANXIETY WE TREAT === */
 
 
   .anxiety-treatment-icons {
@@ -711,6 +698,14 @@ margin: 0 auto;
   .emotional_text {
     font-size: 20px;
   }
+
+  /* ==== SECTION #3: WE CAN HELP WITH ANXIETY -=== */
+
+.african {
+  height: 300px;
+}
+
+  /* === MISC. === */
 
   .header {
     font-size: 3.5rem;
@@ -728,14 +723,13 @@ margin: 0 auto;
     transform: translateX(-50%);
   }
 
-  /* ==== WE CAN HELP WITH ANXIETY -=== */
-
-  .circle {
-    grid-column: 1;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+  .section-content {
+    padding: 20px;
   }
+
+  .media-icons {
+  margin: 0px 150px 0px 150px
+}
 
 
 }
@@ -747,11 +741,46 @@ margin: 0 auto;
 
 @media (max-width: 600px) {
 
+/* === TITLE SECTION === */
 
-.greeting {
-  font-size: 2.5rem;
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+/* SECTION #1: IS MY ANXIETY NORMAL? */
+
+.circle {
+  height: 300px;
+  width: 300px;
 }
 
+.dizzyboy {
+  height: 300px;
+}
+
+.section-content {
+  padding: 0 50px;
+}
+
+
+/* === SECTION #2: TYPES OF ANXIETY WE TREAT === */
+
+.emotional_text {
+  font-size: 15px;
+}
+
+.anxiety-treatment-icons {
+  height: 120px;
+  width: 120px;
+}
+
+/* === SECTION #3: WE CAN HELP WITH ANXIETY === */
+
+.african {
+  height: 300px;
+}
+
+/* === MISC. === */
 
 .header {
   font-size: 1.5rem;
@@ -769,17 +798,12 @@ margin: 0 auto;
   transform: translateX(-50%);
 }
 
-
-/* === TYPES OF ANXIETY WE TREAT === */
-
-.emotional_text {
-  font-size: 15px;
+.section-content {
+  padding: 10px 25px;
 }
 
-.anxiety-treatment-icons {
-  height: 120px;
-  width: 120px;
-}
+
+
 
 
   /* === FOOTER === */
@@ -803,6 +827,7 @@ margin: 0 auto;
     padding-bottom: 1rem;
     margin: 0px 35px 0px 30px;
   }
+
 }
 
 

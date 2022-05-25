@@ -215,6 +215,7 @@ section {
   text-transform: uppercase;
   position: relative;
   font-size: 3.5rem;
+  letter-spacing: 6px;
   display: block;
   padding: 3rem;
   font-weight: 900;
@@ -226,7 +227,7 @@ section {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
+  background-color: var(--headerbackground);
   bottom: 2.2rem;
   left: 50%;
   position: absolute;
@@ -390,20 +391,15 @@ footer p {
 /* ==== GROUP THERAPY ==== */
 
 .header {
-  text-transform: uppercase;
   font-size: 4.5rem;
-  display: block;
-  font-weight: 900;
-  text-align: center;
-  font-family: 'Montserrat',sans-serif;
 }
 
 .header::before {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 2.2rem;
+  background-color: var(--headerbackground);
+  bottom: 2.5rem;
   left: 50%;
   position: absolute;
   border-radius: 2rem;
@@ -422,20 +418,15 @@ footer p {
 /* ==== GROUP THERAPY ==== */
 
 .header {
-  text-transform: uppercase;
   font-size: 4.5rem;
-  display: block;
-  font-weight: 900;
-  text-align: center;
-  font-family: 'Montserrat',sans-serif;
 }
 
 .header::before {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 2.2rem;
+  background-color: var(--headerbackground);
+  bottom: 2.5rem;
   left: 50%;
   position: absolute;
   border-radius: 2rem;
@@ -458,30 +449,7 @@ footer p {
 /*992px */
 
 
-@media (max-width: 992px) {
-
-  .header {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    padding: 3rem 0rem 1em;
-  }
-
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 2.2rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
+@media (max-width: 991px) {
 
 
 
@@ -489,7 +457,7 @@ footer p {
 
   .media-icons {
     padding-bottom: 1rem;
-    margin: 0px 35px 0px 30px;
+    margin: 0px 150px 0px 150px;
   }
 
   .media-icons {
@@ -522,8 +490,8 @@ footer p {
     content: "";
     width: 15rem;
     height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 3.2rem;
+    background-color: var(--headerbackground);
+    bottom: 2.5rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
@@ -578,8 +546,8 @@ footer p {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 3.2rem;
+  background-color: var(--headerbackground);
+  bottom: 2.5rem;
   left: 50%;
   position: absolute;
   border-radius: 2rem;
@@ -634,8 +602,8 @@ footer p {
     content: "";
     width: 11rem;
     height: 5px;
-    bottom: 3rem;
-    background-color: var(--darkgreen);
+    bottom: 2.5rem;
+    background-color: var(--headerbackground);
     left: 50%;
     position: absolute;
     border-radius: 2rem;

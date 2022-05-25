@@ -350,6 +350,11 @@ footer p {
         padding: 0 50px;
     }
 
+    .media-icons {
+      padding-bottom: 1rem;
+      margin: 0px 150px 0px 150px;
+    }
+
 }
 
 
