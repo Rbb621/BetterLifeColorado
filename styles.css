@@ -263,7 +263,6 @@ hr {
    line-height: 1.9;
    font-weight: 900;
    letter-spacing: 1px;
-
 }
 
 .AboutUs-2 {
@@ -364,14 +363,23 @@ hr {
 
 /* ==== OUR GOAL ==== */
 
+#mission {
+  background-image: linear-gradient(288deg, var(--headerbackground)  2%, rgba(0,255,66,0) 150%), url(images/YoungAdults.jpeg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  padding: 9em 0 12.1875em;
+}
 
-.mission {
+/* .mission {
   padding-top: 5em;
   line-height: 1.6;
   border-right: 1px;
   width: 100%;
   padding: 50px;
-}
+} */
 
 .OurGoal {
   font-size: 42px;
@@ -1126,6 +1134,15 @@ display: block;
   transform: skewX(-180deg);
 }
 
+#specialties .circle {
+  height: 100px;
+  width: 100px;
+}
+
+.emotional_text {
+  font-size: 14px;
+}
+
 
 
 
@@ -1163,6 +1180,12 @@ display: block;
   .media-icons {
       padding-bottom: 1rem;
       margin: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-sp::before {
+    bottom: 80%;
   }
 }
 
@@ -1250,16 +1273,10 @@ display: block;
   }
 
 
- .section-sp::before {
-    content: "";
-    background: var(--headerbackground);
-    position: absolute;
-    bottom: 85%;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    transform: skewX(-180deg);
-}
+  .section-sp::before {
+    bottom: 82%;
+    top: 5%;
+  }
 
 .section-title h2 {
     font-size: 47px;
@@ -1268,13 +1285,10 @@ display: block;
 
 @media (max-width: 330px) {
 
-/* #client .button {
-  font-size: 1.0rem;
-} */
-
-  /* .grid {
-    max-width: 25ch;
-  } */
+  .section-sp::before {
+    bottom: 82%;
+    top: 5%;
+  }
 
   .component--horizontal-rule .default {
     max-width: 250px;
