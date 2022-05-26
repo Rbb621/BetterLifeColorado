@@ -460,34 +460,32 @@ hr {
 
 
 
-/* === GOOD FAITH ESTIMATE === */
+/* === TITLE SECTIONS === */
 
-.GoodFaithEstimate {
+
+.header-section {
   text-transform: uppercase;
   position: relative;
   font-size: 3.5rem;
-  letter-spacing: 4px;
+  display: block;
   padding: 3rem;
   font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
   text-align: center;
-  }
+  font-family: 'Montserrat',sans-serif;
+  color: var(--headerbackground);
 }
 
-.GoodFaithEstimate::before {
+.header-section::before {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 3.2rem;
+  background-color: var(--headerbackground);
+  bottom: 2.3rem;
   left: 50%;
   position: absolute;
   border-radius: 2rem;
   transform: translateX(-50%);
 }
-
 
 .insurance_image {
 display: flex;
@@ -664,18 +662,31 @@ footer p {
      margin-right: auto;
   }
 
+  .header-section {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 2.5rem;
+    display: block;
+    letter-spacing: 6px;
+    padding: 3rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--headerbackground);
+  }
 
-  .insurance::before {
+  .header-section::before {
     content: "";
     width: 15rem;
     height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 2.7rem;
+    background-color: var(--headerbackground);
+    bottom: 2.3rem;
     left: 50%;
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
   }
+
 
   .textbox-insurance {
     margin: 50px auto;

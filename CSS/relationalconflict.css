@@ -328,7 +328,7 @@ hr {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
+  background-color: var(--headerbackground);
   bottom: 2.2rem;
   left: 50%;
   position: absolute;
@@ -433,6 +433,12 @@ section {
   margin-bottom: 0;
 }
 
+.treatment-icon {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
 /* ==== Background === */
 
 .section-bg {
@@ -449,6 +455,7 @@ section {
   left: 0;
   right: 0;
   transform: skewY(-3deg);
+  z-index: -1;
 }
 
 /* === Section 5 Content === */
@@ -504,7 +511,7 @@ ol li, ul li {
     color: var(--white);
     position: relative;
     line-height: 1.7;
-    padding: 20px 50px;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -697,6 +704,15 @@ footer p {
   border-radius: 2rem;
   transform: translateX(-50%);
 }
+
+/* === SECTION #3: APPROACHES WE USE === */
+
+
+.treatment-icon {
+  height: 180px;
+  width: 180px;
+}
+
 }
 
 @media (max-width: 1450px) {
@@ -730,6 +746,15 @@ footer p {
 .binge-list-5{
   margin: 20px 8em;
 }
+
+/* === SECTION #3: APPROACHES WE USE === */
+
+
+.treatment-icon {
+  height: 180px;
+  width: 180px;
+}
+
 
 }
 
@@ -922,6 +947,14 @@ h5 {
     padding: 0px 20px;
   }
 
+  /* === SECTION #3: APPROACHES WE USE === */
+
+
+  .treatment-icon {
+    height: 180px;
+    width: 180px;
+  }
+
   /* FOOTER */
 
 
@@ -1003,9 +1036,17 @@ margin: 20px 3em;
   font-size: 15px;
 }
 
+
+/* === SECTION #3: APPROACHES WE USE === */
+
+
+.header-white {
+  font-size: 2.2rem;
+}
+
 .treatment-icon {
-  height: 120px;
-  width: 120px;
+  height: 180px;
+  width: 180px;
 }
 
 
@@ -1200,6 +1241,13 @@ h4 {
     font-size: 14px
     padding: 8px;
   }
+
+    /* === SECTION #3: APPROACHES WE USE === */
+
+
+    .header-white {
+      font-size: 1.8rem;
+    }
 
 /* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
 
