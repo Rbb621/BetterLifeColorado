@@ -44,10 +44,20 @@ section {
   color: var(--contactinfohover);
 }
 
-.card {
-  background: var(--headerbackground);
+.green-card {
+  background: var(--darkgreen);
   width: 450px;
   padding: 3rem;
+  margin: auto;
+  box-shadow: 60px -16px var(--headerbackground);
+}
+
+.section-content-card {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 1em;
+  text-align: center;
 }
 
 /* ==== NAVBAR ==== */
@@ -184,40 +194,6 @@ section {
     }
 
 
-/* ==== FEELINGS INFORMATION ==== */
-
-
-h2 {
-  padding-top: 1em;
-}
-
-.wp-block-quote {
-  padding: 0;
-  color: var(--lightbrown);
-}
-
-
-/* === SHAPES === */
-
-
-.circle  {
-  height: 450px;
-  width: 450px;
-  position: relative;
-  border-radius: 50%;
-  background: var(--darkgreen);
-  float: left;
-}
-
-.content {
-  position: relative;
-  width: inherit;
-  height: auto;
-  top: 50%;
-  transform:translateY(-50%);
-  color: var(--headerbackground);
-}
-
 /* === ABOUT === */
 
 
@@ -227,23 +203,12 @@ h2 {
 
 #emotional .container {
   padding: 0;
-  color: var(--black);
+  color: var(--white);
   max-width: 1170px;
   margin: 0 auto;
 }
 
 /* === MISC. === */
-
-.component--horizontal-rule.align-center hr {
-    margin: 0 auto 40px;
-}
-
-.component--horizontal-rule .default {
-    background: var(--lightbrown);
-    height: 2px;
-    margin: 0 auto 40px;
-    max-width: 1200px;
-}
 
 .container {
 max-width: 1170px;
@@ -262,42 +227,6 @@ margin: 0 auto;
   padding: 0;
 }
 
-.image, .quoteonquote {
-  grid-row: 1 / 2;
-  align-self: center;
-}
-
-.image {
-  grid-column: 1 / 3;
-}
-
-.quoteonquote {
-  grid-column: 2 / -1;
-
-  background: white;
-  padding: 1.65em;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.25);
-  font-size: 18px;
-  font-weight: 700;
-  max-width: 40ch;
-}
-
-.text-box {
-  line-height: 1.7;
-  max-width: 37ch;
-  font-family: 'Montserrat', sans-serif;
-  padding: 9em 0 12.1875em;
-  color: #fff;
-}
-
-hr {
-    background: var(--lightbrown);
-    border: 0;
-    height: 2px;
-    margin: 0;
-    padding: 0;
-}
-
 
 /* === HEADER TITLES === */
 
@@ -311,13 +240,14 @@ hr {
   font-weight: 700;
   text-align: center;
   font-family: 'Montserrat',sans-serif;
+  color: var(--headerbackground);
 }
 
 .header::before {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
+  background-color: var(--headerbackground);
   bottom: 2.2rem;
   left: 50%;
   position: absolute;
@@ -325,74 +255,37 @@ hr {
   transform: translateX(-50%);
 }
 
-/* ==== SECTION #1 WHAT IS AN EATING DISORDERS ==== */
 
-.section-content-1 {
-  font-family: 'Poppins',sans-serif;
-  padding: 10px;
-  line-height: 1.7;
-  float: right;
-}
-
-.scrabble {
-  float: right;
-}
-
-/* ==== SECTION #3 WHAT ARE THE SIGNS AND SYMPTOMS OF EATING DISORDERS ==== */
-
-.section-list-3 {
-    position: relative;
-    list-style: disc;
-    font-family: 'Poppins', sans-serif;
-}
-
-.section-content-3-symptoms {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* ==== SECTION #4 BINGE EATING DISORDERS ==== */
-
-ul .section-content {
-  list-style: disc;
-}
-
-.section-content-4 {
-  font-family: 'Poppins',sans-serif;
-  padding: 0px 50px;
-  margin: 10px;
-  line-height: 1.7;
-}
-
-.section-content-3 {
-  margin-top: 1em;
-}
+/* ==== SECTION #2: COMMON RELATIONAL CONFLICTS ==== */
 
 
-/* ==== SECTION #5 WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS ==== */
+/* === SECTION #3: APPROACHES WE USE  === */
 
-section {
-  padding: 60px 0;
-  overflow: hidden;
+/* ==== Header-white === */
+
+.header-white {
+  text-transform: uppercase;
   position: relative;
+  font-size: 2.5rem;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  color: var(--white);
+  letter-spacing: 6px;
 }
 
-.section-title h2::after {
+.header-white::before {
   content: "";
-  width: 12rem;
+  width: 15rem;
   height: 5px;
-  display: block;
-  background: var(--darkgreen);
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
   left: 50%;
-  bottom: 0;
   position: absolute;
   border-radius: 2rem;
   transform: translateX(-50%);
-}
-
-.section-title p {
-  margin-bottom: 0;
 }
 
 /* ==== Background === */
@@ -411,68 +304,36 @@ section {
   left: 0;
   right: 0;
   transform: skewY(-3deg);
+  z-index: -1;
 }
 
-/* === Section 5 Content === */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
 
-.binge-content-5 {
+/* === Icons === */
+
+.treatment-icon {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+/* === Content Section #3 === */
+
+
+.section-content-3 {
   color: var(--white);
   position: relative;
   line-height: 1.7;
-  padding: 0px 50px;
+  padding: 20px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
-
-.binge-list-5 {
-    color: var(--white);
-    position: relative;
-    list-style: disc;
-    font-size: 1.2rem;
-    margin: 20px;
-}
-
-.binge-title-5 {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  color: var(--white);
-  font-weight: 900;
-  font-family: 'Montserrat',sans-serif;
-  letter-spacing: 3px;
-}
-
-.binge-title-5::before {
-
-}
-
-.wp-block-columns {
-  margin-bottom: 0;
-  min-width: 0;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-ol li, ul li {
-    margin: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.binge-content-sub-5 {
-    color: var(--white);
-    position: relative;
-    line-height: 1.7;
-    padding: 20px 50px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
 
 /* === SECTION TITLE/CONTENT === */
 
@@ -489,18 +350,12 @@ ol li, ul li {
   font-family: 'Poppins',sans-serif;
   padding: 0px 50px;
   line-height: 1.7;
+  color: var(--headerbackground);
 }
-
 
 
 
 /* ==== FOOTER ==== */
-
-footer .container {
-max-width: 1170px;
-padding: 0 20px;
-margin: 0 auto;
-}
 
 .link {
   color: var(--white);
@@ -549,7 +404,6 @@ footer p {
 #emotional, img {
   max-width: 100%;
   display: block;
-
 }
 
 .bottomlogo {
@@ -649,11 +503,6 @@ footer p {
     text-align: center;
   }
 
-.section-content-1 {
-  font-family: 'Poppins',sans-serif;
-  padding: 10px 0px;
-  line-height: 1.7;
-}
 
 .header::before {
   content: "";
@@ -666,6 +515,15 @@ footer p {
   border-radius: 2rem;
   transform: translateX(-50%);
 }
+
+/* === SECTION #3: APPROACHES WE USE === */
+
+
+.treatment-icon {
+  height: 180px;
+  width: 180px;
+}
+
 }
 
 @media (max-width: 1450px) {
@@ -694,11 +552,14 @@ footer p {
     transform: translateX(-50%);
   }
 
-  /*SECTION #5 */
+/* === SECTION #3: APPROACHES WE USE === */
 
-.binge-list-5{
-  margin: 20px 8em;
+
+.treatment-icon {
+  height: 180px;
+  width: 180px;
 }
+
 
 }
 
@@ -715,25 +576,9 @@ h5 {
   font-size: 1rem;
 }
 
-  /*About Us*/
 
-  #intro .box {
-    background: #fff;
-    padding: 4.875em 20em 4.6875em 135px;
-    position: relative;
-    min-height: 540px;
-    font-size: 18px;
-    font-family: 'Montserrat',sans-serif;
-    line-height: 1.6;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-}
+/* === HEADERS === */
 
-/* === SUBTYPES OF OCD WE TREAT === */
-
-.emotional_text {
-  font-size: 24px;
-}
 
 .header {
   text-transform: uppercase;
@@ -764,13 +609,7 @@ h5 {
   margin: 0;
 }
 
-/* MISC. */
-
-.component--horizontal-rule .default {
-    max-width: 900px;
 }
-
-  }
 
 
 /* 991px */
@@ -826,25 +665,11 @@ h5 {
     font-size: 3.5rem;
   }
 
-  /* === About Us === */
-
-  #intro .box {
-    background: #fff;
-    padding: 4.875em 18em 4.6875em 135px;
-    position: relative;
-    min-height: 540px;
-    font-size: 16px;
-    font-family: 'Montserrat',sans-serif;
-    line-height: 1.6;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-  }
-
   .title-text {
     text-align: center;
   }
 
-  /* === TYPES OF ANXIETY WE TREAT === */
+  /* === SECTION #3 === */
 
 
   .treatment-icon {
@@ -852,9 +677,8 @@ h5 {
     width: 150px;
   }
 
-  .emotional_text {
-    font-size: 20px;
-  }
+    /* === HEADER === */
+
 
   .header {
     font-size: 2.5rem;
@@ -871,24 +695,22 @@ h5 {
     transform: translateX(-50%);
   }
 
-  /* === WHAT IS EATING DISORDER === */
 
-  .card {
-    margin: auto;
-  }
 
-  /* === WHY DOES SOMEONE DEVELOP AN EATING DISORDER? SECTION #2 ==== */
+  /* === SECTION #1 ==== */
 
   .section-content {
     font-family: 'Poppins',sans-serif;
-    padding: 0px 50px;
+    padding: 15px 75px;;
     line-height: 1.7;
   }
 
-  /* SECTION #4: BINGE EATING DISORDER */
+  /* === SECTION #3: APPROACHES WE USE === */
 
-  .section-content-4 {
-    padding: 0px 20px;
+
+  .treatment-icon {
+    height: 180px;
+    width: 180px;
   }
 
   /* FOOTER */
@@ -898,28 +720,6 @@ h5 {
   margin: 0px 150px 0px 150px
 }
 
-/*SECTION #5 */
-
-.binge-list-5{
-margin: 20px 3em;
-}
-
-/* MISC. */
-
-.component--horizontal-rule .default {
-    max-width: 600px;
-}
-
-.pictures {
-    padding: 0;
-    height: 180px;
-    width: 350px;
-    margin: auto;
-}
-
-.section-content {
-  padding: 20px;
-}
 
 }
 
@@ -966,15 +766,16 @@ margin: 20px 3em;
 }
 
 
-/* === TYPES OF ANXIETY WE TREAT === */
+/* === SECTION #3: APPROACHES WE USE === */
 
-.emotional_text {
-  font-size: 15px;
+
+.header-white {
+  font-size: 2.2rem;
 }
 
 .treatment-icon {
-  height: 120px;
-  width: 120px;
+  height: 180px;
+  width: 180px;
 }
 
 
@@ -1006,6 +807,12 @@ margin: 20px 3em;
 
 @media (max-width: 472px) {
 
+  /* SECTION 1: ADDRESSING RELATIONAL CONFLICT */
+
+  .green-card {
+    width: 320px;
+  }
+
   .subtitle-text {
     padding: 7px;
   }
@@ -1032,37 +839,25 @@ margin: 20px 3em;
     transform: translateX(-50%);
   }
 
-  .smallcircle {
-      background: var(--contactinfohover);
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin: 20px 4px
+  /* SECTION #1: */
+
+  .section-content {
+    padding: 10px 50px;
   }
 
-  .emotional_text {
-    font-size: 17px;
-  }
 
-  /* SECTION #3: */
+  /* SECTION #3: APPROACHES WE USE */
 
-
-.section-list-3 {
-  font-size: .9em;
-  padding: 8px;
-}
-
-
-  /* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
-
-    .binge-content-sub-5 {
+    .section-content-3 {
       font-size: 13.3px;
       padding: 8px 17px;
     }
 
-    .binge-list-5 {
-      font-size: 1rem;
+    .section-list-3 {
+      font-size: .9em;
+      padding: 8px;
     }
+
 
   /* === FOOTER === */
 
@@ -1082,9 +877,6 @@ margin: 20px 3em;
 
   /* === MISC. === */
 
-  .component--horizontal-rule .default {
-      max-width: 300px;
-  }
 
   .pictures {
     width: 300px;
@@ -1094,10 +886,6 @@ margin: 20px 3em;
 
 h4 {
   font-size: 1.2em;
-}
-
-.section-content {
-  padding: 10px 50px;
 }
 
 
@@ -1115,15 +903,17 @@ h4 {
       font-size: 3.5rem;
     }
 
-    /* === SECTION #1 === */
 
-    .scrabble {
-      max-width: 25ch;
+    /* === SECTION #1: ADDRESSING RELATIONAL CONFLICT === */
+
+    .green-card {
+        background: var(--darkgreen);
+        width: 275px;
+        padding: 1em;
+        margin: auto;
+        box-shadow: 60px -16px var(--headerbackground);
     }
 
-    .section-content-1 {
-      max-width: 25ch;
-    }
 
   /* === MISC. === */
 
@@ -1154,23 +944,17 @@ h4 {
     padding: 8px 25px;
   }
 
-  .section-list-3 {
-    font-size: 14px
-    padding: 8px;
-  }
 
-/* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
 
-  .binge-content-sub-5 {
+    /* === SECTION #3: APPROACHES WE USE === */
+
+
+    .header-white {
+      font-size: 1.8rem;
+    }
+
+  .section-content-3 {
     font-size: 13.3px;
     padding: 8px 17px;
   }
-
-  .binge-list-5 {
-    font-size: 1rem;
-  }
-
-
-
-
 }

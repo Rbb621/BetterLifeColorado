@@ -197,27 +197,6 @@ h2 {
 }
 
 
-/* === SHAPES === */
-
-
-.circle  {
-  height: 450px;
-  width: 450px;
-  position: relative;
-  border-radius: 50%;
-  background: var(--darkgreen);
-  float: left;
-}
-
-.content {
-  position: relative;
-  width: inherit;
-  height: auto;
-  top: 50%;
-  transform:translateY(-50%);
-  color: var(--headerbackground);
-}
-
 /* === ABOUT === */
 
 
@@ -280,14 +259,6 @@ margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   max-width: 40ch;
-}
-
-.text-box {
-  line-height: 1.7;
-  max-width: 37ch;
-  font-family: 'Montserrat', sans-serif;
-  padding: 9em 0 12.1875em;
-  color: #fff;
 }
 
 hr {
@@ -441,10 +412,6 @@ section {
   font-weight: 900;
   font-family: 'Montserrat',sans-serif;
   letter-spacing: 3px;
-}
-
-.binge-title-5::before {
-
 }
 
 .wp-block-columns {
@@ -620,7 +587,7 @@ footer p {
 }
 
 
-/*Hover */
+/* Hover */
 
 .computer-icon:hover {
   color: var(--contactinfohover);
@@ -635,13 +602,15 @@ footer p {
 }
 
 
-
 /*Media*/
 
 @media (min-width: 1500px) {
+
   .greeting {
     text-align: center;
   }
+
+/* SECTION #1: */
 
 .section-content-1 {
   font-family: 'Poppins',sans-serif;
@@ -696,32 +665,9 @@ footer p {
 
 }
 
-
-
-
 /*1024px*/
 
 @media (max-width: 1024px) {
-
-  /*About Us*/
-
-  #intro .box {
-    background: #fff;
-    padding: 4.875em 20em 4.6875em 135px;
-    position: relative;
-    min-height: 540px;
-    font-size: 18px;
-    font-family: 'Montserrat',sans-serif;
-    line-height: 1.6;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* === SUBTYPES OF OCD WE TREAT === */
-
-.emotional_text {
-  font-size: 24px;
-}
 
 .header {
   text-transform: uppercase;
@@ -784,9 +730,7 @@ footer p {
       transform: translateX(-50%);
     }
 
-
     /* === FOOTER === */
-
 
     .media-icons {
       display: flex;
@@ -814,34 +758,8 @@ footer p {
     font-size: 3.5rem;
   }
 
-  /* === About Us === */
-
-  #intro .box {
-    background: #fff;
-    padding: 4.875em 18em 4.6875em 135px;
-    position: relative;
-    min-height: 540px;
-    font-size: 16px;
-    font-family: 'Montserrat',sans-serif;
-    line-height: 1.6;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-  }
-
   .title-text {
     text-align: center;
-  }
-
-  /* === TYPES OF ANXIETY WE TREAT === */
-
-
-  .treatment-icon {
-    height: 150px;
-    width: 150px;
-  }
-
-  .emotional_text {
-    font-size: 20px;
   }
 
   .header {
@@ -859,13 +777,13 @@ footer p {
     transform: translateX(-50%);
   }
 
-  /* === WHAT IS EATING DISORDER === */
+  /* === SECTION #1: WHAT IS EATING DISORDER === */
 
   .card {
     margin: auto;
   }
 
-  /* === WHY DOES SOMEONE DEVELOP AN EATING DISORDER? SECTION #2 ==== */
+  /* === SECTION #2 WHY DOES SOMEONE DEVELOP AN EATING DISORDER?  ==== */
 
   .section-content {
     font-family: 'Poppins',sans-serif;
@@ -878,13 +796,6 @@ footer p {
   .section-content-4 {
     padding: 0px 20px;
   }
-
-  /* FOOTER */
-
-
-  .media-icons {
-  margin: 0px 150px 0px 150px
-}
 
 /*SECTION #5 */
 
@@ -907,6 +818,12 @@ margin: 20px 3em;
 
 .section-content {
   padding: 20px;
+}
+
+/* FOOTER */
+
+.media-icons {
+margin: 0px 150px 0px 150px
 }
 
 }
@@ -952,19 +869,6 @@ margin: 20px 3em;
 .section-content {
   padding: 15px 50px;
 }
-
-
-/* === TYPES OF ANXIETY WE TREAT === */
-
-.emotional_text {
-  font-size: 15px;
-}
-
-.treatment-icon {
-  height: 120px;
-  width: 120px;
-}
-
 
 /* === FOOTER === */
 
@@ -1018,14 +922,6 @@ margin: 20px 3em;
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
-  }
-
-  .smallcircle {
-      background: var(--contactinfohover);
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin: 20px 4px
   }
 
   .emotional_text {
@@ -1087,7 +983,6 @@ h4 {
 .section-content {
   padding: 10px 50px;
 }
-
 
 }
 
@@ -1153,8 +1048,4 @@ h4 {
   .binge-list-5 {
     font-size: 1rem;
   }
-
-
-
-
 }
