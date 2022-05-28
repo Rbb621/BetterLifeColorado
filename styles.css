@@ -337,16 +337,6 @@ hr {
  }
 
  .image { grid-column: 1 / 3; }
-/*
- .healing {
-   grid-column: 2 / -1;
-
-   background: white;
-   padding: .45em;
-   box-shadow: 4px 4px 10px rgba(0,0,0,.25);
-   font-size: 18px;
-   font-weight: 300;
- } */
 
 
 #intro, img {

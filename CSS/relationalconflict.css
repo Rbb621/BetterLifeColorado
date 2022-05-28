@@ -278,7 +278,7 @@ margin: 0 auto;
     background-size: 100% 100%;
 }
 
-.testimonial-image {
+.cover-image {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -286,14 +286,28 @@ margin: 0 auto;
     overflow: hidden;
     position: relative;
     background-attachment: fixed;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(235, 223, 223, 0.6));
   }
 
-  .testimonial-text {
+
+  .testimonial-header {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 8rem;
+    display: block;
+    padding: 3rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
     color: var(--white);
+    letter-spacing: 6px;
   }
 
   .testimonial-content {
     color: var(--white);
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
   }
 
   .carousel-indicators li {
@@ -332,6 +346,30 @@ margin: 0 auto;
 .carousel-indicators .active {
     background-color: var(--white);
 }
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+
 
 
 /* === SECTION #3: APPROACHES WE USE  === */
@@ -797,6 +835,23 @@ h5 {
 
 
 }
+
+/*responsive*/
+@media(max-width: 767px){
+  .home .carousel-control-next,
+  .home .carousel-control-prev{
+  	display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .home .carousel-item h2{
+  	font-size: 45px;
+  }
+  .home .carousel-item p{
+  	font-size: 22px;
+  }
 
 
 
