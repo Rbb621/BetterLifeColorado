@@ -599,10 +599,7 @@ margin: 0 auto;
 
 
 #Office {
-  background-image: linear-gradient(260deg, #3b4045  2%, rgba(0,255,66,0) 200%),
-  url(images/Building.jpeg);
-  /* background-image: linear-gradient(260deg, var(--lightbrown) 15%, rgba(0,255,66,0) 200%),
-  url(images/Building.jpeg); */
+  background-image: url(images/Building.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1136,7 +1133,7 @@ display: block;
 }
 
 .emotional_text {
-  font-size: 18px;
+  font-size: 23.5px;
 }
 
 
@@ -1156,14 +1153,12 @@ display: block;
   .OfficeHeading {
     padding-bottom: 1rem;
     padding-top: 1rem;
-    text-align: center;
   }
 
   .OfficeParagraph {
     width: 100%;
     font-size: 16px;
     padding: 0;
-    margin: 0px 25px;
   }
 
 
@@ -1246,11 +1241,20 @@ display: block;
     padding: 2em 0em 4.5em;
   }
 
+  .OfficeParagraph {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
 }
 
 
 
 @media (max-width: 412px) {
+
+  .intro-paragraph-2 {
+    font-size: 1rem;
+  }
 
   .profile_wrap {
     margin: 0px 38px 0px 50px;
@@ -1258,14 +1262,18 @@ display: block;
 
   #client .button {
       font-size: 1.5rem;
-      top: 2rem;
+      top: 0rem;
       position: relative;
   }
 
   .greeting {
       font-size: 3em;
       text-align: center;
-      padding: 0;
+      padding-bottom: 2em;
+  }
+
+  .button {
+    padding: 0;
   }
 
 

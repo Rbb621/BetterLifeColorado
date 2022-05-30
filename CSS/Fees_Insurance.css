@@ -432,7 +432,9 @@ hr {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0,0,0, 0.15);
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  overflow-x: visible;
+  scroll-behavior: smooth;
 }
 
 .content-table thead tr {
@@ -976,19 +978,21 @@ ul {
 
   /* === INSURANCE 472px === */
 
-  .insurance {
-  font-size: 1.7rem;
+
+
+  .header-section {
+  font-size: 1.5rem;
   margin: auto;
   display: block;
   text-align: center;
   }
 
-  .insurance::before {
+  .header-section::before {
     content: "";
     width: 10rem;
     height: 5px;
     bottom: 2.7rem;
-    background-color: var(--darkgreen);
+    background-color: var(--headerbackground);
     left: 50%;
     position: absolute;
     border-radius: 2rem;
@@ -1053,7 +1057,7 @@ ul {
   }
 
   #GFE .textbox ul li {
-    padding-left: 54px;
+    padding-left: 15px;
 }
 }
 
