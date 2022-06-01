@@ -695,8 +695,29 @@ footer p {
     transform: translateX(-50%);
   }
 
-/* === SECTION #3: APPROACHES WE USE === */
+  .header-white {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    display: block;
+    padding: 3rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+  }
 
+  .section-content-3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  /* === SECTION #2: === */
+
+  .testimonial-header-longslide, .testimonial-header {
+    font-size: 3.5rem;
+  }
+
+/* === SECTION #3: APPROACHES WE USE === */
 
 .treatment-icon {
   height: 180px;
@@ -746,6 +767,12 @@ h5 {
   transform: translateX(-50%);
 }
 
+/* === SECTION #2: === */
+
+.testimonial-header-longslide, .testimonial-header {
+  font-size: 3.5rem;
+}
+
 /* FOOTER */
 
 .media-icons {
@@ -778,8 +805,16 @@ h5 {
       transform: translateX(-50%);
     }
 
-    .testimonial-header-longslide {
-      font-size: 3.6rem;
+    /* === SECTION #2: === */
+
+    .testimonial-header-longslide, .testimonial-header {
+      font-size: 3rem;
+    }
+
+
+
+    .testimonial-content, .testimonial-content-longslide {
+      font-size: 1.3rem;
     }
 
 
@@ -1147,68 +1182,68 @@ h5 {
     top: 2em;
     position: relative;
 }
-  }
 
-  .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: .25rem;
-    color: #fff;
-    text-align: center;
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  text-align: center;
 }
 
 
-  /* SECTION #3: APPROACHES WE USE */
+/* SECTION #3: APPROACHES WE USE */
 
-    .section-content-3 {
-      font-size: 12.3px;
-      padding: 8px 17px;
-    }
+  .section-content-3 {
+    font-size: 12.3px;
+    padding: 8px 17px;
+  }
 
-    .section-list-3 {
-      font-size: .9em;
-      padding: 8px;
-    }
+  .section-list-3 {
+    font-size: .9em;
+    padding: 8px;
+  }
 
-    .header-white {
-    font-size: 1.1rem;
+  /* .header-white {
+  font-size: 1.1rem;
+} */
+
+
+/* === FOOTER === */
+
+.trademark {
+  text-align: center;
 }
 
+.contact {
+  padding-top: 1rem;
+  padding-bottom: .4rem;
+}
 
-  /* === FOOTER === */
+.media-icons {
+  padding-bottom: 1rem;
+  margin: auto;
+}
 
-  .trademark {
-    text-align: center;
-  }
-
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: auto;
-  }
-
-  /* === MISC. === */
+/* === MISC. === */
 
 
-  .pictures {
-    width: 300px;
-    margin: auto;
-    height: 150px;
+.pictures {
+  width: 300px;
+  margin: auto;
+  height: 150px;
 }
 
 h4 {
-  font-size: 1.2em;
+font-size: 1.2em;
 }
+  }
 
 
-}
+
 
 @media (max-width: 320px) {
 

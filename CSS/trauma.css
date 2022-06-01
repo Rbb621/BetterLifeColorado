@@ -158,7 +158,7 @@ section {
       height: 100vh;
       overflow: hidden;
       position: relative;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
     }
 
     .effect{

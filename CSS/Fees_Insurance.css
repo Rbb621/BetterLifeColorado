@@ -183,7 +183,7 @@ hr {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 
@@ -436,6 +436,8 @@ hr {
   overflow-x: visible;
   scroll-behavior: smooth;
 }
+
+
 
 .content-table thead tr {
   background-color: var(--darkgreen);
@@ -1041,6 +1043,10 @@ ul {
     transform: translateX(-50%);
   }
 
+  .table-container {
+    overflow-x: scroll;
+  }
+
 }
 
 @media (max-width: 438px) {
@@ -1060,6 +1066,7 @@ ul {
     padding-left: 15px;
 }
 }
+
 
 @media (max-width: 330px) {
 

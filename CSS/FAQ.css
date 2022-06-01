@@ -9,7 +9,9 @@
   --grey: #cacaca;
   --limegreen: #9FC088;
   --lightbrown: #5a5a5b;
+  --footer: #2C3333;
 }
+
 li {
   list-style: none;
   margin: auto;
@@ -23,7 +25,6 @@ html,body{
     overflow-x: hidden;
     padding: 0;
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -36,18 +37,18 @@ html,body{
 display: flex;
 justify-content: center;
 flex-direction: column;
-
 }
+
 .hr-line{
 width: 60%;
 margin: auto;
-
 }
 
 p {
   font-family: 'Poppins';
   line-height: 1.429;
   letter-spacing: 0.1em;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* Style the buttons that are used to open and close the faq-page body */
@@ -62,8 +63,8 @@ p {
   transition: 0.4s;
   margin: auto;
   font-size: 1.5rem;
-
 }
+
 .faq-body{
   margin: auto;
   /* text-align: center; */
@@ -89,9 +90,9 @@ p {
   margin-left: 5px;
 }
 
+/* Unicode character for "minus" sign (-) */
 .active:after {
-  /* content: "\2796"; */
-  /* Unicode character for "minus" sign (-) */
+  content: "\2796";
 }
 
 li {
@@ -108,7 +109,7 @@ li {
   margin-right: 1em;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .nav-link.current, .navbar-nav .show>.nav-link {
     color: var(--darkgreen);
 }
 
@@ -131,7 +132,7 @@ li {
     font-weight: 700;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.current, .navbar-dark .navbar-nav .show>.nav-link:hover {
     color: var(--darkgreen);
 }
 
@@ -311,6 +312,23 @@ li {
 
   .faq-page {
     font-size: 1.4rem;
-    width: 90%;
+    width: 100%;
   }
+
+  .faq-body {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+
+.faq-page {
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.faq-body {
+  width: 90%;
+  font-size: 0.79rem;
+}
 }
