@@ -177,7 +177,7 @@ section {
     .title-text h1 {
       color: transparent;
       -webkit-text-stroke: 3px #fff;
-      font-size: 5rem;
+      font-size: 10rem;
     }
 
 
@@ -288,6 +288,7 @@ footer p {
 }
 
 .Details {
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 600;
 }
@@ -318,6 +319,7 @@ footer p {
 
 .connect {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 600;
 }
@@ -421,6 +423,14 @@ footer p {
 
 @media (max-width: 1024px) {
 
+  /* === TITLE SECTION === */
+
+  .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 8rem;
+  }
+
 /* ==== GROUP THERAPY ==== */
 
 .header {
@@ -480,6 +490,13 @@ footer p {
 
 @media (max-width: 768px) {
 
+  .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 10rem;
+      text-align: center;
+  }
+
 
   .header {
     text-transform: uppercase;
@@ -531,17 +548,10 @@ footer p {
 @media (max-width: 600px) {
 
 
-.greeting {
-  font-size: 2.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .title-text h1 {
     color: transparent;
     -webkit-text-stroke: 3px #fff;
-    font-size: 5rem;
+    font-size: 8rem;
     text-align: center;
 }
 
@@ -607,6 +617,13 @@ footer p {
 
 
 @media (max-width: 472px) {
+
+  .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 5rem;
+      text-align: center;
+  }
 
   .header {
     font-size: 2rem;

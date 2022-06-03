@@ -170,7 +170,8 @@ section {
     .title-text h1 {
       color: transparent;
       -webkit-text-stroke: 3px #fff;
-      font-size: 5rem;
+      font-size: 10rem;
+      text-align: center;
     }
 
 
@@ -363,8 +364,9 @@ footer p {
 }
 
 .Details {
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 
@@ -398,8 +400,9 @@ footer p {
 
 .connect {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .media-icons {
@@ -530,7 +533,8 @@ footer p {
 /* Welcome */
 
 .title-text h1 {
-  font-size: 3.9rem;
+  font-size: 10rem;
+  text-align: center;
 }
 
 
@@ -605,10 +609,12 @@ footer p {
 @media (max-width: 768px) {
 
 
-  /* === Welcome === */
+  /* === TITLE SECTION === */
 
-  .greeting {
-    font-size: 3.5rem;
+  .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 7rem;
   }
 
   .title-text {
@@ -674,7 +680,7 @@ footer p {
 /* TITLE */
 
   .title-text h1 {
-    font-size: 2.9rem;
+    font-size: 5.5rem;
   }
 
   .section-title {

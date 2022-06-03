@@ -170,7 +170,7 @@ section {
     .title-text h1 {
       color: transparent;
       -webkit-text-stroke: 3px #fff;
-      font-size: 5rem;
+      font-size: 10rem;
     }
 
 
@@ -353,6 +353,7 @@ margin: 0 auto;
   }
 
   .Details {
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 600;
   }
@@ -383,6 +384,7 @@ margin: 0 auto;
 
   .connect {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 600;
   }
@@ -505,6 +507,10 @@ margin: 0 auto;
   margin: 0;
 }
 
+.Details {
+  font-size: 46px;
+}
+
 }
 
 
@@ -605,8 +611,14 @@ margin: 0 auto;
     padding: 20px;
   }
 
+  /* Footer */
+
   .media-icons {
   margin: 0px 150px 0px 150px
+}
+
+.Details {
+  font-size: 39px;
 }
 
 
@@ -621,9 +633,11 @@ margin: 0 auto;
 
 /* === TITLE SECTION === */
 
-  .greeting {
-    font-size: 2.5rem;
-  }
+.title-text h1 {
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+    font-size: 8rem;
+}
 
 /* SECTION #1: IS MY ANXIETY NORMAL? */
 
@@ -640,7 +654,7 @@ margin: 0 auto;
 /* === SECTION #2: TYPES OF ANXIETY WE TREAT === */
 
 .emotional_text {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .anxiety-treatment-icons {
@@ -682,6 +696,10 @@ margin: 0 auto;
 
   /* === FOOTER === */
 
+  .Details {
+    font-size: 39px;
+  }
+
   .bottomlogo {
     display: block;
     margin-left: auto;
@@ -702,6 +720,10 @@ margin: 0 auto;
     margin: 0px 35px 0px 30px;
   }
 
+  footer p {
+    font-size: 14.9px;
+}
+
 }
 
 
@@ -721,7 +743,7 @@ margin: 0 auto;
   }
 
   .header {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .header::before {
@@ -737,7 +759,7 @@ margin: 0 auto;
   }
 
   .emotional_text {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   /* === FOOTER === */
@@ -756,19 +778,23 @@ margin: 0 auto;
     margin: 0px 0px 48px;
   }
 
+  footer p {
+    font-size: 19px;
+}
+
 
 }
 
 @media (max-width: 320px) {
 
   .emotional_text {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   /* === TYPES OF ANXIETY WE TREAT === */
 
   .emotional_text {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .circle {
@@ -783,5 +809,13 @@ margin: 0 auto;
     max-width: 100%;
     font-size: 3rem;
   }
+
+  .Details {
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 15px;
+}
 
 }

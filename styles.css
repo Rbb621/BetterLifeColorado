@@ -825,6 +825,13 @@ footer p {
 .media-icons {
   margin: 0;
 }
+
+.Details {
+  font-size: 46px;
+}
+
+
+
 }
 
 
@@ -916,6 +923,12 @@ footer p {
   .OfficeParagraph {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  /* FOOTER */
+
+  .Details {
+    font-size: 39px;
   }
 
 }
@@ -1047,6 +1060,16 @@ display: block;
       padding-bottom: 1rem;
       margin: auto;
   }
+
+  footer p {
+    font-size: 14.9px;
+}
+
+.Details {
+  font-size: 39px;
+}
+
+
 }
 
 @media (max-width: 575px) {
@@ -1120,6 +1143,10 @@ display: block;
     padding: 0px 20px;
   }
 
+  footer p {
+    font-size: 19px;
+}
+
 }
 
 
@@ -1160,6 +1187,10 @@ display: block;
     font-size: 47px;
 }
 
+footer p {
+  font-size: 15px;
+}
+
 }
 
 @media (max-width: 330px) {
@@ -1175,6 +1206,10 @@ display: block;
 
 .TelehealthHeading {
   font-size: 3em;
+}
+
+.Details {
+  font-size: 40px;
 }
 
 }

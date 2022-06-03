@@ -206,7 +206,8 @@ hr {
 .header-text h1 {
   color: transparent;
   -webkit-text-stroke: 3px #fff;
-  font-size: 5rem;
+  font-size: 10rem;
+  text-align: center;
 }
 
 .box {
@@ -557,6 +558,7 @@ footer p {
 }
 
 .Details {
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 600;
 }
@@ -587,6 +589,7 @@ footer p {
 
 .connect {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 600;
 }
@@ -758,6 +761,14 @@ footer p {
 
 @media (max-width 1024px) {
 
+  /* === TITLE SECTION === */
+
+  .title-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 8rem;
+  }
+
   .textbox-slider {
     max-width: 71ch;
   }
@@ -818,6 +829,14 @@ footer p {
 
 
 @media (max-width: 768px) {
+
+  /* === TITLE SECTION === */
+
+  .header-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 8rem;
+  }
 
 
   /*Header*/
@@ -898,6 +917,14 @@ footer p {
 /*Max-Width: 600px*/
 
 @media (max-width: 600px) {
+
+  /* === TITLE SECTION === */
+
+  .header-text h1 {
+      color: transparent;
+      -webkit-text-stroke: 3px #fff;
+      font-size: 5rem;
+  }
 
 .GoodFaithEstimate {
   font-size: 3rem;
@@ -1055,7 +1082,7 @@ ul {
 
 .header-text h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   }
 
   .title-box h2 {
@@ -1069,6 +1096,11 @@ ul {
 
 
 @media (max-width: 330px) {
+
+  .header-text h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    }
 
   .GoodFaithEstimate {
     font-size: 1.4rem;
