@@ -782,10 +782,14 @@ h5 {
   font-size: 3.5rem;
 }
 
-/* FOOTER */
+/* === FOOTER === */
 
 .media-icons {
   margin: 0;
+}
+
+.Details {
+  font-size: 46px;
 }
 
 }
@@ -950,12 +954,15 @@ h5 {
     width: 180px;
   }
 
-  /* FOOTER */
-
+  /* === FOOTER === */
 
   .media-icons {
-  margin: 0px 150px 0px 150px
-}
+  margin: 0px 150px 0px 150px;
+  }
+
+  .Details {
+  font-size: 39px;
+  }
 
 
 }
@@ -1096,6 +1103,10 @@ h5 {
 
 /* === FOOTER === */
 
+.Details {
+  font-size: 39px;
+}
+
 .bottomlogo {
   display: block;
   margin-left: auto;
@@ -1115,6 +1126,11 @@ h5 {
   padding-bottom: 1rem;
   margin: 0px 35px 0px 30px;
 }
+
+footer p {
+  font-size: 14.9px;
+}
+
 }
 
 
@@ -1345,4 +1361,14 @@ font-size: 1.2em;
     font-size: 13.3px;
     padding: 8px 17px;
   }
+
+  /* === FOOTER === */
+
+  .Details {
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 15px;
+}
 }

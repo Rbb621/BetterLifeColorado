@@ -381,9 +381,9 @@ hr {
 
 /* ==== INSURANCE POLICIES ==== */
 
-.container h1{
+/* .container h1{
   font-size: 50px;
-}
+} */
 
 
 .insurance {
@@ -787,6 +787,16 @@ footer p {
     padding: 0;
 }
 
+/* === FOOTER === */
+
+.media-icons {
+  margin: 0;
+}
+
+.Details {
+  font-size: 46px;
+}
+
 }
 
 
@@ -903,18 +913,20 @@ footer p {
   }
 
 
-  /*Footer*/
+  /* === FOOTER === */
 
   .media-icons {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 150px 0 150px;
+  margin: 0px 150px 0px 150px
+  }
+
+  .Details {
+  font-size: 39px;
   }
 
 }
 
 
-/*Max-Width: 600px*/
+/*600px*/
 
 @media (max-width: 600px) {
 
@@ -992,10 +1004,34 @@ ul {
   width: 9rem;
 }
 
+/* === FOOTER === */
+
+.Details {
+  font-size: 39px;
+}
+
+.bottomlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trademark {
+  text-align: center;
+}
+
+.contact {
+  padding-top: 1rem;
+  padding-bottom: .4rem;
+}
+
 .media-icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 35px 0 35px;
+  padding-bottom: 1rem;
+  margin: 0px 35px 0px 30px;
+}
+
+footer p {
+  font-size: 14.9px;
 }
 
 }
@@ -1126,6 +1162,16 @@ ul {
 .textbox-insurance {
   margin: 30px auto;
   max-width: 28ch;
+  font-size: 15px;
+}
+
+/* === FOOTER === */
+
+.Details {
+  font-size: 40px;
+}
+
+footer p {
   font-size: 15px;
 }
 

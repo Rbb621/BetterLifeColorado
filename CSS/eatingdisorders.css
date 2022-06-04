@@ -213,15 +213,16 @@ h2 {
 
 /* === MISC. === */
 
-.component--horizontal-rule.align-center hr {
-    margin: 0 auto 40px;
+.component--horizontal-rule .default {
+    max-width: 60%;
 }
+
 
 .component--horizontal-rule .default {
     background: var(--lightbrown);
     height: 2px;
     margin: 0 auto 40px;
-    max-width: 1200px;
+    max-width: 60%;
 }
 
 .container {
@@ -331,7 +332,7 @@ ul .section-content {
 
 .section-content-4 {
   font-family: 'Poppins',sans-serif;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   margin: 10px;
   line-height: 1.7;
 }
@@ -454,7 +455,7 @@ ol li, ul li .section-list-3 {
 
 .section-content {
   font-family: 'Poppins',sans-serif;
-  padding: 0px 50px;
+ padding: 0px 20px;
   line-height: 1.7;
 }
 
@@ -703,17 +704,20 @@ footer p {
   transform: translateX(-50%);
 }
 
-/* FOOTER */
+/* .section-content {
+  padding: 0px 25px;
+} */
+
+/* === FOOTER === */
 
 .media-icons {
   margin: 0;
 }
 
-/* MISC. */
-
-.component--horizontal-rule .default {
-    max-width: 900px;
+.Details {
+  font-size: 46px;
 }
+
 
   }
 
@@ -751,6 +755,18 @@ footer p {
     .media-icons {
       padding-bottom: 1rem;
       margin: 0px 250px 0px 250px;
+    }
+
+    .pictures {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      height: 300px;
+    }
+
+    .section-content {
+      margin-top: 10px;
     }
 
   }
@@ -794,15 +810,15 @@ footer p {
 
   .section-content {
     font-family: 'Poppins',sans-serif;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     line-height: 1.7;
   }
 
   /* SECTION #4: BINGE EATING DISORDER */
 
-  .section-content-4 {
+  /* .section-content-4 {
     padding: 0px 20px;
-  }
+  } */
 
 /*SECTION #5 */
 
@@ -810,11 +826,7 @@ footer p {
 margin: 20px 3em;
 }
 
-/* MISC. */
 
-.component--horizontal-rule .default {
-    max-width: 600px;
-}
 
 .pictures {
     padding: 0;
@@ -823,14 +835,18 @@ margin: 20px 3em;
     margin: auto;
 }
 
-.section-content {
+/* .section-content {
   padding: 20px;
-}
+} */
 
-/* FOOTER */
+/* === FOOTER === */
 
 .media-icons {
 margin: 0px 150px 0px 150px
+}
+
+.Details {
+font-size: 39px;
 }
 
 }
@@ -875,11 +891,15 @@ margin: 0px 150px 0px 150px
   transform: translateX(-50%);
 }
 
-.section-content {
+/* .section-content {
   padding: 15px 50px;
-}
+} */
 
 /* === FOOTER === */
+
+.Details {
+  font-size: 39px;
+}
 
 .bottomlogo {
   display: block;
@@ -900,6 +920,11 @@ margin: 0px 150px 0px 150px
   padding-bottom: 1rem;
   margin: 0px 35px 0px 30px;
 }
+
+footer p {
+  font-size: 14.9px;
+}
+
 }
 
 
@@ -918,7 +943,7 @@ margin: 0px 150px 0px 150px
   }
 
   .header {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .header::before {
@@ -951,12 +976,15 @@ margin: 0px 150px 0px 150px
     width: 280px;
 }
 
+.section-content {
+  padding: 0 10px;
+}
+
   /* SECTION #3: */
 
 
 .section-list-3 {
   font-size: .9em;
-  padding: 8px;
 }
 
 
@@ -987,25 +1015,18 @@ margin: 0px 150px 0px 150px
     margin: 0px 0px 48px;
   }
 
-  /* === MISC. === */
-
-  .component--horizontal-rule .default {
-      max-width: 300px;
-  }
 
   .pictures {
     width: 300px;
     margin: auto;
-    height: 150px;
+    height: 200px;
 }
 
 h4 {
   font-size: 1.2em;
 }
 
-.section-content {
-  padding: 10px 50px;
-}
+
 
 }
 
@@ -1027,10 +1048,12 @@ h4 {
       max-width: 25ch;
     }
 
+
+
   /* === MISC. === */
 
   .header {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .header::before {
@@ -1039,7 +1062,7 @@ h4 {
   }
 
   .pictures {
-  width: 250px;
+  width: 280px;
   height: 180px;
   margin: auto;
   }
@@ -1053,12 +1076,11 @@ h4 {
   }
 
   .section-content {
-    padding: 8px 25px;
-  }
+   padding: 0 10px;
+ }
 
   .section-list-3 {
     font-size: 14px
-    padding: 8px;
   }
 
 /* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
@@ -1071,4 +1093,14 @@ h4 {
   .binge-list-5 {
     font-size: 1rem;
   }
+
+  /* === FOOTER === */
+
+  .Details {
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 15px;
+}
 }

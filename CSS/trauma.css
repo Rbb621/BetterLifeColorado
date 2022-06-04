@@ -42,6 +42,7 @@ section {
 
 .link:hover {
   color: var(--contactinfohover);
+  transition: .1s;
 }
 
 .card {
@@ -351,6 +352,7 @@ hr {
    font-weight: 800;
    color: var(--white);
    font-size: 2.2em;
+   text-transform: uppercase;
  }
 
 #emergency .btn:hover {
@@ -814,17 +816,17 @@ h5 {
   transform: translateX(-50%);
 }
 
-/* FOOTER */
+/* === FOOTER === */
 
 .media-icons {
   margin: 0;
 }
 
-/* MISC. */
-
-.component--horizontal-rule .default {
-    max-width: 900px;
+.Details {
+  font-size: 46px;
 }
+
+
 
   }
 
@@ -927,38 +929,16 @@ h5 {
     transform: translateX(-50%);
   }
 
-  /* === WHAT IS EATING DISORDER === */
-
-  .card {
-    margin: auto;
-  }
-
-  /* === WHY DOES SOMEONE DEVELOP AN EATING DISORDER? SECTION #2 ==== */
-
-  .section-content {
-    font-family: 'Poppins',sans-serif;
-    padding: 0px 50px;
-    line-height: 1.7;
-  }
-
-  /* SECTION #4: BINGE EATING DISORDER */
-
-  .section-content-4 {
-    padding: 0px 20px;
-  }
-
-  /* FOOTER */
-
+  /* === FOOTER === */
 
   .media-icons {
-  margin: 0px 150px 0px 150px
-}
+  margin: 0px 150px 0px 150px;
+  }
 
-/*SECTION #5 */
+  .Details {
+  font-size: 39px;
+  }
 
-.binge-list-5{
-margin: 20px 3em;
-}
 
 /* MISC. */
 
@@ -1036,6 +1016,10 @@ margin: 20px 3em;
 
 /* === FOOTER === */
 
+.Details {
+  font-size: 39px;
+}
+
 .bottomlogo {
   display: block;
   margin-left: auto;
@@ -1055,12 +1039,29 @@ margin: 20px 3em;
   padding-bottom: 1rem;
   margin: 0px 35px 0px 30px;
 }
+
+footer p {
+  font-size: 14.9px;
+}
 }
 
 
 
 
 @media (max-width: 472px) {
+
+  /* === EMERGENCY === */
+
+  .section-content-emergency {
+    font-size: 2em;
+    padding: 0;
+    letter-spacing: 0;
+  }
+
+  .section-content-contact {
+    line-height: 1.2;
+    padding: 0;
+  }
 
   .subtitle-text {
     padding: 7px;
@@ -1088,13 +1089,6 @@ margin: 20px 3em;
     transform: translateX(-50%);
   }
 
-  .smallcircle {
-      background: var(--contactinfohover);
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin: 20px 4px
-  }
 
   .emotional_text {
     font-size: 17px;
@@ -1215,17 +1209,16 @@ h4 {
     padding: 8px;
   }
 
-/* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
 
-  .binge-content-sub-5 {
-    font-size: 13.3px;
-    padding: 8px 17px;
+  /* === FOOTER === */
+
+  .Details {
+    font-size: 40px;
   }
 
-  .binge-list-5 {
-    font-size: 1rem;
-  }
-
+  footer p {
+    font-size: 15px;
+}
 
 
 

@@ -455,6 +455,11 @@ footer p {
   margin: 0;
 }
 
+.Details {
+  font-size: 46px;
+}
+
+
 
   }
 
@@ -530,13 +535,15 @@ footer p {
 }
 
 
-  /*Footer*/
+/* === FOOTER === */
 
-  .media-icons {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0 25px 0 25px; */
-  }
+.media-icons {
+margin: 0px 150px 0px 150px;
+}
+
+.Details {
+font-size: 39px;
+}
 
 }
 
@@ -591,26 +598,36 @@ footer p {
 }
 
 
-  /*Footer*/
+/* === FOOTER === */
 
-  .bottomlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.Details {
+  font-size: 39px;
+}
 
-  .trademark {
-    text-align: center;
-  }
+.bottomlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
+.trademark {
+  text-align: center;
+}
 
-  .media-icons {
-    margin: 0px;
-  }
+.contact {
+  padding-top: 1rem;
+  padding-bottom: .4rem;
+}
+
+.media-icons {
+  padding-bottom: 1rem;
+  margin: 0px 35px 0px 30px;
+}
+
+footer p {
+  font-size: 14.9px;
+}
+
 }
 
 
@@ -694,6 +711,16 @@ footer p {
     bottom: 2.5rem;
     width: 8rem;
   }
+
+  /* === FOOTER === */
+
+  .Details {
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 15px;
+}
 
 
 }

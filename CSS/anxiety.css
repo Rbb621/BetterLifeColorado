@@ -611,7 +611,7 @@ margin: 0 auto;
     padding: 20px;
   }
 
-  /* Footer */
+  /* === FOOTER === */
 
   .media-icons {
   margin: 0px 150px 0px 150px
@@ -689,10 +689,6 @@ margin: 0 auto;
 .section-content {
   padding: 10px 25px;
 }
-
-
-
-
 
   /* === FOOTER === */
 
@@ -809,6 +805,8 @@ margin: 0 auto;
     max-width: 100%;
     font-size: 3rem;
   }
+
+  /* === FOOTER === */
 
   .Details {
     font-size: 40px;

@@ -42,6 +42,7 @@ section {
 
 .link:hover {
   color: var(--contactinfohover);
+  transition: .1s;
 }
 
 .green-card {
@@ -219,6 +220,7 @@ section {
        font-weight: 800;
        color: var(--white);
        font-size: 2.2em;
+       text-transform: uppercase;
      }
 
     #emergency .btn:hover {
@@ -653,10 +655,14 @@ h5 {
   transform: translateX(-50%);
 }
 
-/* FOOTER */
+/* === FOOTER === */
 
 .media-icons {
   margin: 0;
+}
+
+.Details {
+  font-size: 46px;
 }
 
 }
@@ -764,12 +770,16 @@ h5 {
     width: 180px;
   }
 
-  /* FOOTER */
-
+  /* === FOOTER === */
 
   .media-icons {
   margin: 0px 150px 0px 150px
 }
+
+.Details {
+  font-size: 39px;
+}
+
 
 
 }
@@ -786,7 +796,7 @@ h5 {
   .title-text h1 {
       color: transparent;
       -webkit-text-stroke: 3px #fff;
-      font-size: 8rem;
+      font-size: 6rem;
   }
 
 /* === MISC. === */
@@ -834,6 +844,10 @@ h5 {
 
 /* === FOOTER === */
 
+.Details {
+  font-size: 39px;
+}
+
 .bottomlogo {
   display: block;
   margin-left: auto;
@@ -853,6 +867,11 @@ h5 {
   padding-bottom: 1rem;
   margin: 0px 35px 0px 30px;
 }
+
+footer p {
+  font-size: 14.9px;
+}
+
 }
 
 
@@ -860,20 +879,31 @@ h5 {
 
 @media (max-width: 472px) {
 
-  /* SECTION 1: ADDRESSING RELATIONAL CONFLICT */
 
-  .green-card {
-    width: 320px;
+  /* === EMERGENCY === */
+
+  .section-content-emergency {
+    font-size: 2em;
+    padding: 0;
+    letter-spacing: 0;
+  }
+
+  .section-content-contact {
+    line-height: 1.2;
+    padding: 0;
+  }
+
+
+  /* === WELCOME === */
+
+  .title-text h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 0;
   }
 
   .subtitle-text {
     padding: 7px;
-  }
-
-  .title-text h1 {
-    text-align: center;
-    font-size: 4rem;
-    padding: 0;
   }
 
   .header {
@@ -956,21 +986,25 @@ h4 {
       font-size: 3.5rem;
     }
 
+    /* === EMERGENCY === */
 
-    /* === SECTION #1: ADDRESSING RELATIONAL CONFLICT === */
-
-    .green-card {
-        background: var(--darkgreen);
-        width: 275px;
-        padding: 1em;
-        margin: auto;
-        box-shadow: 60px -16px var(--headerbackground);
+   .section-content-emergency {
+      font-size: 2em;
+      padding: 0;
+      letter-spacing: 0;
     }
+
+    .section-content-contact {
+      line-height: 1.2;
+      padding: 0;
+    }
+
+
 
 
   /* === MISC. === */
 
-  .header {
+  /* .header {
     font-size: 1rem;
   }
 
@@ -995,19 +1029,29 @@ h4 {
 
   .section-content {
     padding: 8px 25px;
-  }
+  } */
 
 
 
     /* === SECTION #3: APPROACHES WE USE === */
 
 
-    .header-white {
+    /* .header-white {
       font-size: 1.8rem;
     }
 
   .section-content-3 {
     font-size: 13.3px;
     padding: 8px 17px;
+  } */
+
+  /* === FOOTER === */
+
+  .Details {
+    font-size: 40px;
   }
+
+  footer p {
+    font-size: 15px;
+}
 }
