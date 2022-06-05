@@ -11,6 +11,7 @@
   --lightbrown: #5a5a5b;
   --lightblack: #4A4A4A;
   --text: #F1EEE9;
+  --officedetails: #aeaeae;
 }
 
 li {
@@ -177,7 +178,7 @@ hr {
   nav .dropdown-menu {
       min-width: 200px;
       max-height: none;
-      padding: 0px;
+      padding: 20px;
       border-radius: 0;
       margin: 0;
       white-space: nowrap;
@@ -316,13 +317,6 @@ hr {
   position: relative;
   line-height: 1.6;
   display: inline;
-}
-
-.missionpar1 {
-  position: relative;
-  max-width: 35ch;
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .YoungAdults {
@@ -580,8 +574,9 @@ margin: 0 auto;
 footer p {
   line-height: .8;
   font-family: "Poppins";
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.1em;
+  color: var(--officedetails);
 }
 
 .footer  {
@@ -715,23 +710,9 @@ footer p {
 
   .greeting {
     text-align: center;
+    font-size: 9rem;
   }
 
-  .line1 {
-    height: 620px;
-    right: 2rem;
-    position: relative;
-  }
-
-  .wrap1 {
-    position: relative;
-    bottom: 5rem;
-    margin-left: auto;
-    text-align: center;
-    line-height: 0;
-    margin-right: auto;
-    display: block;
-}
 }
 
 @media (max-width: 1450px) {
@@ -750,56 +731,16 @@ footer p {
     border-radius: 2rem;
     transform: translateX(-50%);
   }
-
-  .line1 {
-
-    width: 4px;
-    background-color: #45e19f;
-    height: 560px;
-    right: 2em;
-    position: relative;
-  }
 }
-
-
-
-@media (max-width: 1400px) {
-
-
-  .line1 {
-
-    width: 4px;
-    background-color: #45e19f;
-    height: 165;
-    right: 2em;
-    position: relative;
-  }
-
-}
-
 
 /*1024px*/
 
 @media (max-width: 1024px) {
 
 .greeting {
-  font-size: 4em;
+  font-size: 5em;
   position: relative;
 }
-
-
-  /* =====  MISC. 1024PX ===== */
-
-  .line1 {
-
-    width: 4px;
-    background-color: #45e19f;
-    height: 680px;
-    right: 2em;
-    position: relative;
-  }
-
-
 
 
 /* =====  SPECIALTIES 1024px ===== */
@@ -810,14 +751,10 @@ footer p {
     display: block;
 }
 
-/* === TELEHEALTH 768px === */
+/* === TELEHEALTH 1024px === */
 
 .text-box  {
   padding: 9em 2em 12.1875em;
-}
-
-.component--horizontal-rule .default {
-  max-width: 800px;
 }
 
 /* ==== FOOTER 1024px ==== */
@@ -830,8 +767,6 @@ footer p {
   font-size: 46px;
 }
 
-
-
 }
 
 
@@ -842,20 +777,8 @@ footer p {
 
 @media (max-width: 992px) {
 
-/* =====  OUR GOAL 992px ===== */
 
-  .line1 {
 
-    width: 4px;
-    background-color: var(--darkgreen);
-    height: 500px;
-    right: 2em;
-    position: relative;
-  }
-
-  .missionpar1 {
-    max-width: 60ch;
-  }
 
   /* =====  MISC 992px ===== */
 
@@ -879,7 +802,6 @@ footer p {
 }
 
 #specialties .circle {
-    /* margin: 50px 0px 0px 10px; */
     padding: 0;
 }
 
@@ -887,7 +809,6 @@ footer p {
   padding-bottom: 1rem;
 
   }
-
 
 
 /*768px */
@@ -898,7 +819,7 @@ footer p {
   /* ==== Welcome 768px ==== */
 
   .greeting {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     top: 0;
   }
 
@@ -918,17 +839,14 @@ footer p {
 }
 
 
-  /* ==== OFFICE 768px ==== */
-
-  .OfficeParagraph {
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-  }
-
   /* FOOTER */
 
   .Details {
     font-size: 39px;
+  }
+
+  footer p {
+    font-size: 15px;
   }
 
 }
@@ -945,32 +863,7 @@ footer p {
 /* ==== WELCOME 600px ==== */
 
 .greeting {
-    font-size: 4em;
-    position: relative;
-    padding: 0;
-}
-
-.button {
-  font-size: 1.2rem;
-  position: relative;
-  top: 2rem;
-}
-
-
-/* ==== OUR GOAL 600px ==== */
-
-.line1 {
-width: 4px;
-background-color: #45e19f;
-height: 510px;
-right: 2em;
-position: relative;
-}
-
-.YoungAdults {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+    font-size: 3rem;
 }
 
 .header {
@@ -1024,10 +917,6 @@ display: block;
   font-size: 23.5px;
 }
 
-
-
-
-
 /* === TELEHEALTH 600px === */
 
 .text-box {
@@ -1062,7 +951,7 @@ display: block;
   }
 
   footer p {
-    font-size: 14.9px;
+    font-size: 13.9px;
 }
 
 .Details {
@@ -1080,12 +969,6 @@ display: block;
 
 
 @media (max-width: 472px) {
-
-
-.component--horizontal-rule .default {
-  max-width: 400px;
-}
-
 
 /* SPECIALTIES 472px */
 
@@ -1168,9 +1051,8 @@ display: block;
   }
 
   .greeting {
-      font-size: 3em;
+      font-size: 2.5em;
       text-align: center;
-      padding-bottom: 2em;
   }
 
   .button {
@@ -1195,14 +1077,14 @@ footer p {
 
 @media (max-width: 330px) {
 
+  .greeting {
+    font-size: 2em;
+  }
+
   .section-sp::before {
     bottom: 85%;
     top: 5%;
   }
-
-  .component--horizontal-rule .default {
-    max-width: 250px;
-}
 
 .TelehealthHeading {
   font-size: 3em;

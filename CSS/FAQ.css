@@ -10,6 +10,7 @@
   --limegreen: #9FC088;
   --lightbrown: #5a5a5b;
   --footer: #2C3333;
+  --officedetails: #aeaeae;
 }
 
 li {
@@ -139,7 +140,7 @@ li {
   nav .dropdown-menu {
       min-width: 200px;
       max-height: none;
-      padding: 0px;
+      padding: 10px;
       border-radius: 0;
       margin: 0;
       white-space: nowrap;
@@ -169,8 +170,9 @@ li {
     footer p {
       line-height: .8;
       font-family: "Poppins";
-      font-weight: 300;
+      font-weight: 500;
       letter-spacing: 0.1em;
+      color: var(--officedetails);
     }
 
     .footer  {
@@ -345,7 +347,23 @@ li {
   .faq-body {
     width: 80%;
   }
+
+  /* === FOOTER === */
+
+  .media-icons {
+  margin: 0px 150px 0px 150px
 }
+
+.Details {
+  font-size: 39px;
+}
+
+footer p {
+  font-size: 14px;
+}
+}
+
+/* 600px */
 
 @media (max-width: 600px) {
 
@@ -386,20 +404,20 @@ li {
 }
 
 footer p {
-  font-size: 14.9px;
+  font-size: 13.9px;
 }
 
 }
 
-@@media (max-width: 390px) {
+@media (max-width: 390px) {
 
-}
-/* === FOOTER === */
+  /* === FOOTER === */
 
-.Details {
-  font-size: 40px;
-}
+  .Details {
+    font-size: 40px;
+  }
 
-footer p {
-  font-size: 15px;
+  footer p {
+    font-size: 15px;
+  }
 }

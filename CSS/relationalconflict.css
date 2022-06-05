@@ -10,6 +10,7 @@
   --limegreen: #9FC088;
   --lightbrown: #5a5a5b;
   --footer: #2C3333;
+  --officedetails: #aeaeae;
 }
 
 * {
@@ -127,7 +128,7 @@ section {
   nav .dropdown-menu {
       min-width: 150px;
       max-height: none;
-      padding: 33px 0;
+      padding: 10px;
       border-radius: 0;
       margin: 0;
       white-space: nowrap;
@@ -513,8 +514,9 @@ section {
 footer p {
   line-height: .8;
   font-family: "Poppins";
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.1em;
+  color: var(--officedetails);
 }
 
 .footer  {
@@ -964,6 +966,10 @@ h5 {
   font-size: 39px;
   }
 
+  footer p {
+    font-size: 15px;
+  }
+
 
 }
 
@@ -1124,11 +1130,11 @@ h5 {
 
 .media-icons {
   padding-bottom: 1rem;
-  margin: 0px 35px 0px 30px;
+  margin: auto;
 }
 
 footer p {
-  font-size: 14.9px;
+  font-size: 13.9px;
 }
 
 }
@@ -1236,10 +1242,6 @@ footer p {
     padding: 8px;
   }
 
-  /* .header-white {
-  font-size: 1.1rem;
-} */
-
 
 /* === FOOTER === */
 
@@ -1269,6 +1271,12 @@ footer p {
 h4 {
 font-size: 1.2em;
 }
+
+footer p {
+  font-size: 15px;
+}
+
+
   }
 
 
