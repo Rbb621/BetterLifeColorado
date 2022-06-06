@@ -303,7 +303,7 @@ hr {
 #mission {
   background-image: linear-gradient(288deg, var(--headerbackground)  2%, rgba(0,255,66,0) 150%), url(images/YoungAdults.jpeg);
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
@@ -970,6 +970,10 @@ display: block;
 
 @media (max-width: 472px) {
 
+  #client {
+    height: 65vh;
+  }
+
 /* SPECIALTIES 472px */
 
 .circle {
@@ -1077,8 +1081,23 @@ footer p {
 
 @media (max-width: 330px) {
 
+  #client {
+    height: 75vh;
+  }
+
+  #client .button {
+    font-size: 1rem;
+    top: 1em;
+  }
+
+  .wrap1 {
+    bottom: 10em;
+    left: 0;
+  }
+
   .greeting {
     font-size: 2em;
+    top: 0em;
   }
 
   .section-sp::before {
