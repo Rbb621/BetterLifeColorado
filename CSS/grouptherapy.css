@@ -34,6 +34,10 @@ section {
   min-height: 1000px;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 /* === Misc. ===*/
 
 .link {
@@ -188,7 +192,7 @@ section {
 #Photo {
   background-image: linear-gradient(359deg, var(--contactinfohover)  2%, rgba(0,255,66,0) 400%), url(../images/grouptherapy.jpg);
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
@@ -197,8 +201,7 @@ section {
 
  .GT1 {
   list-style: disc;
-  font-size: 1.5rem;
-  max-width: 60ch;
+  font-size: 1.2rem;
   line-height: 1.9;
   font-weight: 900;
   letter-spacing: 1px;
@@ -533,7 +536,7 @@ footer p {
 }
 
 .GT1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 
@@ -702,7 +705,7 @@ footer p {
   }
 
   .GT1 {
-      line-height: 1.5;
+      line-height: 1.2;
       padding: 5px;
       font-size: 1rem;
   }

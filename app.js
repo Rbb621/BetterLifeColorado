@@ -31,34 +31,7 @@ function show_image(i){
 }
 
 
-//Hamburger Icon closing and reopening
 
-// const mainMenu = document.querySelector('.mainMenu');
-// const closeMenu = document.querySelector('.closeMenu');
-// const openMenu = document.querySelector('.openMenu');
-//
-// openMenu.addEventListener('click',show);
-// closeMenu.addEventListener('click',close);
-//
-//
-// function show(){
-//   debugger;
-//   mainMenu.style.display = 'flex';
-//   mainMenu.style.width = '250px';
-// }
-//
-// function close(){
-//   mainMenu.style.left = '100%';
-// }
-
-
-// Dropdown menu shows up if you hover the word "Staff"
-
-
-// $('.Staff').hover(function() {
-//   $(".dropdown-menu.Staffdropdown").show(function() {
-//   });
-// });
 
 $('.Staff').click(function() {
   $(".dropdown-menu.Staffdropdown").toggle();})
@@ -89,8 +62,6 @@ $('.specialties-heading').click(function() {
             }
         });
     });
-
-
 
 
 

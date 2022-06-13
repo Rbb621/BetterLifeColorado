@@ -27,6 +27,10 @@ html,body{
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: transitionIn 0.75s;
 }
 
 
@@ -52,7 +56,7 @@ p {
 }
 
 .link:hover {
-  color: var(--lightbrown);
+  color: var(--navlinkdropdownmenu);
 }
 
 .header {
@@ -80,7 +84,7 @@ p {
   transform: translateX(-50%);
 }
 
-.component--horizontal-rule.align-center hr {
+/* .component--horizontal-rule.align-center hr {
     margin: 0 auto 40px;
 }
 
@@ -97,46 +101,54 @@ hr {
     height: 2px;
     margin: 0;
     padding: 0;
-}
+} */
 
 
-/* ==== FADE IN EFFECTS ==== */
+/* ====  KEYFRAMES ==== */
 
 .fade-up {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
+.fade-in {
+  animation: fadeIn 2s;
+}
+
 .fade-up.appear {
   opacity: 1;
 }
 
-
-
-/* ==== CIRCLE ==== */
-
-.circle {
-  height: 250px;
-  width: 250px;
-  position: relative;
-  border-radius: 50%;
-}
-
-.content {
-  position: absolute;
-  width: inherit;
-  height: auto;
-  top: 50%;
-  transform:translateY(-50%);
-  text-align: center;
-  font-family: 'Poppins';
-  color: var(--white);
-  font-weight: 900;
-  font-size: 10rem;
-  text-transform: capitalize;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translate(-10px);
+  }
+
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
 
 
 /* ==== NAVBAR ==== */
@@ -192,14 +204,17 @@ hr {
 
 /* ==== WECLOME SECTION ==== */
 
+
+
 #client {
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(235, 223, 223, 0.6));
   background-image: url(images/Nature.jpeg);
   width: 100%;
   height: 85vh;
   line-height: 0;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
+
 }
 
 .menu-wrap {
@@ -224,22 +239,26 @@ hr {
 
 #client .button {
   -webkit-appearance: none;
-  background: var(--signup);
-  border-radius: 8px;
-  border: 0;
-  color: var(--white);
+  background-color: transparent;
+  border-radius: 300px;
+  border: 2px solid #fafafa;
+  color: #fafafa;
   cursor: pointer;
+  letter-spacing: 2px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.8rem;
+  font-size: 15px;
+  font-style: normal;
   font-weight: 700;
-  padding: 1rem 2rem;
-  text-transform: capitalize;
+  padding: 1em 1.75em;
+  text-transform: uppercase;
+  background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 }
 
 #client .button:hover {
-  background: var(--darkgreen);
-  transition: .1s
+  background: #fafafa;
+  color: var(--headerbackground);
+  transition: .2s;
 }
 
 .greeting {
@@ -248,21 +267,32 @@ hr {
   color: white;
   font-size: 5.5rem;
   letter-spacing: .1rem;
-  padding: 1em;
 }
 
 
-/* ==== ABOUT US 2.0 ==== */
+/* ==== ABOUT US ==== */
+
+/* Heading */
+
+.AboutUs-2 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Poppins',sans-serif;
+}
+
+/* Background Image */
 
 #intro-2 {
   background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(images/youngadults.jpg);
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
   padding: 9em 0 12.1875em;
 }
+
+/* Paragraphs */
 
 .intro-paragraph-2 {
    font-size: 1.2rem;
@@ -272,11 +302,7 @@ hr {
    letter-spacing: 1px;
 }
 
-.AboutUs-2 {
-  font-size: 3rem;
-  font-weight: 900;
-  font-family: 'Poppins',sans-serif;
-}
+/* Quotes */
 
 .healing {
   margin: 0.5em auto;
@@ -311,91 +337,97 @@ hr {
 }
 
 
-.OurGoal {
-  font-size: 42px;
-  font-weight: 900;
-  position: relative;
-  line-height: 1.6;
-  display: inline;
-}
-
-.YoungAdults {
-  position: relative;
-  float: left;
-  border-radius: 2%;
-  opacity: .9
-}
-
-.line1 {
-  width: 4px;
-  background-color: var(--darkgreen);
-  height: 550px;
-  float: left;
-}
-
-
 
 /* ==== SPECIALTIES ==== */
 
-
-.circle {
-  height: 200px;
-  width: 200px;
-  display: inline-flex;
-  margin: 3em 7em;
-  border-radius: 50%;
-  box-shadow:  0 0 10px rgba(0, 0, 0, 0.6);
-  transition: background-color 0.4s ease;
-  background-image: linear-gradient(360deg, var(--black), rgba(0,255,66,0) 100%), url(feelings/grass.jpg);
-  background-size: cover;
-  font-weight: 900;
-}
-
 #specialties {
-  background-image: linear-gradient(260deg, var(--darkgreen), rgba(0,255,66,0) 150%), url(feelings/flowers.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--limegreen)
 }
 
+.container-specialties {
+  margin: 20px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
 
+.specialties-header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  display: block;
+  padding: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  color: var(--white);
+}
+
+.specialties-header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+.section-bg-specialties {
+  padding: 120px 0;
+}
+
+.section-bg-specialties::before {
+    content: "";
+    background: var(--white);
+    bottom: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+}
+
+.emotionals {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.emotional {
+  flex-basis: 260px;
+}
+
+.emotional .emotional-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+  margin-top: 3em;
+}
+
+.emotional:hover .emotional-img {
+  filter: grayscale(0);
+}
 
 .emotional_text {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
   text-align: center;
-  font-size: 30px;
-  font-weight: 900;
+}
+
+
+#specialties .title-box {
+  max-width: 800px;
+  margin: 0 auto 1.8125em;
   text-align: center;
-  color: var(--white);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
 }
-
-
-.section-sp {
-  padding: 120px 0;
-  color: var(--white);
-}
-
-
-.section-sp::before {
-  content: "";
-  background: var(--headerbackground);
-  position: absolute;
-  bottom: 75%;
-  top: 5%;
-  left: 0%;
-  right: 0%;
-  transform: skewX(-180deg);
-}
-
-.emotional_text:hover {
-  color: var(--navlinkdropdownmenu);
-  transition: .1s;
-}
-
-.specialink {
-  display: contents;
-}
-
 
 
 /* ==== STAFF ==== */
@@ -479,6 +511,8 @@ section {
   color: var(--white);
 }
 
+
+
 .section-bg::before {
   content: "";
   background: var(--headerbackground);
@@ -501,12 +535,9 @@ section {
 #Telehealth {
   background-image: linear-gradient(90deg, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%), url(images/Telehealth.jpeg);
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
 }
-
-
-
 
 .container_telehealth {
 max-width: 1170px;
@@ -539,7 +570,7 @@ margin: 0 auto;
   background-image: url(images/Building.jpg);
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
 
 .OfficeHeading {
@@ -733,6 +764,19 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 1150px) {
+  .emotionals {
+    flex-direction: column;
+  }
+
+  .emotional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 /*1024px*/
 
 @media (max-width: 1024px) {
@@ -768,8 +812,6 @@ footer p {
 }
 
 }
-
-
 
 
 /*992px */
@@ -809,6 +851,25 @@ footer p {
   padding-bottom: 1rem;
 
   }
+}
+
+@media only screen and (max-width: 900px) {
+  .specialties-header {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .emotionals {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
+
 
 
 /*768px */
@@ -890,6 +951,17 @@ footer p {
 }
 
 /* ==== SPECIALTIES 600px ==== */
+
+/* ==== INSURANCE ==== */
+.insurance-header {
+  font-size: 1.59em;
+}
+
+.insurance-header::before {
+  width: 9rem;
+}
+
+
 
 #specialties .circle {
 margin-left: auto;
@@ -974,7 +1046,6 @@ display: block;
     height: 65vh;
   }
 
-/* SPECIALTIES 472px */
 
 .circle {
   margin-left: auto;
@@ -997,6 +1068,18 @@ display: block;
     border-radius: 2rem;
     transform: translateX(-50%);
   }
+
+  /* === SPECIALTIES 472px === */
+
+.specialties-header {
+  font-size: 28px;
+}
+
+.specialties-header::before {
+  width: 11rem;
+}
+
+
 
   /* === TELEHEALTH 472px === */
 
@@ -1040,19 +1123,17 @@ display: block;
 
 @media (max-width: 412px) {
 
-  .intro-paragraph-2 {
-    font-size: 1rem;
+  #client .button {
+    font-size: 12px;
+    top: 1em;
+    position: relative;
   }
 
   .profile_wrap {
     margin: 0px 38px 0px 50px;
   }
 
-  #client .button {
-      font-size: 1.5rem;
-      top: 0rem;
-      position: relative;
-  }
+
 
   .greeting {
       font-size: 2.5em;
@@ -1085,10 +1166,6 @@ footer p {
     height: 75vh;
   }
 
-  #client .button {
-    font-size: 1rem;
-    top: 1em;
-  }
 
   .wrap1 {
     bottom: 10em;
@@ -1111,6 +1188,10 @@ footer p {
 
 .Details {
   font-size: 40px;
+}
+
+.specialties-header {
+    font-size: 20px;
 }
 
 }

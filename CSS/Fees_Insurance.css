@@ -382,11 +382,6 @@ hr {
 
 /* ==== INSURANCE POLICIES ==== */
 
-/* .container h1{
-  font-size: 50px;
-} */
-
-
 .insurance {
   text-transform: uppercase;
   position: relative;
@@ -1013,7 +1008,7 @@ ul {
 }
 
 
-/* ==== STAFF ==== */
+/* ==== INSURANCE ==== */
 .insurance-header {
   font-size: 1.59em;
 }

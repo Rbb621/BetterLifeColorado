@@ -53,7 +53,7 @@
 
         <!-- LOGO -->
 
-        <a href="index.html"><img class="logo" src="images/Logo_horizontal.png" alt="betterhealthimg"></a>
+        <a href="index.html"><img class="logo" src="images/Logo_horizontal.png" alt="betterhealthimg" loading="lazy"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -119,22 +119,27 @@
 
 
 
-
   <!-- WELCOME SCREEN -->
 
-
+<div class="fade-in">
   <div id="client">
     <div class="menu-wrap">
       <div class="wrap1">
 
         <!-- WELCOME MESSAGE -->
-        <h1 class="greeting">WELCOME TO BETTER LIFE THERAPY</h1>
-        <a class="button" href="#footer">
-          Let's Talk!
-        </a>
+        <h1 class="greeting fade-in">WELCOME TO BETTER LIFE THERAPY
+          <div class>
+          <a class="button fade-in" href="#footer">
+            Let's Talk!
+          </a>
+          </div>
+
+        </h1>
+
 
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -245,95 +250,91 @@
 
 
 
-  <!-- EMOTIONAL FEELINGS -->
 
-  <section id="specialties" class="specialties section-sp">
-    <div class="container">
+  <!-- SPECIALTIES -->
 
+  <div id="specialties" class="section-bg-specialties">
 
-      <div class="section-title">
-        <h2>Specialties</h2>
-      </div>
+    <div class="container-specialties">
 
 
       <div class="row">
-
-        <div class="col-sm-4 col-md-4 col-lg-4">
-
-
-          <a class="specialink" href="anxiety.html">
-            <div class="circle">
-              <div class="content">
-
-                <h1 class="emotional_text">Anxiety</h1>
-
-              </div>
-            </div>
-          </a>
-
-          <a class="specialink" href="depression.html">
-            <div class="circle">
-              <div class="content">
-
-                <h1 class="emotional_text">Depression</h1>
-
-              </div>
-            </div>
-          </a>
-        </div>
+        <h1 class="specialties-header">Specialties</h1>
+      <div class="col-xl-12 col-lg-6 col-md-6 col-xs">
 
 
-        <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="emotionals">
 
-          <a class="specialink" href="foodeatingdisorder.html">
-            <div class="circle">
-              <div class="content">
+          <!-- ANXIETY -->
+          <div class="emotional">
+            <a href="anxiety.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">Anxiety</h3></a>
+          </div>
 
-                <h1 class="emotional_text">Eating Disorders</h1>
+          <!-- DEPRESSION -->
+          <div class="emotional">
+            <a href="depression.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">Depression</h3></a>
+          </div>
 
-              </div>
-            </div>
-          </a>
+
+          <!-- EATING DISORDERS -->
+
+          <div class="emotional">
+            <a href="foodeatingdisorder.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">Eating Disorder</h3></a>
+          </div>
 
 
-          <a class="specialink" href="trauma.html">
-            <div class="circle">
-              <div class="content">
-
-                <h1 class="emotional_text">Trauma</h1>
-
-              </div>
-            </div>
-          </a>
 
         </div>
-
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <a class="specialink" href="ocd.html">
-            <div class="circle">
-              <div class="content">
-                <h1 class="emotional_text">OCD</h1>
-              </div>
-            </div>
-          </a>
-
-
-          <a class="specialink" href="relational_conflict.html">
-            <div class="circle">
-              <div class="content">
-
-                <h1 class="emotional_text">Relational Conflict</h1>
-
-              </div>
-            </div>
-        </div>
-        </a>
-
-
-
       </div>
+
+
+        <div class="col-xl-12 col-lg-6 col-md-6 col-xs">
+
+        <div class="emotionals">
+
+          <!-- OCD -->
+
+          <div class="emotional">
+            <a href="ocd.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">OCD</h3></a>
+          </div>
+
+          <!-- RELATIONAL CONFLICT -->
+
+          <div class="emotional">
+            <a href="relational_conflict.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">Relational Conflict</h3></a>
+          </div>
+
+          <!-- TRAUMA- -->
+
+          <div class="emotional">
+            <a href="trauma.html" class="link">
+              <img src="feelings/grass2.jpg" class="emotional-img" loading="lazy">
+            <h3 class="emotional_text">Trauma</h3></a>
+          </div>
+
+
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <!-- EMPTY BLOCK -->
+    <div style="height:100px;" aria-hidden="true" class="wp-block-spacer"></div>
+    </div>
+  </div>
+
+
+
 
 
   <!-- WORK WITH US -->
@@ -353,7 +354,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
               <a class="profile_image" href="stephanie.html">
-                <img class="staff_profile_picture" src="staff/Stephanie.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Stephanie.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -371,7 +372,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
               <a class="profile_image" href="lexis.html">
-                <img class="staff_profile_picture" src="staff/Lexis.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Lexis.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -388,7 +389,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="800">
             <div class="member-img">
               <a class="profile_image" href="brooke.html">
-                <img class="staff_profile_picture" src="staff/Brooke.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Brooke.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -407,7 +408,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="500">
             <div class="member-img">
               <a class="profile_image" href="tim.html">
-                <img class="staff_profile_picture" src="staff/Tim.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Tim.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -432,7 +433,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="700">
             <div class="member-img">
               <a class="profile_image" href="sara.html">
-                <img class="staff_profile_picture" src="staff/Sara.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Sara.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -449,7 +450,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
               <a class="profile_image" href="stef.html">
-                <img class="staff_profile_picture" src="staff/Stef.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/Stef.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -466,7 +467,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
               <a class="profile_image" href="taylor.html">
-                <img class="staff_profile_picture" src="staff/taylor.png" class="img-fluid" alt=""></a>
+                <img class="staff_profile_picture" src="staff/taylor.png" class="img-fluid" alt="" loading="lazy"></a>
 
               <!-- STAFF INFO -->
               <div class="member-info">
@@ -475,32 +476,32 @@
                 <span class="profile__detail">Trauma, Substance Use, Depression</span>
               </div>
             </div>
-            </div>
-            </div>
+          </div>
+        </div>
 
-              <!--STAFF #8 LAUREN DAVIS-->
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="400">
-                  <div class="member-img">
-                    <a class="profile_image" href="lauren.html">
-                      <img class="staff_profile_picture" src="staff/Lauren.png" class="img-fluid" alt=""></a>
+        <!--STAFF #8 LAUREN DAVIS-->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <a class="profile_image" href="lauren.html">
+                <img class="staff_profile_picture" src="staff/Lauren.png" class="img-fluid" alt="" loading="lazy"></a>
 
-                    <!-- STAFF INFO -->
-                    <div class="member-info">
-                      <h4 class="profile_staff">Lauren Davis</h4>
-                      <span class="profile__detail">Licensed Clinical Social Worker</span>
-                      <span class="profile__detail">Trauma, Substance Use, Depression</span>
-                    </div>
-                  </div>
-                </div>
+              <!-- STAFF INFO -->
+              <div class="member-info">
+                <h4 class="profile_staff">Lauren Davis</h4>
+                <span class="profile__detail">Licensed Clinical Social Worker</span>
+                <span class="profile__detail">Trauma, Substance Use, Depression</span>
               </div>
-
-
-
             </div>
           </div>
         </div>
+
+
+
       </div>
+    </div>
+    </div>
+    </div>
   </section>
 
 
@@ -561,9 +562,9 @@
               <p>950 Wadsworth Blvd. Suite #201</p>
               <p>Lakewood, Colorado 80214</p>
               <a href="tel:(720)-295-0530" class="link">
-                <p>Phone #: 720-295-0530</p>
+                <p>Phone #: 720-295-0530</p></a>
               </a>
-              <p>betterlifecolorado@gmail.com</p>
+              <a href="mailto:betterlifecolorado@gmail.com" class="link"><p>betterlifecolorado@gmail.com</p></a>
             </div>
             <div class="footer-hours">
               <p>Hours</p>
@@ -574,7 +575,7 @@
           <!-- COPYRIGHT -->
 
           <div class="col-12 col-sm-6 col-md-7 col-lg-4">
-            <img class="bottomlogo" src="images/Logo.png" alt="icon">
+            <img class="bottomlogo" src="images/Logo.png" alt="icon" loading="lazy">
             <h6 class="trademark">© Better Life Therapy LLC 2022</h6>
           </div>
 
@@ -583,7 +584,7 @@
           <div class="col col-md-12 col-lg-4">
             <h1 class="connect">Contact</h1>
             <div class="media-icons">
-              <a href="tel:(720)-295-0530" class="link"><i class="phone-icon fa-solid fa-phone"></i></a>
+              <a href="tel:(720)-295-0530"><i class="phone-icon fa-solid fa-phone"></i></a>
               <a href="mailto:betterlifecolorado@gmail.com"><i class="email-icon fas fa-envelope"></i></a>
               <i class="computer-icon fa-solid fa-desktop"></i>
             </div>
