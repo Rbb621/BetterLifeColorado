@@ -28,7 +28,6 @@ html,body{
     margin: 0;
 }
 
-
 section {
   width: 100%;
   min-height: 1000px;
@@ -53,8 +52,6 @@ section {
 
 /* ==== NAVBAR ==== */
 
-
-
 .logo {
   width: 190px;
   margin-right: 1em;
@@ -67,8 +64,6 @@ section {
 .section-content-1 {
   color: var(--white);
 }
-
-
 
 /* ==== DROPDOWN-MENU ==== */
 
@@ -290,7 +285,7 @@ hr {
   content: "";
   width: 15rem;
   height: 5px;
-  background-color: var(--darkgreen);
+  background-color: var(--headerbackground);
   bottom: 2.2rem;
   left: 50%;
   position: absolute;
@@ -461,8 +456,6 @@ ol li, ul li .section-list-3 {
 }
 
 
-
-
 /* ==== FOOTER ==== */
 
 .link {
@@ -490,7 +483,8 @@ footer p {
   padding-top: 2em;
 }
 
-/*Better Health Info*/
+/* BETTER HEALTH INFO */
+
 .location {
   font-weight: 700;
   line-height: 2;
@@ -509,7 +503,7 @@ footer p {
 }
 
 
-/*Logo*/
+/* LOGO */
 
 #emotional, img {
   max-width: 100%;
@@ -592,7 +586,7 @@ footer p {
 }
 
 
-/* Hover */
+/* HOVER */
 
 .computer-icon:hover {
   color: var(--contactinfohover);
@@ -626,13 +620,6 @@ footer p {
 .header::before {
   content: "";
   width: 15rem;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.2rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
 }
 }
 
@@ -650,17 +637,6 @@ footer p {
     font-family: 'Montserrat',sans-serif;
   }
 
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--headerbackground);
-    bottom: 2.2rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
 
   /*SECTION #5 */
 
@@ -683,32 +659,6 @@ footer p {
       text-align: center;
   }
 
-.header {
-  text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: 6px;
-  display: block;
-  padding: 3rem;
-  font-weight: 900;
-  text-align: center;
-  font-family: 'Montserrat',sans-serif;
-}
-
-.header::before {
-  content: "";
-  width: 15rem;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.2rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
-
-/* .section-content {
-  padding: 0px 25px;
-} */
 
 /* === FOOTER === */
 
@@ -729,6 +679,10 @@ footer p {
 
   @media (max-width: 991px) {
 
+.card {
+  margin: auto;
+}
+
     /* === MISC. === */
 
     .header {
@@ -738,13 +692,6 @@ footer p {
     .header::before {
       content: "";
       width: 11rem;
-      height: 5px;
-      bottom: 2rem;
-      background-color: var(--headerbackground);
-      left: 50%;
-      position: absolute;
-      border-radius: 2rem;
-      transform: translateX(-50%);
     }
 
     /* === FOOTER === */
@@ -787,21 +734,6 @@ footer p {
     text-align: center;
   }
 
-  .header {
-    font-size: 2.5rem;
-  }
-
-  .header::before {
-    content: "";
-    width: 11rem;
-    height: 5px;
-    background-color: var(--headerbackground);
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
-
   /* === SECTION #1: WHAT IS EATING DISORDER === */
 
   .card {
@@ -812,23 +744,14 @@ footer p {
 
   .section-content {
     font-family: 'Poppins',sans-serif;
-    /* padding: 0px 50px; */
     line-height: 1.7;
   }
-
-  /* SECTION #4: BINGE EATING DISORDER */
-
-  /* .section-content-4 {
-    padding: 0px 20px;
-  } */
 
 /*SECTION #5 */
 
 .binge-list-5{
 margin: 20px 3em;
 }
-
-
 
 .pictures {
     padding: 0;
@@ -837,9 +760,6 @@ margin: 20px 3em;
     margin: auto;
 }
 
-/* .section-content {
-  padding: 20px;
-} */
 
 /* === FOOTER === */
 
@@ -851,8 +771,11 @@ margin: 0px 150px 0px 150px
 font-size: 39px;
 }
 
+footer p {
+  font-size: 14px;
 }
 
+}
 
 
 /*600px */
@@ -881,22 +804,6 @@ font-size: 39px;
   font-size: 1.7rem;
 }
 
-.header::before {
-  content: "";
-  width: 11rem;
-  height: 5px;
-  bottom: 2rem;
-  background-color: var(--headerbackground);
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
-
-/* .section-content {
-  padding: 15px 50px;
-} */
-
 /* === FOOTER === */
 
 .Details {
@@ -924,12 +831,10 @@ font-size: 39px;
 }
 
 footer p {
-  font-size: 14.9px;
+  font-size: 14px;
 }
 
 }
-
-
 
 
 @media (max-width: 472px) {
@@ -945,19 +850,12 @@ footer p {
   }
 
   .header {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .header::before {
     content: "";
     width: 8rem;
-    height: 5px;
-    bottom: 2rem;
-    background-color: var(--headerbackground);
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
   }
 
   .emotional_text {
@@ -989,6 +887,11 @@ footer p {
   font-size: .9em;
 }
 
+  /* SECTION #4: BINGE EATING DISORDERS */
+
+  .section-content-4 {
+    padding: 0 10px;
+  }
 
   /* SECTION #5: WHAT TYPE OF THERAPY WORKS BEST FOR EATING DISORDERS */
 

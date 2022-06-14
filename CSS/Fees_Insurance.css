@@ -50,60 +50,9 @@ section {
   color: var(--contactinfohover);
 }
 
-
-.component--horizontal-rule.align-center hr {
-    margin: 0 auto 40px;
-}
-
-.component--horizontal-rule .default {
-    background: var(--lightbrown);
-    height: 2px;
-    margin: 0 auto 40px;
-    max-width: 1200px;
-}
-
-hr {
-    background: var(--lightbrown);
-    border: 0;
-    height: 2px;
-    margin: 0;
-    padding: 0;
-}
-
 /* ====  KEYFRAMES ==== */
 
-.fade-up {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in {
-  animation: fadeIn 2s;
-}
-
-.fade-up.appear {
-  opacity: 1;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInTop {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
   }
@@ -119,25 +68,34 @@ hr {
     animation: fadeInLeft 1.2s both;
   }
 
-  .fadeInTop .profile{
-    -webkit-animation: fadeInLeft 1.2s both;
-    -moz-animation: fadeInLeft 1.2s both;
-    -o-animation: fadeInLeft 1.2s both;
-    animation: fadeInLeft 1.2s both;
+  /* === TITLE SECTIONS === */
+
+  .header-section {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 3.5rem;
+    display: block;
+    padding: 3rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--headerbackground);
   }
 
-  .fadeInRight .profile{
-    -webkit-animation: fadeInLeft 1.2s both;
-    -moz-animation: fadeInLeft 1.2s both;
-    -o-animation: fadeInLeft 1.2s both;
-    animation: fadeInLeft 1.2s both;
+  .header-section::before {
+    content: "";
+    width: 15rem;
+    height: 5px;
+    background-color: var(--headerbackground);
+    bottom: 2.3rem;
+    left: 50%;
+    position: absolute;
+    border-radius: 2rem;
+    transform: translateX(-50%);
   }
-
 
 
 /* ===NavBar=== */
-
-
 
 .logo {
   width: 190px;
@@ -148,10 +106,7 @@ hr {
     color: var(--darkgreen);
 }
 
-
-
 /* ==== DROPDOWN-MENU ==== */
-
 
   .nav-link {
     display: block;
@@ -248,7 +203,6 @@ hr {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  /* background-attachment: fixed; */
 }
 
 
@@ -275,82 +229,27 @@ hr {
   text-align: center;
 }
 
-.box {
-  padding: 50px;
+/* === INSURANCE === */
+
+.insurance_image {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.textbox-insurance {
   text-align: center;
-  font-family: Montserrat;
-  max-width: 100%;
+  margin: auto;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 17px;
+  width: 100%;
+  color: var(--black);
+  max-width: 70ch;
+  font-weight: 700;
 }
-
-.box h1{
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-.box p{
-  line-height: 2;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms;
-}
-
-
-/* ==== GOOD FAITH ESTIMATE ==== */
-
-.title-box h2 {
-  font-size: 1.5em;
-  max-width: 100%;
-  line-height: 1.3;
-}
-
-#GFE .title-box {
-  max-width: 800px;
-  margin: 0 auto 1.8125em;
-  text-align: center;
-  line-height: 1.5;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
-}
-
-.textbox {
-    max-width: 900px;
-    margin: 3em 3em 2em 7em;
-    padding-right: 360px;
-    font-family: 'Montserrat',sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #333;
-    font-size: 17px;
-}
-
-/* ===== Bullet Points ===== */
-
-#GFE .textbox ul li {
-    /* padding-left: 54px; */
-    position: relative;
-    margin-bottom: 1.5em;
-  }
-
-#GFE ul li:before {
-    content: '\f101';
-    font-family: FontAwesome;
-    display: inline-block;
-    padding: 0 25px 0 0;
-    position: relative;
-    color: inherit;;
-  }
-
-  .contact {
-    font-size: 17px;
-    margin: 31px 29px;
-    max-width: 50ch;
-    line-height: 1.5;
-
-  }
-
 
 /* ==== STAFF INFO ==== */
 
@@ -364,7 +263,7 @@ hr {
   font-family: "Poppins", sans-serif;
 }
 
-.insurance-header {
+.staff-header {
   text-transform: uppercase;
   position: relative;
   font-size: 3.5rem;
@@ -376,7 +275,7 @@ hr {
   font-family: 'Montserrat',sans-serif;
 }
 
-.insurance-header::before {
+.staff-header::before {
   content: "";
   width: 15rem;
   height: 5px;
@@ -429,7 +328,6 @@ hr {
 .profile p {
   font-size: 16px;
   margin-top: 20px;
-  /* margin-bottom: 3em; */
 }
 
 #staff .title-box {
@@ -440,36 +338,6 @@ hr {
   -webkit-font-smoothing: antialiased;
   font-family: 'Montserrat', sans-serif;
   font-size: 19px;
-}
-
-
-
-/* ==== INSURANCE POLICIES ==== */
-
-.insurance {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 3.5rem;
-  letter-spacing: 4px;
-  padding: 3rem;
-  font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  }
-}
-
-.insurance::before {
-  content: "";
-  width: 15rem;
-  height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 3.2rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
 }
 
 /* === SLIDING SCALE === */
@@ -498,8 +366,6 @@ hr {
   scroll-behavior: smooth;
 }
 
-
-
 .content-table thead tr {
   background-color: var(--darkgreen);
   color: var(--white);
@@ -523,57 +389,59 @@ hr {
   border-bottom: 2px solid var(--headerbackground);
 }
 
+/* ==== GOOD FAITH ESTIMATE ==== */
 
+.title-box h2 {
+  font-size: 1.5em;
+  max-width: 100%;
+  line-height: 1.3;
+}
 
-/* === TITLE SECTIONS === */
-
-
-.header-section {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 3.5rem;
-  display: block;
-  padding: 3rem;
-  font-weight: 700;
+#GFE .title-box {
+  max-width: 800px;
+  margin: 0 auto 1.8125em;
   text-align: center;
-  font-family: 'Montserrat',sans-serif;
-  color: var(--headerbackground);
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
 }
 
-.header-section::before {
-  content: "";
-  width: 15rem;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.3rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
+.textbox {
+    max-width: 900px;
+    margin: 3em 3em 2em 7em;
+    padding-right: 360px;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 17px;
 }
 
-.insurance_image {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-align-items: center;
-margin-top: 20px;
-}
+/* ===== Bullet Points ===== */
 
-.textbox-insurance {
-  text-align: center;
-  margin: auto;
-  font-family: 'Montserrat',sans-serif;
-  font-size: 17px;
-  width: 100%;
-  color: var(--black);
-  max-width: 70ch;
-  font-weight: 700;
-}
+#GFE .textbox ul li {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
 
+#GFE ul li:before {
+    content: '\f101';
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0 25px 0 0;
+    position: relative;
+    color: inherit;;
+  }
 
-/* ===FOOTER=== */
+  .contact {
+    font-size: 17px;
+    margin: 31px 29px;
+    max-width: 50ch;
+    line-height: 1.5;
+  }
+
+/* === FOOTER === */
 
 footer .container {
 max-width: 1170px;
@@ -606,7 +474,7 @@ footer p {
   padding-top: 2em;
 }
 
-/*Better Health Info*/
+/* BETTER HEALTH INFO */
 .location {
   font-weight: 700;
   line-height: 2;
@@ -625,7 +493,7 @@ footer p {
 }
 
 
-/*Logo*/
+/* LOGO */
 
 .bottomlogo {
   height: 280px;
@@ -701,7 +569,6 @@ footer p {
   transition: .5s;
 }
 
-
 /*Hover */
 
 .computer-icon:hover {
@@ -715,8 +582,6 @@ footer p {
   border: 2px solid var(--contactinfohover);
   transition: .2s;
 }
-
-
 
 
 /*Media*/
@@ -766,11 +631,9 @@ footer p {
     transform: translateX(-50%);
   }
 
-
   .textbox-insurance {
     margin: 50px auto;
   }
-
 
   .insurance_image {
     margin: auto 20px 0px 0;
@@ -780,17 +643,6 @@ footer p {
     margin: 31px 120px;
   }
 
-  .GoodFaithEstimate::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 2.7rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -845,6 +697,8 @@ footer p {
     max-width: 71ch;
   }
 
+  /* === INSURANCE === */
+
   .insurance_image {
     margin: 0;
     padding: 0;
@@ -871,16 +725,12 @@ footer p {
 
 }
 
-
-
 @media (max-width: 992px) {
-
 
   .media-icons {
     display: flex;
     justify-content: space-between;
   }
-
 
   /*Footer*/
 
@@ -904,11 +754,7 @@ footer p {
   }
 }
 
-
-
-
 /* 768px */
-
 
 @media (max-width: 768px) {
 
@@ -919,14 +765,11 @@ footer p {
       -webkit-text-stroke: 3px #fff;
       font-size: 8rem;
   }
-
-
   /*Header*/
 
   .header-text {
     text-align: center;
   }
-
 
   /* ===Policies === */
 
@@ -950,10 +793,6 @@ footer p {
     .contact{
         max-width: 60ch;
     }
-
-
-
-
 
 /*Insurance*/
 
@@ -980,11 +819,6 @@ footer p {
     transform: translateX(-50%);
   }
 
-  .GoodFaithEstimate {
-    font-size: 3rem;
-  }
-
-
   /* === FOOTER === */
 
   .media-icons {
@@ -999,9 +833,7 @@ footer p {
   font-size: 15px;
 }
 
-
 }
-
 
 /*600px*/
 
@@ -1014,10 +846,6 @@ footer p {
       -webkit-text-stroke: 3px #fff;
       font-size: 5rem;
   }
-
-.GoodFaithEstimate {
-  font-size: 3rem;
-}
 
 #policies .title-box {
   font-size: 10px;
@@ -1035,33 +863,15 @@ footer p {
     padding: 0;
 }
 
+/* === FOOTER 600px === */
+
 .contact {
     max-width: 60ch;
     padding: 0;
     margin: 20px;
 }
 
-.textbox-insurance {
-  margin: 70px auto;
-  max-width: 47ch;
-}
-
-.insurance_image {
-  margin: 0;
-  padding: 0;
-}
-
-.GoodFaithEstimate::before {
-  content: "";
-  width: 15rem;
-  height: 5px;
-  background-color: var(--darkgreen);
-  bottom: 2.7rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
+  /* === GOODFAITHESTIMATE 600px === */
 
 .title-box h2 {
   font-size: 1em;
@@ -1071,14 +881,26 @@ ul {
     padding-left: 0;
 }
 
+/* === STAFF INFO === */
 
-/* ==== INSURANCE ==== */
-.insurance-header {
+.staff-header {
   font-size: 1.59em;
 }
 
-.insurance-header::before {
+.staff-header::before {
   width: 9rem;
+}
+
+/* ==== INSURANCE ==== */
+
+.textbox-insurance {
+  margin: 70px auto;
+  max-width: 47ch;
+}
+
+.insurance_image {
+  margin: 10px;
+  padding: 0;
 }
 
 /* === FOOTER === */
@@ -1113,14 +935,15 @@ footer p {
 
 }
 
-
-
 @media (max-width: 472px) {
 
 
   /* === INSURANCE 472px === */
 
-
+  .insurance_image {
+    padding: 0;
+    margin: 10px 15px;
+  }
 
   .header-section {
   font-size: 1.5rem;
@@ -1141,11 +964,6 @@ footer p {
     transform: translateX(-50%);
   }
 
-  .insurance_image {
-    padding: 0;
-    margin: 0;
-  }
-
   /* === FOOTER 472px === */
 
   .trademark {
@@ -1163,25 +981,10 @@ footer p {
   }
 
   .textbox-insurance {
-    margin: 100px auto;
     max-width: 28ch;
   }
 
-  .GoodFaithEstimate {
-    font-size: 2rem;
-  }
-
-  .GoodFaithEstimate::before {
-    content: "";
-    width: 10rem;
-    height: 5px;
-    background-color: var(--darkgreen);
-    bottom: 2.7rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
+    /* === SLIDING SCALE 472px === */
 
   .table-container {
     overflow-x: scroll;
@@ -1215,11 +1018,6 @@ footer p {
     font-size: 3.5rem;
     }
 
-  .GoodFaithEstimate {
-    font-size: 1.4rem;
-  }
-
-
   #policies .textbox {
       margin: 25px 4px 30px -20px;
       line-height: 1.6;
@@ -1251,6 +1049,5 @@ footer p {
 footer p {
   font-size: 15px;
 }
-
 
   }

@@ -66,23 +66,31 @@ $('.specialties-heading').click(function() {
 //Staff Info - fadeUp and fadeLeft/fadeRight
 
 
+
+observer.observe(document.querySelector(.profiles))
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      document.querySelectorAll(".profile[0].classList.add("fadeInRight")")
-      document.querySelectorAll(".profile[1].classList.add("fadeInTop")")
-      document.querySelectorAll(".profile[2].classList.add("fadeInTop")")
-      document.querySelectorAll(".profile[3].classList.add("fadeInLeft")")
-      document.querySelectorAll(".profile[4].classList.add("fadeInRight")")
-      document.querySelectorAll(".profile[5].classList.add("fadeInTop")")
-      document.querySelectorAll(".profile[6].classList.add("fadeInTop")")
-      document.querySelectorAll(".profile[7].classList.add("fadeInLeft")")
-      document.querySelectorAll(".profile[8].classList.add("fadeUp")")
+      document.querySelectorAll(".profile")[0].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[1].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[2].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[3].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[4].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[5].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[6].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[7].classList.add("fadeInLeft")
+      document.querySelectorAll(".profile")[8].classList.add("fadeInLeft")
     }
   })
 })
 
-observer.observe(document.querySelector(.profiles))
+observer.observe(document.querySelector(".profiles"))
+
+AOS.init({
+  duration: 3000,
+  once: true,
+});
 
 
 //Fade In Effects//

@@ -38,6 +38,7 @@ html,body{
 display: flex;
 justify-content: center;
 flex-direction: column;
+padding: 20px;
 }
 
 .hr-line{
@@ -410,6 +411,10 @@ footer p {
 }
 
 @media (max-width: 390px) {
+
+.faq-container {
+  padding: 0;
+}
 
   /* === FOOTER === */
 
