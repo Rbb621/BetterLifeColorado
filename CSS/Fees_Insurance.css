@@ -70,6 +70,70 @@ hr {
     padding: 0;
 }
 
+/* ====  KEYFRAMES ==== */
+
+.fade-up {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+.fade-up.appear {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  .fadeInLeft .profile{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+  }
+
+  .fadeInTop .profile{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+  }
+
+  .fadeInRight .profile{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+  }
+
+
 
 /* ===NavBar=== */
 

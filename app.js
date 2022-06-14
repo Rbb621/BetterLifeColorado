@@ -63,7 +63,26 @@ $('.specialties-heading').click(function() {
         });
     });
 
+//Staff Info - fadeUp and fadeLeft/fadeRight
 
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      document.querySelectorAll(".profile[0].classList.add("fadeInRight")")
+      document.querySelectorAll(".profile[1].classList.add("fadeInTop")")
+      document.querySelectorAll(".profile[2].classList.add("fadeInTop")")
+      document.querySelectorAll(".profile[3].classList.add("fadeInLeft")")
+      document.querySelectorAll(".profile[4].classList.add("fadeInRight")")
+      document.querySelectorAll(".profile[5].classList.add("fadeInTop")")
+      document.querySelectorAll(".profile[6].classList.add("fadeInTop")")
+      document.querySelectorAll(".profile[7].classList.add("fadeInLeft")")
+      document.querySelectorAll(".profile[8].classList.add("fadeUp")")
+    }
+  })
+})
+
+observer.observe(document.querySelector(.profiles))
 
 
 //Fade In Effects//
