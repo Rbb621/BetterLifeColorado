@@ -55,7 +55,6 @@ p {
 
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  /* background-color: #eee; */
   color: #444;
   cursor: pointer;
   padding: 30px 20px;
@@ -113,6 +112,19 @@ li {
 
 .navbar-dark .navbar-nav .nav-link.current, .navbar-nav .show>.nav-link {
     color: var(--darkgreen);
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+   border: none;
+}
+
+:focus-visible {
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0
+  ;
 }
 
 

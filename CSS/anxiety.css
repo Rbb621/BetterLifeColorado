@@ -56,6 +56,19 @@ section {
     color: var(--darkgreen);
 }
 
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+   border: none;
+}
+
+:focus-visible {
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0
+  ;
+}
+
 /* ==== DROPDOWN-MENU ==== */
 
 

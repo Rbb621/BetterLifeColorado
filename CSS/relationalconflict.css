@@ -109,6 +109,19 @@ section {
 
 /* === DROPDOWN MENU === */
 
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+   border: none;
+}
+
+:focus-visible {
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0
+  ;
+}
+
 
   .nav-link {
     display: block;
@@ -473,6 +486,16 @@ section {
   color: var(--white);
   position: relative;
   line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.section-content-name {
+  color: var(--white);
+  position: relative;
+  line-height: 1.7;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -712,8 +735,7 @@ footer p {
   }
 
   .section-content-3 {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 14px;
   }
 
   /* === SECTION #2: === */
@@ -783,6 +805,13 @@ h5 {
 .testimonial-header-longslide, .testimonial-header {
   font-size: 3.5rem;
 }
+
+/* === SECTION #3: === */
+
+.section-content-3 {
+  padding: 20px;
+}
+
 
 /* === FOOTER === */
 
