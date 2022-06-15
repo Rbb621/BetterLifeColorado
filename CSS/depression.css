@@ -127,6 +127,7 @@ section {
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     font-weight: 700;
+    border: none;
   }
 
   .nav-link:hover {
@@ -147,6 +148,7 @@ section {
       box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
       flex-direction: column;
       transition: ease-in .1;
+      border: none;
     }
 
 
@@ -156,6 +158,7 @@ section {
         font-weight: 400;
         background: transparent;
         padding: 15px 20px;
+        border: none;
     }
 
 
@@ -399,7 +402,6 @@ section {
 
 .section-content {
   font-family: 'Poppins',sans-serif;
-  padding: 0px 50px;
   line-height: 1.7;
   color: var(--headerbackground);
 }
@@ -612,8 +614,13 @@ footer p {
 .treatment-icon {
   height: 180px;
   width: 180px;
+  margin-top: 30px;
 }
 
+.section-content-3 {
+  font-size: 20px;
+  padding: 20px;
+}
 
 }
 
@@ -693,6 +700,10 @@ h5 {
       transform: translateX(-50%);
     }
 
+    .paperbag {
+      margin: auto;
+    }
+
 
     /* === FOOTER === */
 
@@ -705,6 +716,10 @@ h5 {
     .media-icons {
       padding-bottom: 1rem;
       margin: 0px 250px 0px 250px;
+    }
+
+    .depression_picture {
+      margin: auto;
     }
 
   }
@@ -727,14 +742,6 @@ h5 {
     text-align: center;
   }
 
-  /* === SECTION #3 === */
-
-
-  .treatment-icon {
-    height: 150px;
-    width: 150px;
-  }
-
     /* === HEADER === */
 
 
@@ -753,14 +760,10 @@ h5 {
     transform: translateX(-50%);
   }
 
-
-
-
   /* === SECTION #1 ==== */
 
   .section-content {
     font-family: 'Poppins',sans-serif;
-    padding: 15px 75px;;
     line-height: 1.7;
   }
 
@@ -830,9 +833,12 @@ footer p {
   transform: translateX(-50%);
 }
 
-.section-content {
-  padding: 15px 50px;
+/* === SECTION #2: ISN'T DEPRESSION JUST BEING REALLY SAD? === */
+.paperbag {
+  height: 200px;
+  margin: auto;
 }
+
 
 
 /* === SECTION #3: APPROACHES WE USE === */
@@ -919,23 +925,10 @@ footer p {
   .header::before {
     content: "";
     width: 8rem;
-    height: 5px;
-    bottom: 2rem;
-    background-color: var(--headerbackground);
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
-
-  /* SECTION #1: */
-
-  .section-content {
-    padding: 10px 50px;
   }
 
 
-  /* SECTION #3: APPROACHES WE USE */
+  /* SECTION #3: CAN DEPRESSION BE TREATED */
 
     .section-content-3 {
       font-size: 13.3px;
@@ -946,7 +939,6 @@ footer p {
       font-size: .9em;
       padding: 8px;
     }
-
 
   /* === FOOTER === */
 
@@ -1026,51 +1018,6 @@ footer p {
       padding: 0;
     }
 
-
-
-
-  /* === MISC. === */
-
-  /* .header {
-    font-size: 1rem;
-  }
-
-  .header::before {
-    width: 5rem;
-    height: 3px;
-  }
-
-  .pictures {
-  width: 250px;
-  height: 180px;
-  margin: auto;
-  }
-
-  h4 {
-    font-size: 1.1em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
-  .section-content {
-    padding: 8px 25px;
-  } */
-
-
-
-    /* === SECTION #3: APPROACHES WE USE === */
-
-
-    /* .header-white {
-      font-size: 1.8rem;
-    }
-
-  .section-content-3 {
-    font-size: 13.3px;
-    padding: 8px 17px;
-  } */
 
   /* === FOOTER === */
 
