@@ -761,9 +761,13 @@ footer p {
     font-size: 15px;
 }
 
+.section-content {
+  padding: 10px;
 }
 
-@media (max-width: 320px) {
+}
+
+@media (max-width: 330px) {
 
   .emotional_text {
     font-size: 20px;

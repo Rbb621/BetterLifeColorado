@@ -690,6 +690,10 @@ h5 {
   transform: translateX(-50%);
 }
 
+.section-content-subtitle {
+  padding: 40px;
+}
+
 /* === FOOTER === */
 
 .media-icons {
@@ -805,6 +809,10 @@ h5 {
     width: 180px;
   }
 
+  .section-content-subtitle {
+    padding: 40px;
+  }
+
   /* === FOOTER === */
 
   .media-icons {
@@ -881,6 +889,10 @@ footer p {
 .section-content-3 {
   text-align: left;
   padding: 30px
+}
+
+.section-content-subtitle {
+  padding: 40px;
 }
 
 
@@ -971,6 +983,10 @@ footer p {
       padding: 8px;
     }
 
+    .section-content-subtitle {
+      padding: 27px;
+    }
+
   /* === FOOTER === */
 
   .trademark {
@@ -1024,7 +1040,7 @@ footer p {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
 
   /* === WELCOME === */
 
@@ -1034,6 +1050,10 @@ footer p {
 
     .title-text h1 {
       font-size: 3.5rem;
+    }
+
+    .section-content-subtitle {
+      padding: 25px;
     }
 
     /* === EMERGENCY === */
