@@ -424,13 +424,17 @@ section {
     font-family: 'Poppins', sans-serif;
 }
 
-.leftside {
-  height: 100vh;
-  width: 50%;
-}
 
-.leftside {
-  background: var(--darkgreen);
+/* === SECTION #4 ==== */
+
+#symptoms-section-4 {
+  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(../specialties/depression3.jpg);
+  width: 100%;
+  background-repeat: round;
+  background-size: cover;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  padding: 3em 0 3.1875em;
 }
 
 
@@ -645,6 +649,10 @@ footer p {
 
 .section-content-3 {
   font-size: 14px;
+  padding: 20px;
+}
+
+.section-content-subtitle {
   padding: 20px;
 }
 
@@ -985,6 +993,10 @@ footer p {
 
     .section-content-subtitle {
       padding: 27px;
+    }
+
+    .header-white {
+      font-size: 1.4rem;
     }
 
   /* === FOOTER === */

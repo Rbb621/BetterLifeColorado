@@ -839,6 +839,10 @@ footer p {
     margin-bottom: 2em;
 }
 
+.intro-paragraph-2 {
+  font-size: 14px;
+}
+
 #specialties .circle {
     padding: 0;
 }
@@ -847,7 +851,11 @@ footer p {
   padding-bottom: 1rem;
 
   }
+
+
 }
+
+
 
 @media only screen and (max-width: 900px) {
   .specialties-header {
