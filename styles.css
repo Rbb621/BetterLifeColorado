@@ -221,13 +221,11 @@ p {
   flex-direction: column;
   justify-content: end;
   position: relative;
-  line-height: 0;
 }
 
 .wrap1 {
   position: absolute;
   bottom: 5rem;
-  left: 1rem;
   text-align: center;
   line-height: 0;
 }
@@ -279,7 +277,7 @@ p {
 /* Background Image */
 
 #intro-2 {
-  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(images/youngadults.jpg);
+  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,0,0,0) 200%), url(images/youngadults.jpg);
   width: 100%;
   background-repeat: round;
   background-size: cover;
@@ -624,7 +622,7 @@ footer p {
 
 .Details {
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 600;
 }
 
@@ -639,11 +637,6 @@ footer p {
   display: block;
 }
 
-.copyright {
-  color: var(--white);
-  text-align: center;
-}
-
 .trademark {
   padding-bottom: 1rem;
   text-align: center;
@@ -655,7 +648,7 @@ footer p {
 .connect {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 600;
 }
 
@@ -681,18 +674,6 @@ footer p {
   transition: .2s;
 }
 
-
-.computer-icon {
-  border: 2px solid var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
 .email-icon {
   border: 2px solid var(--white);
   color: var(--white);
@@ -708,21 +689,11 @@ footer p {
 
 /*Hover */
 
-.computer-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
 .email-icon:hover {
   color: var(--contactinfohover);
   border: 2px solid var(--contactinfohover);
   transition: .2s;
 }
-
-
-
-
 
 
 

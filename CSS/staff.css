@@ -294,18 +294,6 @@ footer p {
   transition: .2s;
 }
 
-
-.computer-icon {
-  border: 2px solid var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
 .email-icon {
   border: 2px solid var(--white);
   color: var(--white);
@@ -320,12 +308,6 @@ footer p {
 
 
 /*Hover */
-
-.computer-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
 
 .email-icon:hover {
   color: var(--contactinfohover);
