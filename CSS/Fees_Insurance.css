@@ -250,6 +250,17 @@ margin-top: 20px;
   font-weight: 700;
 }
 
+.caption {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 30px;
+  width: 100%;
+  color: var(--black);
+  max-width: 70ch;
+  font-weight: 500;
+}
+
 /* ==== STAFF INFO ==== */
 
 #staff {

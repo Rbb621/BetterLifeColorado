@@ -655,7 +655,6 @@ footer p {
 .media-icons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 35px 0px 35px;
 }
 
 .phone-icon {
@@ -711,6 +710,10 @@ footer p {
     font-size: 9rem;
   }
 
+  .media-icons  {
+    margin: 0px 5em;
+  }
+
 }
 
 @media (max-width: 1450px) {
@@ -728,6 +731,10 @@ footer p {
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
+  }
+
+  .media-icons  {
+    margin: 0px 5em;
   }
 }
 
@@ -771,7 +778,7 @@ footer p {
 /* ==== FOOTER 1024px ==== */
 
 .media-icons {
-  margin: 0;
+  margin: 0 4em;
 }
 
 .Details {
@@ -820,6 +827,7 @@ footer p {
 
 .media-icons {
   padding-bottom: 1rem;
+  margin: 0px 24em;
 
   }
 
@@ -883,6 +891,10 @@ footer p {
 
   footer p {
     font-size: 15px;
+  }
+
+  .media-icons {
+    margin: 0px 17em;
   }
 
 }
@@ -989,12 +1001,8 @@ display: block;
   /* ==== FOOTER 600px ==== */
 
   .media-icons {
-    margin: auto;
-  }
-
-  .media-icons {
       padding-bottom: 1rem;
-      margin: auto;
+      margin: 0px 12em;
   }
 
   footer p {
@@ -1092,6 +1100,10 @@ display: block;
     font-size: 19px;
 }
 
+.media-icons {
+  margin: 0px 8em;
+}
+
 }
 
 
@@ -1133,6 +1145,10 @@ footer p {
   font-size: 15px;
 }
 
+.media-icons {
+  margin: 0px 5em;
+}
+
 }
 
 @media (max-width: 330px) {
@@ -1167,6 +1183,10 @@ footer p {
 
 .specialties-header {
     font-size: 20px;
+}
+
+.media-icons {
+  margin: 0px 3em;
 }
 
 }
