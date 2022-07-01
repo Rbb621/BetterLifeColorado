@@ -49,7 +49,9 @@ hr {
   margin: auto;
 }
 
-/* === Misc. ===*/
+/***************************************/
+        /* Links */
+/***************************************/
 
 .link {
   var(--white);
@@ -60,7 +62,9 @@ hr {
   color: var(--contactinfohover);
 }
 
-/* ===NavBar=== */
+/***************************************/
+        /* Navbar */
+/***************************************/
 
 .logo {
   width: 190px;
@@ -84,7 +88,9 @@ hr {
   ;
 }
 
-/* ==== DROPDOWN-MENU ==== */
+/***************************************/
+        /* Dropdown Menu */
+/***************************************/
 
 
   .nav-link {
@@ -119,10 +125,6 @@ hr {
     }
 
 
-
-/* === DROPDOWN MENU === */
-
-
   .nav-link {
     display: block;
     padding: 1rem 1rem;
@@ -147,7 +149,9 @@ hr {
     }
 
 
-    /* === HEADER SECTION === */
+    /***************************************/
+            /* Header Section */
+    /***************************************/
 
     .title {
       background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
@@ -183,7 +187,13 @@ hr {
     }
 
 
-/* ==== SECTION #2: TYPES OF ANXIETY WE TREAT ==== */
+/***************************************/
+      /* SPECIALTIES - ANXIETY */
+/***************************************/
+
+/***************************************/
+    /* Types of Anxiety We Treat */
+/***************************************/
 
 .anxiety-treatment-icons {
   margin-left: auto;
@@ -226,29 +236,10 @@ hr {
   text-transform: capitalize;
 }
 
-/* ==== SECTION #3: WE CAN HELP WITH ANXIETY -=== */
 
-.african {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.circle  {
-  height: 400px;
-  width: 400px;
-  position: relative;
-  border-radius: 50%;
-  background: var(--darkgreen);
-  margin: auto;
-  display: block;
-  overflow: hidden;
-}
-
-
-/* === MISC. === */
-
-/* Quotes */
+/*****************************************************/
+                  /* Quotes */
+/*****************************************************/
 
 .healing {
   margin: 0.5em auto;
@@ -268,6 +259,10 @@ hr {
 .quote {
   border:none; font-size:1.2em; font-style:italic; padding:0; vertical-align:middle;
 }
+
+/*****************************************************/
+      /* Background Diagonal Container */
+/*****************************************************/
 
 #emotional_type2 {
   padding: 9.0625em 0;
@@ -299,13 +294,41 @@ padding: 0 20px;
 margin: 0 auto;
 }
 
+/*****************************************************/
+              /* Emotional Images */
+/*****************************************************/
+
 
 #emotional, img {
   max-width: 100%;
   display: block;
 }
 
-/* === HEADER TITLES === */
+.african {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.circle  {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  border-radius: 50%;
+  background: var(--darkgreen);
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.pictures {
+  padding: 0;
+}
+
+
+/*****************************************************/
+                /* Header Titles */
+/*****************************************************/
 
 
 .header {
@@ -319,8 +342,26 @@ margin: 0 auto;
   font-family: 'Montserrat',sans-serif;
 }
 
+.title-text-typesmaller {
+  display: grid;
+  place-items: center;
+  height: 70vh;
+  font-family: 'Poppins',serif;
+  text-transform: capitalize;
+  font-size: 50px;
+}
 
-/* === SECTION TITLE/CONTENT === */
+.title-text-typesmaller h1 {
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+  font-size: 10rem;
+  text-align: center;
+}
+
+
+/*****************************************************/
+      /* Section Title and Section Content */
+/*****************************************************/
 
 .section-title {
   text-transform: uppercase;
@@ -349,9 +390,32 @@ margin: 0 auto;
   line-height: 1.7;
 }
 
-/* === SPECIALTIES === */
+.section-content-3 {
+  color: var(--white);
+  position: relative;
+  line-height: 1.7;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
 
-/* --- Depression --- */
+.section-content-3-name {
+  color: var(--white);
+  position: relative;
+  line-height: 1.7;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*****************************************************/
+      /* Specialties Background with White Text */
+/*****************************************************/
 
 .ocd-treatment-icon {
   margin-left: auto;
@@ -360,7 +424,7 @@ margin: 0 auto;
   margin-top: 50px;
 }
 
-.ocd-emotional_text {
+.white-emotional_text {
   position: relative;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -371,21 +435,9 @@ margin: 0 auto;
   text-transform: capitalize;
 }
 
-.title-text-depression {
-  display: grid;
-  place-items: center;
-  height: 70vh;
-  font-family: 'Poppins',serif;
-  text-transform: capitalize;
-  font-size: 50px;
-}
-
-.title-text-depression h1 {
-  color: transparent;
-  -webkit-text-stroke: 3px #fff;
-  font-size: 10rem;
-  text-align: center;
-}
+/*****************************************************/
+      /* Specialties Background with White Text */
+/*****************************************************/
 
 .depression_picture {
   margin: auto;
@@ -408,22 +460,60 @@ margin: 0 auto;
   z-index: -1;
 }
 
-.section-list-3 {
+/*****************************************************/
+    /* BINGE CONTENT Section-5 - Eating Disorders  */
+/*****************************************************/
+
+.binge-content-5 {
+  color: var(--white);
+  position: relative;
+  line-height: 1.7;
+  padding: 0px 50px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.binge-list-5 {
+    color: var(--white);
     position: relative;
     list-style: disc;
+    font-size: 1.2rem;
+    margin: 20px 8em;
+}
+
+.binge-title-5 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: var(--white);
+  font-weight: 900;
+  font-family: 'Montserrat',sans-serif;
+  letter-spacing: 3px;
+}
+
+.wp-block-columns {
+  margin-bottom: 0;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.binge-content-sub-5 {
+    color: var(--white);
+    position: relative;
+    line-height: 1.7;
+    padding: 20px 50px;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.section-list-ref {
-  margin-top: 25px;
-  line-height: 1.8;
-}
-
-
-
-
-
-/* === SECTION #4 ==== */
+/*****************************************************/
+      /* Depression Section 4 */
+/*****************************************************/
 
 #symptoms-section-4 {
   background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(../specialties/depression3.jpg);
@@ -462,7 +552,40 @@ margin: 0 auto;
   transform: translateX(-50%);
 }
 
-/* ==== Background === */
+/*****************************************************/
+      /* Bullet Point Lists */
+/*****************************************************/
+
+.section-list-3 {
+    position: relative;
+    list-style: disc;
+    font-family: 'Poppins', sans-serif;
+}
+
+ol li, ul li .section-list-3 {
+    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+/*****************************************************/
+      /* Reference List */
+/*****************************************************/
+
+.section-list-ref {
+  margin-top: 25px;
+  line-height: 1.8;
+  position: relative;
+  list-style: disc;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*****************************************************/
+      /* Container Background */
+/*****************************************************/
 
 .section-bg {
   padding: 120px 0;
@@ -487,7 +610,9 @@ section {
   position: relative;
 }
 
-/* === Icons === */
+/*****************************************************/
+      /* Treatment Icons */
+/*****************************************************/
 
 .treatment-icon {
   height: 180px;
@@ -495,125 +620,9 @@ section {
   margin: auto;
 }
 
-/* === Content Section #3 === */
-
-
-.section-content-3 {
-  color: var(--white);
-  position: relative;
-  line-height: 1.7;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.section-content-3-name {
-  color: var(--white);
-  position: relative;
-  line-height: 1.7;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: 20px;
-}
-
-
-
-/* --- EATING DISORDERS --- */
-
-.pictures {
-  padding: 0;
-}
-
-.card {
-  background: var(--headerbackground);
-  width: 450px;
-  padding: 3rem;
-}
-
-
-
-.section-content-1 {
-  font-family: 'Poppins',sans-serif;
-  padding: 10px;
-  line-height: 1.7;
-  float: right;
-  color: var(--white);
-}
-
-.scrabble {
-  float: right;
-}
-
-.section-content-3-eatingdisorders {
-  margin-top: 1em;
-}
-
-/* === Section 5 Content === */
-
-.binge-content-5 {
-  color: var(--white);
-  position: relative;
-  line-height: 1.7;
-  padding: 0px 50px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.binge-list-5 {
-    color: var(--white);
-    position: relative;
-    list-style: disc;
-    font-size: 1.2rem;
-    margin: 20px 8em;
-}
-
-.binge-title-5 {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  color: var(--white);
-  font-weight: 900;
-  font-family: 'Montserrat',sans-serif;
-  letter-spacing: 3px;
-}
-
-.wp-block-columns {
-  margin-bottom: 0;
-  min-width: 0;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-ol li, ul li .section-list-3 {
-    margin: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.binge-content-sub-5 {
-    color: var(--white);
-    position: relative;
-    line-height: 1.7;
-    padding: 20px 50px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-
-
-/* --- OCD --- */
-
-/* SECTION 3: SPECIALISTS IN OCD TREATMENT */
+/*****************************************************/
+                /* QUOTES  */
+/*****************************************************/
 
 .grid {
   display: grid;
@@ -642,7 +651,11 @@ ol li, ul li .section-list-3 {
   max-width: 40ch;
 }
 
-/* --- Relational Conflict --- */
+/*****************************************************/
+        /* Card Backgrounds with Content  */
+/*****************************************************/
+
+/* --- Card --- */
 
 .green-card {
   background: var(--darkgreen);
@@ -671,8 +684,35 @@ ol li, ul li .section-list-3 {
   text-align: center;
 }
 
-/* ==== SECTION #2: COMMON RELATIONAL CONFLICTS ==== */
+.card {
+  background: var(--headerbackground);
+  width: 450px;
+  padding: 3rem;
+}
 
+.section-content-1 {
+  font-family: 'Poppins',sans-serif;
+  padding: 10px;
+  line-height: 1.7;
+  float: right;
+  color: var(--white);
+}
+
+.scrabble {
+  float: right;
+}
+
+.section-content-3-eatingdisorders {
+  margin-top: 1em;
+}
+
+/*****************************************************/
+        /* SPECIALTIES - RELATIONAL CONFLICT  */
+/*****************************************************/
+
+/*****************************************************/
+        /*   Testimonial  */
+/*****************************************************/
 
 .image {
   display: none;
@@ -689,7 +729,9 @@ ol li, ul li .section-list-3 {
   position: relative;
 }
 
-/* Arrow Buttons */
+/*****************************************************/
+        /* Arrow Buttons  */
+/*****************************************************/
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
@@ -716,7 +758,9 @@ ol li, ul li .section-list-3 {
   }
 
 
-/* Testimonial Header */
+  /*****************************************************/
+              /* Testimonial Header  */
+  /*****************************************************/
 
   .testimonial-header {
     text-transform: uppercase;
@@ -729,7 +773,6 @@ ol li, ul li .section-list-3 {
     font-family: 'Montserrat',sans-serif;
     color: var(--white);
     letter-spacing: 6px;
-    /* text-shadow: 0px 4px var(--headerbackground); */
   }
 
 .testimonial-header-longslide {
@@ -742,12 +785,13 @@ ol li, ul li .section-list-3 {
     font-family: 'Montserrat',sans-serif;
     color: var(--white);
     letter-spacing: 6px;
-    /* text-shadow: 0px 4px var(--headerbackground); */
   }
 
 
 
-/* Testimonial Content */
+  /*****************************************************/
+              /* Testimonial Content */
+  /*****************************************************/
 
   .testimonial-content, .testimonial-content-longslide {
     color: var(--white);
@@ -794,6 +838,10 @@ ol li, ul li .section-list-3 {
     background-color: var(--white);
 }
 
+/*****************************************************/
+                /* Keyframes */
+/*****************************************************/
+
 @keyframes fadeInLeft{
 	0%{
 		opacity: 0;
@@ -804,6 +852,7 @@ ol li, ul li .section-list-3 {
 		transform: translateX(0px);
 	}
 }
+
 @keyframes fadeInRight{
 	0%{
 		opacity: 0;
@@ -816,18 +865,10 @@ ol li, ul li .section-list-3 {
 }
 
 
+/*****************************************************/
+                /* FOOTER  */
+/*****************************************************/
 
-/* --- Trauma --- */
-
-.section-list-ref {
-    position: relative;
-    list-style: disc;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
-  /* === FOOTER === */
 
   footer .container {
   max-width: 1170px;
@@ -896,17 +937,10 @@ ol li, ul li .section-list-3 {
 
   /*=== CONTACT ===*/
 
-  .connect {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-  }
-
   .media-icons {
     display: flex;
     justify-content: space-between;
-    margin: 0px 35px 0px 35px;
+    padding-bottom: 1rem;
   }
 
   .phone-icon {
@@ -948,7 +982,9 @@ ol li, ul li .section-list-3 {
 
 
 
-/*Media*/
+  /*****************************************************/
+                /* Media Queries */
+  /*****************************************************/
 
 @media (min-width: 1500px) {
   .greeting {
@@ -1036,8 +1072,6 @@ ol li, ul li .section-list-3 {
     font-size: 5.5rem;
   }
 
-
-
 }
 
 
@@ -1062,9 +1096,6 @@ ol li, ul li .section-list-3 {
 
 /* === FOOTER === */
 
-.media-icons {
-  margin: 0;
-}
 
 .Details {
   font-size: 46px;
@@ -1131,19 +1162,6 @@ ol li, ul li .section-list-3 {
 
   .testimonial-content, .testimonial-content-longslide {
     font-size: 1.3rem;
-  }
-
-
-  /*Footer*/
-
-  .media-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 250px 0px 250px;
   }
 
 }
@@ -1264,15 +1282,7 @@ ol li, ul li .section-list-3 {
   }
 
 
-  /* .section-content {
-    padding: 20px;
-  } */
-
   /* === FOOTER === */
-
-  .media-icons {
-  margin: 0px 150px 0px 150px
-}
 
 .Details {
   font-size: 39px;
@@ -1466,11 +1476,6 @@ footer p {
     padding-bottom: .4rem;
   }
 
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: auto;
-  }
-
   footer p {
     font-size: 13.9px;
 }
@@ -1615,11 +1620,6 @@ text-align: center;
   .contact {
     padding-top: 1rem;
     padding-bottom: .4rem;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 0px 48px;
   }
 
   footer p {

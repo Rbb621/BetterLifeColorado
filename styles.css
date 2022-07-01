@@ -30,7 +30,6 @@ html,body{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /* animation: transitionIn 0.75s; */
 }
 
 
@@ -46,7 +45,9 @@ p {
 
 
 
-/* ==== MISC. ====*/
+/***************************************/
+        /* Links */
+/***************************************/
 
 .link {
   color: var(--white);
@@ -57,6 +58,10 @@ p {
 .link:hover {
   color: var(--navlinkdropdownmenu);
 }
+
+/***************************************/
+        /* Header */
+/***************************************/
 
 .header {
   text-transform: uppercase;
@@ -84,7 +89,9 @@ p {
 }
 
 
-/* ====  KEYFRAMES ==== */
+/***************************************/
+        /* Keyframes */
+/***************************************/
 
 .fade-up {
   opacity: 0;
@@ -131,9 +138,9 @@ p {
   }
 
 
-/* ==== NAVBAR ==== */
-
-
+  /***************************************/
+            /* Navbar */
+  /***************************************/
 
 .logo {
   width: 190px;
@@ -154,13 +161,14 @@ p {
 :focus-visible {
   outline-color: none;
   outline-style: none;
-  outline-width: 0
-  ;
+  outline-width: 0;
 }
 
 
 
-/* ==== DROPDOWN-MENU ==== */
+/***************************************/
+        /* Dropdown-Menu */
+/***************************************/
 
 
   .nav-link {
@@ -198,8 +206,9 @@ p {
       background: var(--headerbackground);
     }
 
-/* ==== WECLOME SECTION ==== */
-
+/***************************************/
+        /* Welcome Section */
+/***************************************/
 
 
 #client {
@@ -210,7 +219,6 @@ p {
   line-height: 0;
   background-repeat: round;
   background-size: cover;
-
 }
 
 .menu-wrap {
@@ -229,6 +237,8 @@ p {
   text-align: center;
   line-height: 0;
 }
+
+/* Let's Talk! Button */
 
 
 #client .button {
@@ -255,6 +265,8 @@ p {
   transition: .2s;
 }
 
+/* Greeting Message */
+
 .greeting {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -264,7 +276,9 @@ p {
 }
 
 
-/* ==== ABOUT US ==== */
+/***************************************/
+        /* About Us */
+/***************************************/
 
 /* Heading */
 
@@ -318,7 +332,9 @@ p {
 }
 
 
-/* ==== OUR GOAL ==== */
+/***************************************/
+        /* Our Goal */
+/***************************************/
 
 #mission {
   background-image: linear-gradient(288deg, var(--headerbackground)  2%, rgba(0,255,66,0) 150%), url(images/YoungAdults.jpeg);
@@ -332,7 +348,12 @@ p {
 
 
 
-/* ==== SPECIALTIES ==== */
+/***************************************/
+        /* Specialities */
+/***************************************/
+
+
+/* Container-Specialties */
 
 #specialties {
   background: var(--limegreen)
@@ -343,6 +364,32 @@ p {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+
+.section-bg-specialties {
+  padding: 120px 0;
+}
+
+.section-bg-specialties::before {
+    content: "";
+    background: var(--white);
+    bottom: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+}
+
+#specialties .title-box {
+  max-width: 800px;
+  margin: 0 auto 1.8125em;
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+}
+
+/* Header */
 
 .specialties-header {
   text-transform: uppercase;
@@ -369,19 +416,7 @@ p {
   transform: translateX(-50%);
 }
 
-.section-bg-specialties {
-  padding: 120px 0;
-}
-
-.section-bg-specialties::before {
-    content: "";
-    background: var(--white);
-    bottom: 60px;
-    top: 60px;
-    left: 0;
-    right: 0;
-    transform: skewY(-3deg);
-}
+/* Specialties Icons */
 
 .emotionals {
   display: flex;
@@ -407,24 +442,16 @@ p {
   filter: grayscale(0);
 }
 
+/* Specialties Text */
+
 .emotional_text {
   margin-top: 15px;
   text-align: center;
 }
 
-
-#specialties .title-box {
-  max-width: 800px;
-  margin: 0 auto 1.8125em;
-  text-align: center;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
-}
-
-
-/* ==== STAFF ==== */
+/***************************************/
+        /* Work With Us - Staff */
+/***************************************/
 
 
 .profile_staff {
@@ -523,7 +550,9 @@ section {
    display: block;
  }
 
-/* ==== TELEHEALTH ==== */
+ /***************************************/
+         /* Telehealth */
+ /***************************************/
 
 
 #Telehealth {
@@ -538,14 +567,6 @@ max-width: 1170px;
 margin: 0 auto;
 }
 
-.TelehealthHeading {
-  font-size: 3.5em;
-  font-weight: 900;
-  color: var(--white);
-  margin-top: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
 .text-box {
   line-height: 1.6;
   max-width: 37ch;
@@ -557,7 +578,9 @@ margin: 0 auto;
 }
 
 
-/* ==== OFFICE ==== */
+/***************************************/
+        /* Office */
+/***************************************/
 
 
 #Office {
@@ -565,14 +588,6 @@ margin: 0 auto;
   width: 100%;
   background-size: cover;
   background-repeat: round;
-}
-
-.OfficeHeading {
-  text-align: left;
-  font-size: 3.5em;
-  font-weight: 900;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
 }
 
 .text-box-office {
@@ -587,8 +602,16 @@ margin: 0 auto;
   font-weight: 700;
 }
 
+.OfficeHeading {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Poppins',sans-serif;
+}
 
-/* ==== FOOTER ==== */
+
+/***************************************/
+        /* Footer */
+/***************************************/
 
 footer .container {
 max-width: 1170px;
@@ -645,16 +668,11 @@ footer p {
 
 /*=== CONTACT ===*/
 
-.connect {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 46px;
-  font-weight: 600;
-}
 
 .media-icons {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .phone-icon {
@@ -697,13 +715,13 @@ footer p {
 
 
 
-/* =================  MEDIA ================= */
+/***************************************/
+        /* Media */
+/***************************************/
 
 
 
 @media (min-width: 1500px) {
-
-/* ====  WELCOME SECTION 1500PX ==== */
 
   .greeting {
     text-align: center;
@@ -711,10 +729,11 @@ footer p {
   }
 
   .media-icons  {
-    margin: 0px 5em;
+    margin: 0px 1em;
   }
 
 }
+
 
 @media (max-width: 1450px) {
 
@@ -733,9 +752,6 @@ footer p {
     transform: translateX(-50%);
   }
 
-  .media-icons  {
-    margin: 0px 5em;
-  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -777,9 +793,6 @@ footer p {
 
 /* ==== FOOTER 1024px ==== */
 
-.media-icons {
-  margin: 0 4em;
-}
 
 .Details {
   font-size: 46px;
@@ -827,8 +840,6 @@ footer p {
 
 .media-icons {
   padding-bottom: 1rem;
-  margin: 0px 24em;
-
   }
 
 
@@ -893,9 +904,6 @@ footer p {
     font-size: 15px;
   }
 
-  .media-icons {
-    margin: 0px 17em;
-  }
 
 }
 
@@ -1002,7 +1010,6 @@ display: block;
 
   .media-icons {
       padding-bottom: 1rem;
-      margin: 0px 12em;
   }
 
   footer p {
@@ -1100,9 +1107,6 @@ display: block;
     font-size: 19px;
 }
 
-.media-icons {
-  margin: 0px 8em;
-}
 
 }
 
@@ -1145,9 +1149,6 @@ footer p {
   font-size: 15px;
 }
 
-.media-icons {
-  margin: 0px 5em;
-}
 
 }
 
@@ -1183,10 +1184,6 @@ footer p {
 
 .specialties-header {
     font-size: 20px;
-}
-
-.media-icons {
-  margin: 0px 3em;
 }
 
 }

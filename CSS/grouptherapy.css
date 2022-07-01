@@ -318,17 +318,10 @@ footer p {
 
 /*=== CONTACT ===*/
 
-.connect {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
 .media-icons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 35px 0px 35px;
+  padding-bottom: 1rem;
 }
 
 .phone-icon {
@@ -375,6 +368,11 @@ footer p {
 @media (min-width: 1500px) {
   .greeting {
     text-align: center;
+  }
+
+  .media-icons  {
+    margin: 0px 1em;
+    padding-bottom: 1rem;
   }
 }
 
@@ -448,32 +446,6 @@ footer p {
   }
 
 
-
-
-
-/*992px */
-
-
-@media (max-width: 991px) {
-
-
-
-  /*Footer*/
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 150px 0px 150px;
-  }
-
-  .media-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-}
-
-
-
 /*768px */
 
 
@@ -520,10 +492,6 @@ footer p {
 
 
 /* === FOOTER === */
-
-.media-icons {
-margin: 0px 150px 0px 150px;
-}
 
 .Details {
 font-size: 39px;
@@ -601,11 +569,6 @@ font-size: 39px;
 .contact {
   padding-top: 1rem;
   padding-bottom: .4rem;
-}
-
-.media-icons {
-  padding-bottom: 1rem;
-  margin: auto;
 }
 
 footer p {

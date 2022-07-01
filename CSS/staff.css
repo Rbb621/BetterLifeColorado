@@ -265,17 +265,10 @@ footer p {
 
 /*=== CONTACT ===*/
 
-.connect {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
 .media-icons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 35px 0px 35px;
+  padding-bottom: 1rem;
 }
 
 .phone-icon {
@@ -322,10 +315,6 @@ footer p {
   max-width: 320px;
 }
 
-.media-icons {
-  margin: 0;
-}
-
 .Details {
   font-size: 46px;
 }
@@ -354,19 +343,11 @@ footer p {
         padding: 0 50px;
     }
 
-    .media-icons {
-      padding-bottom: 1rem;
-      margin: 0px 150px 0px 150px;
-    }
 
 }
 
 @media (max-width: 768px) {
   /* Footer */
-
-  .media-icons {
-  margin: 0px 150px 0px 150px
-}
 
 .Details {
   font-size: 39px;
@@ -396,11 +377,6 @@ footer p {
         padding: 0 10px;
     }
 
-    .media-icons {
-      margin: auto;
-      padding-bottom: 1rem;
-    }
-
   #about-intro {
     padding: 0;
     padding-bottom: 5em;
@@ -425,11 +401,6 @@ footer p {
 .contact {
   padding-top: 1rem;
   padding-bottom: .4rem;
-}
-
-.media-icons {
-  padding-bottom: 1rem;
-  margin: auto;
 }
 
 footer p {

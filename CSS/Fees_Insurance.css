@@ -453,6 +453,12 @@ margin-top: 20px;
 
 /* === FOOTER === */
 
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
 footer .container {
 max-width: 1170px;
 padding: 0 20px;
@@ -521,19 +527,6 @@ footer p {
 
 
 /*=== CONTACT ===*/
-
-.connect {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.media-icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 35px 0px 35px;
-}
 
 .phone-icon {
   border: 2px solid var(--white);
@@ -704,29 +697,9 @@ footer p {
 
 /* === FOOTER === */
 
-.media-icons {
-  margin: 0;
-}
-
 .Details {
   font-size: 46px;
 }
-
-}
-
-@media (max-width: 992px) {
-
-  .media-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /*Footer*/
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px 150px 0px 150px;
-  }
 
 }
 
@@ -809,10 +782,6 @@ footer p {
   }
 
   /* === FOOTER === */
-
-  .media-icons {
-  margin: 0px 150px 0px 150px
-}
 
 .Details {
   font-size: 39px;
@@ -913,11 +882,6 @@ ul {
   padding-bottom: .4rem;
 }
 
-.media-icons {
-  padding-bottom: 1rem;
-  margin: auto;
-}
-
 footer p {
   font-size: 13.9px;
 }
@@ -962,11 +926,6 @@ footer p {
   .connect {
     padding-top: 1rem;
     padding-bottom: .4rem;
-  }
-
-  .media-icons {
-    padding-bottom: 1rem;
-    margin: 0px;
   }
 
   .textbox-insurance {
