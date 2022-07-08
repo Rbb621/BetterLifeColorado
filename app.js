@@ -30,6 +30,38 @@ function show_image(i){
   dots[index].className += "  active";
 }
 
+//**********************************
+//        Sticky Navbar
+//**********************************
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+//**********************************
+//        Skeleton Loading
+//**********************************
+
+// const grid = document.querySelector('.grid')
+// const cardTemplate = document.getElementById('cardTemplate')
+// for (let i = 0; i < = 10)
+//
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then
+
+//**********************************
+//        Dropdown
+//**********************************
 
 
 

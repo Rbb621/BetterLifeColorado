@@ -66,6 +66,13 @@ hr {
         /* Navbar */
 /***************************************/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 .logo {
   width: 190px;
   margin-right: 1em;
@@ -184,6 +191,7 @@ hr {
       -webkit-text-stroke: 3px #fff;
       font-size: 10rem;
       text-align: center;
+      margin-top: 1em;
     }
 
 
@@ -354,8 +362,9 @@ margin: 0 auto;
 .title-text-typesmaller h1 {
   color: transparent;
   -webkit-text-stroke: 3px #fff;
-  font-size: 10rem;
+  font-size: 8rem;
   text-align: center;
+  margin-top: 1em;
 }
 
 
@@ -1131,7 +1140,7 @@ section {
 
   /* --- Depression --- */
 
-  .title-text-depression h1 {
+  .title-text-typesmaller h1 {
     font-size: 8rem;
   }
 
@@ -1188,7 +1197,7 @@ section {
 
   /* --- Depression --- */
 
-  .title-text-depression {
+  .title-text-typesmaller {
     font-size: 8rem;
     text-align: center;
     padding: 2px;
@@ -1360,8 +1369,9 @@ footer p {
 
 /* --- Depression --- */
 
-.title-text-depression h1 {
+.title-text-typesmaller h1 {
   font-size: 6rem;
+  margin-top: 2em;
 }
 
 /* --- Eating Disorder --- */
@@ -1488,8 +1498,9 @@ footer p {
 
   /* --- Depression --- */
 
-  .title-text-depression h1 {
+  .title-text-typesmaller h1 {
     font-size: 4rem;
+    margin-top: 4em;
   }
 
   .section-title {
@@ -1636,8 +1647,9 @@ text-align: center;
 
   /* --- Depression --- */
 
-  .title-text-depression h1 {
-    font-size: 3rem;
+  .title-text-typesmaller h1 {
+    font-size: 4rem;
+    margin-top: 4em;
   }
 
   .emotional_text {

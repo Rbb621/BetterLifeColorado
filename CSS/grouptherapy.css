@@ -38,7 +38,10 @@ h2 {
   text-decoration: underline;
 }
 
-/* === Misc. ===*/
+
+/***************************************/
+            /* Misc. */
+/***************************************/
 
 .link {
   color: var(--black);
@@ -50,15 +53,16 @@ h2 {
 }
 
 
-/* .fade-in {
-  opacity: 0;
-  transition: opacity 250ms;
-} */
+/***************************************/
+            /* NavBar */
+/***************************************/
 
-
-/* ===NavBar=== */
-
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 
 .logo {
   width: 190px;
@@ -69,9 +73,24 @@ h2 {
     color: var(--darkgreen);
 }
 
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+   border: none;
+}
+
+:focus-visible {
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0
+  ;
+}
 
 
-/* ==== DROPDOWN-MENU ==== */
+
+/***************************************/
+          /* DROPDOWN-MENU */
+/***************************************/
 
 
   .nav-link {
@@ -105,24 +124,6 @@ h2 {
       background: var(--headerbackground);
     }
 
-
-
-/*Dropdown Menu*/
-
-.btn:focus,.btn:active {
-   outline: none !important;
-   box-shadow: none;
-   border: none;
-}
-
-:focus-visible {
-  outline-color: none;
-  outline-style: none;
-  outline-width: 0
-  ;
-}
-
-
   .nav-link {
     display: block;
     padding: 1rem 1rem;
@@ -137,21 +138,18 @@ h2 {
     transition: .1s;
   }
 
+  .nav .nav-links .nav-item .dropdown-menu .nav-link {
+    justify-content: flex-start;
+    color: #a7b1c1;
+    font-weight: 400;
+    background: transparent;
+    padding: 15px 20px;
+  }
 
 
-
-    .nav .nav-links .nav-item .dropdown-menu .nav-link {
-        justify-content: flex-start;
-        color: #a7b1c1;
-        font-weight: 400;
-        background: transparent;
-        padding: 15px 20px;
-    }
-
-
-
-
-    /* === HEADER SECTION === */
+  /***************************************/
+            /* TITLE SECTIONS */
+  /***************************************/
 
     .grouptherapy {
       background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),url(https://stephanieberliant.files.wordpress.com/2021/08/pexels-photo-2422290.jpeg);
@@ -160,7 +158,6 @@ h2 {
       height: 100vh;
       overflow: hidden;
       position: relative;
-      /* background-attachment: fixed; */
     }
 
     .effect{
@@ -184,11 +181,14 @@ h2 {
       -webkit-text-stroke: 3px #fff;
       font-size: 10rem;
       text-align: center;
+      margin-top: 1em;
     }
 
 
+/***************************************/
+       /* GROUP THERAPY PAGE */
+/***************************************/
 
-/* ==== GROUP THERAPY PAGE ==== */
 
 #Photo {
   background-image: linear-gradient(359deg, var(--contactinfohover)  2%, rgba(0,255,66,0) 400%), url(../images/grouptherapy.jpg);
@@ -214,12 +214,14 @@ h2 {
   font-weight: 300;
 }
 
-
+/***************************************/
+            /* Header */
+/***************************************/
 
 .header {
   text-transform: uppercase;
   position: relative;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 6px;
   display: block;
   padding: 3rem;
@@ -240,6 +242,10 @@ h2 {
   transform: translateX(-50%);
 }
 
+/***************************************/
+            /* Container */
+/***************************************/
+
 .container_group {
 max-width: 1170px;
 padding: 0 20px;
@@ -247,8 +253,9 @@ margin: 0 auto;
 }
 
 
-
-/* ===FOOTER=== */
+/***************************************/
+            /* Footer */
+/***************************************/
 
 footer .container {
 max-width: 1170px;
@@ -256,14 +263,6 @@ padding: 0 20px;
 margin: 0 auto;
 }
 
-.link {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.link:hover {
-  color: var(--contactinfohover);
-}
 
 footer p {
   line-height: .8;
@@ -281,7 +280,9 @@ footer p {
   padding-top: 2em;
 }
 
-/*Better Health Info*/
+/***************************************/
+      /* Better Health Info */
+/***************************************/
 .location {
   font-weight: 700;
   line-height: 2;
@@ -299,8 +300,9 @@ footer p {
   font-weight: 600;
 }
 
-
-/*Logo*/
+/***************************************/
+            /* Logo */
+/***************************************/
 
 .bottomlogo {
   height: 280px;
@@ -315,8 +317,9 @@ footer p {
   text-align: center;
 }
 
-
-/*=== CONTACT ===*/
+/***************************************/
+          /* CONTACT */
+/***************************************/
 
 .media-icons {
   display: flex;
@@ -362,10 +365,12 @@ footer p {
   transition: .2s;
 }
 
-
-/*Media*/
+/***************************************/
+            /* Media */
+/***************************************/
 
 @media (min-width: 1500px) {
+
   .greeting {
     text-align: center;
   }
@@ -386,7 +391,7 @@ footer p {
 
 .header::before {
   content: "";
-  width: 15rem;
+  width: 50%;
   height: 5px;
   background-color: var(--headerbackground);
   bottom: 2.5rem;
@@ -416,12 +421,12 @@ footer p {
 /* ==== GROUP THERAPY ==== */
 
 .header {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 .header::before {
   content: "";
-  width: 15rem;
+  width: 50%;
   height: 5px;
   background-color: var(--headerbackground);
   bottom: 2.5rem;
@@ -462,7 +467,7 @@ footer p {
   .header {
     text-transform: uppercase;
     position: relative;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     letter-spacing: 4px;
     display: block;
     padding: 3rem;
@@ -517,7 +522,7 @@ font-size: 39px;
 .header {
   text-transform: uppercase;
   position: relative;
-  font-size: 3.2rem;
+  font-size: 2rem;
   letter-spacing: 4px;
   display: block;
   padding: 3rem;
@@ -527,7 +532,7 @@ font-size: 39px;
 
 .header::before {
   content: "";
-  width: 15rem;
+  width: 50%;
   height: 5px;
   background-color: var(--headerbackground);
   bottom: 2.5rem;
@@ -595,7 +600,7 @@ footer p {
 
   .header::before {
     content: "";
-    width: 11rem;
+    width: 50%;
     height: 5px;
     bottom: 2.5rem;
     background-color: var(--headerbackground);

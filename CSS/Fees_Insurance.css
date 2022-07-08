@@ -39,7 +39,9 @@ section {
   min-height: 1000px;
 }
 
-/* === Misc. ===*/
+/***************************************/
+            /* Misc. */
+/***************************************/
 
 .link-contact {
   color: var(--black);
@@ -50,7 +52,9 @@ section {
   color: var(--contactinfohover);
 }
 
-/* ====  KEYFRAMES ==== */
+/***************************************/
+          /* KEYFRAMES */
+/***************************************/
 
 @keyframes fadeInLeft {
   0% {
@@ -68,7 +72,9 @@ section {
     animation: fadeInLeft 1.2s both;
   }
 
-  /* === TITLE SECTIONS === */
+/***************************************/
+          /* TITLE SECTIONS */
+/***************************************/
 
   .header-section {
     text-transform: uppercase;
@@ -94,8 +100,16 @@ section {
     transform: translateX(-50%);
   }
 
+/***************************************/
+            /* NavBar */
+/***************************************/
 
-/* ===NavBar=== */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 
 .logo {
   width: 190px;
@@ -119,7 +133,9 @@ section {
   ;
 }
 
-/* ==== DROPDOWN-MENU ==== */
+/***************************************/
+          /* DROPDOWN-MENU */
+/***************************************/
 
   .nav-link {
     display: block;
@@ -153,10 +169,6 @@ section {
     }
 
 
-
-/*Dropdown Menu*/
-
-
   .nav-link {
     display: block;
     padding: 1rem 1rem;
@@ -181,18 +193,9 @@ section {
         padding: 15px 20px;
     }
 
-/*Links*/
-
-.link {
-  color: #333;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #948f8f;
-}
-
-/* === HEADER SECTION === */
+/***************************************/
+          /* HEADER SECTION */
+/***************************************/
 
 .header {
   background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
@@ -226,9 +229,12 @@ section {
   -webkit-text-stroke: 3px #fff;
   font-size: 10rem;
   text-align: center;
+  margin-top: .25em;
 }
 
-/* === INSURANCE === */
+/***************************************/
+            /* INSURANCE */
+/***************************************/
 
 .insurance_image {
 display: flex;
@@ -261,7 +267,13 @@ margin-top: 20px;
   font-weight: 500;
 }
 
-/* ==== STAFF INFO ==== */
+/***************************************/
+          /* STAFF INFO */
+/***************************************/
+
+/***************************************/
+      /* Container Background  */
+/***************************************/
 
 #staff {
   background: var(--limegreen)
@@ -273,6 +285,9 @@ margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
 
+/***************************************/
+        /* Staff Title Section */
+/***************************************/
 .staff-header {
   text-transform: uppercase;
   position: relative;
@@ -296,6 +311,10 @@ margin-top: 20px;
   border-radius: 2rem;
   transform: translateX(-50%);
 }
+
+/***************************************/
+          /* Staff Images */
+/***************************************/
 
 .profiles {
   display: flex;
@@ -321,6 +340,9 @@ margin-top: 20px;
   filter: grayscale(0);
 }
 
+/***************************************/
+            /* Staff Name */
+/***************************************/
 .user-name {
   margin-top: 15px;
   font-size: 24.3px;
@@ -350,7 +372,9 @@ margin-top: 20px;
   font-size: 19px;
 }
 
-/* === SLIDING SCALE === */
+/***************************************/
+        /*  SLIDING SCALE  */
+/***************************************/
 
 .textbox-slider {
     font-family: 'Montserrat', sans-serif;
@@ -399,7 +423,9 @@ margin-top: 20px;
   border-bottom: 2px solid var(--headerbackground);
 }
 
-/* ==== GOOD FAITH ESTIMATE ==== */
+/***************************************/
+        /* GOOD FAITH ESTIMATE */
+/***************************************/
 
 .title-box h2 {
   font-size: 1.5em;
@@ -428,7 +454,9 @@ margin-top: 20px;
     font-size: 17px;
 }
 
-/* ===== Bullet Points ===== */
+/***************************************/
+        /* Bullet Points */
+/***************************************/
 
 #GFE .textbox ul li {
     position: relative;
@@ -451,7 +479,9 @@ margin-top: 20px;
     line-height: 1.5;
   }
 
-/* === FOOTER === */
+/***************************************/
+            /* FOOTER */
+/***************************************/
 
 .media-icons {
   display: flex;
@@ -490,7 +520,10 @@ footer p {
   padding-top: 2em;
 }
 
-/* BETTER HEALTH INFO */
+/***************************************/
+        /* BETTER HEALTH INFO */
+/***************************************/
+
 .location {
   font-weight: 700;
   line-height: 2;
@@ -508,8 +541,9 @@ footer p {
   font-weight: 600;
 }
 
-
-/* LOGO */
+/***************************************/
+            /* LOGO */
+/***************************************/
 
 .bottomlogo {
   height: 280px;
@@ -525,8 +559,9 @@ footer p {
   text-align: center;
 }
 
-
-/*=== CONTACT ===*/
+/***************************************/
+            /* CONTACT */
+/***************************************/
 
 .phone-icon {
   border: 2px solid var(--white);
@@ -564,8 +599,9 @@ footer p {
   transition: .2s;
 }
 
-
-/*Media*/
+/***************************************/
+            /* Media */
+/***************************************/
 
 @media (min-width: 1500px) {
   .textbox {

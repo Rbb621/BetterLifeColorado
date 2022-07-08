@@ -137,6 +137,17 @@ p {
     }
   }
 
+  @keyframes skeleton-loading {
+    0% {
+      background-color: var(--grey)(200, 20%, 70%);
+    }
+
+    100% {
+      background-color: var(--grey)(200, 20%, 95%);
+    }
+  }
+
+
 
   /***************************************/
             /* Navbar */
@@ -162,6 +173,13 @@ p {
   outline-color: none;
   outline-style: none;
   outline-width: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 
@@ -215,7 +233,7 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(235, 223, 223, 0.6));
   background-image: url(images/Nature.jpeg);
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   line-height: 0;
   background-repeat: round;
   background-size: cover;
@@ -453,6 +471,22 @@ p {
         /* Work With Us - Staff */
 /***************************************/
 
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: .5rem;
+  margin-bottom: .25rem;
+  border-radius: .125rem;
+}
+
+.skelteon-text:last-child {
+  margin-bottom: 0;
+  width: 80%
+}
 
 .profile_staff {
   font-family: 'Poppins',sans-serif;

@@ -49,10 +49,16 @@ p {
   font-weight: 300;
 }
 
+/***************************************/
+        /* NavBar */
+/***************************************/
 
-/* ===NavBar=== */
-
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 
 .logo {
   width: 190px;
@@ -64,8 +70,9 @@ p {
 }
 
 
-
-/* ==== DROPDOWN-MENU ==== */
+/***************************************/
+      /*  DROPDOWN-MENU  */
+/***************************************/
 
 
 .btn:focus,.btn:active {
@@ -112,8 +119,9 @@ p {
       background: var(--headerbackground);
     }
 
-
-/*Staff*/
+/***************************************/
+            /* Staff */
+/***************************************/
 
 .staff_name {
   font-size: 2.5em;
@@ -129,7 +137,7 @@ p {
 
 
 #about-intro {
-    padding: 7em 0 3.125em 0;
+    padding: 12em 0 3.125em 0;
 }
 
 #about-intro .container {
@@ -165,7 +173,9 @@ p {
     margin-bottom: (2.9375em / 2);
 }
 
-/*Staff Button*/
+/***************************************/
+          /*Staff Button*/
+/***************************************/
 
 #about-intro .button {
   -webkit-appearance: none;
@@ -189,13 +199,14 @@ p {
 
 
 
-
-/* ===FOOTER=== */
+/***************************************/
+            /* FOOTER */
+/***************************************/
 
 footer .container {
-max-width: 1170px;
-padding: 0 20px;
-margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .link {
@@ -222,8 +233,10 @@ footer p {
   font-family: 'Poppins';
   padding-top: 2em;
 }
+/***************************************/
+      /* Better Health Info */
+/***************************************/
 
-/*Better Health Info*/
 .location {
   font-weight: 700;
   line-height: 2;
@@ -241,8 +254,9 @@ footer p {
   font-weight: 600;
 }
 
-
-/*Logo*/
+/***************************************/
+          /* Logo Section*/
+/***************************************/
 
 .bottomlogo {
   height: 280px;
@@ -262,8 +276,9 @@ footer p {
   text-align: center;
 }
 
-
-/*=== CONTACT ===*/
+/***************************************/
+          /* Contact */
+/***************************************/
 
 .media-icons {
   display: flex;
@@ -307,6 +322,10 @@ footer p {
   border: 2px solid var(--contactinfohover);
   transition: .2s;
 }
+
+/***************************************/
+              /* Media */
+/***************************************/
 
 @media (max-width: 1024px) {
 
@@ -380,6 +399,7 @@ footer p {
   #about-intro {
     padding: 0;
     padding-bottom: 5em;
+    padding-top: 8em;
 }
 
 /* === FOOTER === */
