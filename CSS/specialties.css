@@ -944,12 +944,15 @@ section {
     text-align: center;
   }
 
-  /*=== CONTACT ===*/
+  /***************************************/
+            /* Contact */
+  /***************************************/
 
   .media-icons {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     padding-bottom: 1rem;
+    margin: 3px;
   }
 
   .phone-icon {

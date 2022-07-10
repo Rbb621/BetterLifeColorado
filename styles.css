@@ -644,7 +644,7 @@ margin: 0 auto;
 
 
 /***************************************/
-        /* Footer */
+            /* Footer */
 /***************************************/
 
 footer .container {
@@ -668,7 +668,9 @@ footer p {
   padding-top: 2em;
 }
 
-/* ==== BETTER HEALTH INFO ==== */
+/***************************************/
+      /* Better Health Details */
+/***************************************/
 
 
 .footer-hours {
@@ -684,7 +686,9 @@ footer p {
 }
 
 
-/* ==== LOGO ==== */
+/***************************************/
+        /* Logo Section */
+/***************************************/
 
 .bottomlogo {
   height: 280px;
@@ -700,13 +704,16 @@ footer p {
 }
 
 
-/*=== CONTACT ===*/
+/***************************************/
+            /* Contact */
+/***************************************/
 
 
 .media-icons {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   padding-bottom: 1rem;
+  margin: 3px;
 }
 
 .phone-icon {

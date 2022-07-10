@@ -484,9 +484,10 @@ margin-top: 20px;
 /***************************************/
 
 .media-icons {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   padding-bottom: 1rem;
+  margin: 3px;
 }
 
 footer .container {
