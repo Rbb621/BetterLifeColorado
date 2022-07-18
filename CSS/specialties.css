@@ -257,9 +257,9 @@ hr {
   border:none;
   color:var(--darkgreen);
   font-family:'Times New Roman',sans-serif;
-  font-size:3em;
-  font-weight:bold;
-  line-height:41px;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 41px;
   padding: 0px 16px 0px 16px;
   width: 20px;
 }
@@ -1517,7 +1517,7 @@ footer p {
   }
 
   .header {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .emotional_text {
@@ -1530,6 +1530,10 @@ footer p {
 
   .header-white {
     font-size: 1.4rem
+  }
+
+  .white-emotional_text {
+    font-size: 24px;
   }
 
   /* Eating Disorder */
@@ -1643,6 +1647,14 @@ text-align: center;
 .section-content {
   padding: 10px;
 }
+
+}
+
+@media (max-width: 390px) {
+
+  .header {
+    font-size: 1rem;
+  }
 
 }
 
