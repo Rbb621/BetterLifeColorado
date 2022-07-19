@@ -160,6 +160,16 @@ hr {
             /* Header Section */
     /***************************************/
 
+    .title-substance {
+      background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),
+      url(https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+      -webkit-background-size: cover;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
     .title {
       background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
       -webkit-background-size: cover;
