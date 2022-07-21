@@ -687,7 +687,7 @@ section {
 .section-content-card {
   color: var(--white);
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  letter-spacing: 1.2px;
   margin-top: 1em;
   text-align: center;
 }
@@ -717,12 +717,25 @@ section {
   color: var(--white);
 }
 
+.section-content-question {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  padding: 1em;
+}
+
 .scrabble {
   float: right;
 }
 
 .section-content-3-eatingdisorders {
   margin-top: 1em;
+}
+
+.card-background {
+  background-color: var(--lightbrown);
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  padding: 1em;
 }
 
 /*****************************************************/
@@ -1663,7 +1676,7 @@ text-align: center;
 @media (max-width: 390px) {
 
   .header {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
 }
