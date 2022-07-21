@@ -417,6 +417,17 @@ margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: left;
+}
+
+.section-content-center {
+  color: var(--white);
+  position: relative;
+  line-height: 1.7;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -933,7 +944,10 @@ section {
     padding-top: 2em;
   }
 
-  /*Better Health Info*/
+  /*****************************************************/
+          /* === BETTER HEALTH INFO === */
+  /*****************************************************/
+
   .location {
     font-weight: 700;
     line-height: 2;
@@ -951,7 +965,9 @@ section {
     font-weight: 600;
   }
 
-  /*Logo*/
+  /*****************************************************/
+                /* === LOGO SECTION === */
+  /*****************************************************/
 
   .bottomlogo {
     height: 280px;
@@ -967,9 +983,9 @@ section {
     text-align: center;
   }
 
-  /***************************************/
-            /* Contact */
-  /***************************************/
+/***************************************/
+            /* CONTACT */
+/***************************************/
 
   .media-icons {
     display: inline-block;
@@ -1006,9 +1022,6 @@ section {
     transition: .5s;
   }
 
-
-  /*Hover */
-
   .email-icon:hover {
     color: var(--contactinfohover);
     border: 2px solid var(--contactinfohover);
@@ -1017,46 +1030,65 @@ section {
 
 
 
-  /*****************************************************/
-                /* Media Queries */
-  /*****************************************************/
+/*****************************************************/
+              /* Media Queries */
+/*****************************************************/
 
 @media (min-width: 1500px) {
+
+  /*****************************************************/
+                /* === WELCOME === */
+  /*****************************************************/
+
   .greeting {
     text-align: center;
   }
 
-  .header {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    letter-spacing: 6px;
-    display: block;
-    padding: 3rem;
-    font-weight: 900;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-  }
+/*****************************************************/
+              /* === HEADER === */
+/*****************************************************/
 
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--headerbackground);
-    bottom: 2.2rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
-  }
+.header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  display: block;
+  padding: 3rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+}
 
-  /* --- Depression --- */
+.header::before {
+  content: "";
+  width: 15rem;
+  height: 5px;
+  background-color: var(--headerbackground);
+  bottom: 2.2rem;
+  left: 50%;
+  position: absolute;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+/*****************************************************/
+              /* === SECTION CONTENT === */
+/*****************************************************/
 
   .section-content-subtitle {
     padding: 20px;
   }
 }
 
+/*****************************************************/
+              /* === 1450px === */
+/*****************************************************/
+
 @media (max-width: 1450px) {
+
+  /*****************************************************/
+                /* === HEADER === */
+  /*****************************************************/
 
 
   .header {
@@ -1082,7 +1114,9 @@ section {
     transform: translateX(-50%);
   }
 
-  /* --- Depression --- */
+  /*****************************************************/
+                /* === SECTION-CONTENT === */
+  /*****************************************************/
 
   .section-content-subtitle {
     padding: 20px;
@@ -1093,15 +1127,19 @@ section {
     font-size: 14px;
   }
 
+  /*****************************************************/
+                /* === IMAGES === */
+  /*****************************************************/
+
   .treatment-icon {
     height: 180px;
     width: 180px;
     margin-top: 30px;
   }
 
-  /* --- Relational Conflict --- */
-
-  /* === SECTION #2: === */
+  /*****************************************************/
+                /* === IMAGES === */
+  /*****************************************************/
 
   .testimonial-header-longslide, .testimonial-header {
     font-size: 5.5rem;
@@ -1110,26 +1148,31 @@ section {
 }
 
 
-/*1024px*/
+/*****************************************************/
+              /* === 1024px === */
+/*****************************************************/
 
 @media (max-width: 1024px) {
 
-/* === TYPES OF ANXIETY WE TREAT === */
+  /*****************************************************/
+                /* === EMOTIONAL TEXT === */
+  /*****************************************************/
 
 .emotional_text {
   font-size: 26px;
 }
 
-/* --- Depression --- */
+/*****************************************************/
+          /* === SECTION CONTENT === */
+/*****************************************************/
 
 .section-content-subtitle {
   padding: 40px;
 }
 
-/* --- Relational Conflict --- *
-
-
-/* === FOOTER === */
+/*****************************************************/
+              /* === FOOTER === */
+/*****************************************************/
 
 
 .Details {
@@ -1140,7 +1183,9 @@ section {
     margin: 20px 2em;
 }
 
-/* -- Relational Conflict --- */
+/*****************************************************/
+              /* === CARD === */
+/*****************************************************/
 
 .green-card {
   box-shadow: 25px -16px var(--headerbackground);
@@ -1149,10 +1194,17 @@ section {
 }
 
 
-/*992px */
+/*****************************************************/
+                      /*992px */
+/*****************************************************/
+
 
 
 @media (max-width: 991px) {
+
+  /*****************************************************/
+                /* === HEADER === */
+  /*****************************************************/
 
   .header {
     font-size: 2.5rem;
@@ -1164,51 +1216,65 @@ section {
     bottom: 2rem;
   }
 
-  /* --- Depression --- */
+/*****************************************************/
+                /* === WELCOME === */
+/*****************************************************/
 
   .title-text-typesmaller h1 {
     font-size: 8rem;
   }
 
-  .paperbag {
-    margin: auto;
-  }
-
-  /* --- Eating Disorder --- */
+/*****************************************************/
+              /* === CARD === */
+/*****************************************************/
 
   .card {
     margin: auto;
   }
 
-  .pictures {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 300px;
-  }
+/*****************************************************/
+              /* === IMAGES === */
+/*****************************************************/
 
-  /* --- Relational Conflickt --- */
+.paperbag {
+  margin: auto;
+}
 
-  .testimonial-header-longslide, .testimonial-header {
-    font-size: 2.4rem;
-  }
+.pictures {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 300px;
+}
+
+/*****************************************************/
+              /* === TESTIMONIAL  === */
+/*****************************************************/
+
+.testimonial-header-longslide, .testimonial-header {
+  font-size: 2.4rem;
+}
 
 
-  .testimonial-content, .testimonial-content-longslide {
-    font-size: 1.3rem;
-  }
+.testimonial-content, .testimonial-content-longslide {
+  font-size: 1.3rem;
+}
 
 }
 
 
-/*768px */
+/*****************************************************/
+                      /*768px */
+/*****************************************************/
 
 
 @media (max-width: 768px) {
 
 
-  /* === WELCOME === */
+/*****************************************************/
+              /* === WELCOME SECTION === */
+/*****************************************************/
 
   .greeting {
     font-size: 3.5rem;
@@ -1219,33 +1285,24 @@ section {
     padding: 2px;
   }
 
-
-
-  /* --- Depression --- */
-
   .title-text-typesmaller {
     font-size: 8rem;
     text-align: center;
     padding: 2px;
   }
 
+/*****************************************************/
+            /* === SECTION CONTENT === */
+/*****************************************************/
+
   .section-content-subtitle {
     padding: 40px;
   }
 
 
-  /* --- Eating Disorder --- */
-
-  .pictures {
-      padding: 0;
-      height: 180px;
-      width: 350px;
-      margin: auto;
-  }
-
-  /* --- Relational Conflict --- */
-
-  /* SECTION #2: */
+/*****************************************************/
+              /* === TESTIMONIAL === */
+/*****************************************************/
 
   .home .carousel-control-next,
   .home .carousel-control-prev{
@@ -1272,52 +1329,67 @@ section {
   max-width: 80ch;
 }
 
-
-
-  .home .carousel-indicators li{
+.home .carousel-indicators li{
     height: 60px;
     width: 60px;
-  }
-  .home .carousel-item h2{
-    font-size: 45px;
-  }
-  .home .carousel-item p{
-    font-size: 22px;
-  }
+}
 
-  .cover-image {
-    height: 70vh;
-  }
+.home .carousel-item h2{
+  font-size: 45px;
+}
 
-  /* --- Anxiety --- */
+.home .carousel-item p{
+  font-size: 22px;
+}
 
-
-  /* === SECTION #2: TYPES OF ANXIETY WE TREAT === */
+.cover-image {
+  height: 70vh;
+}
 
 
-  .anxiety-treatment-icons {
-    height: 150px;
-    width: 150px;
-  }
+/*****************************************************/
+            /* === EMOTIONAL TEXT === */
+/*****************************************************/
 
-  .emotional_text {
-    font-size: 20px;
-  }
+.emotional_text {
+  font-size: 20px;
+}
 
-  /* ==== SECTION #3: WE CAN HELP WITH ANXIETY -=== */
+
+/*****************************************************/
+                /* === IMAGES === */
+/*****************************************************/
 
 .african {
   height: 300px;
 }
 
-  /* === MISC. === */
+.anxiety-treatment-icons {
+  height: 150px;
+  width: 150px;
+}
+
+.pictures {
+    padding: 0;
+    height: 250px;
+    width: 350px;
+    margin: auto;
+}
+
+
+/*****************************************************/
+                /* === HEADER === */
+/*****************************************************/
 
   .header {
     font-size: 2.5rem;
   }
 
 
-  /* === FOOTER === */
+/*****************************************************/
+              /* === FOOTER === */
+/*****************************************************/
+
 
 .Details {
   font-size: 39px;
@@ -1331,9 +1403,11 @@ footer p {
 
 /* 767px*/
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
 
-  /* SECTION #2: */
+/*****************************************************/
+              /* === TESTIMONIAL === */
+/*****************************************************/
 
   .home .carousel-control-next,
   .home .carousel-control-prev{
@@ -1360,32 +1434,35 @@ footer p {
   max-width: 80ch;
 }
 
+.home .carousel-indicators li{
+	height: 60px;
+	width: 60px;
+}
 
+.home .carousel-item h2{
+	font-size: 45px;
+}
 
-  .home .carousel-indicators li{
-  	height: 60px;
-  	width: 60px;
-  }
-  .home .carousel-item h2{
-  	font-size: 45px;
-  }
-  .home .carousel-item p{
-  	font-size: 22px;
-  }
+.home .carousel-item p{
+	font-size: 22px;
+}
 
-  .cover-image {
-    height: 80vh;
-  }
+.cover-image {
+  height: 80vh;
+}
 
 }
 
-
-/*600px */
-
+/*****************************************************/
+                    /*600px */
+/*****************************************************/
 
 @media (max-width: 600px) {
 
-/* === TITLE SECTION === */
+
+/*****************************************************/
+            /* === TITLE SECTION === */
+/*****************************************************/
 
 .title-text h1 {
     color: transparent;
@@ -1393,25 +1470,15 @@ footer p {
     font-size: 8rem;
 }
 
-/* --- Depression --- */
-
 .title-text-typesmaller h1 {
   font-size: 6rem;
   margin-top: 2em;
 }
 
-/* --- Eating Disorder --- */
 
-.pictures {
-    padding: 0;
-    height: 180px;
-    width: 350px;
-    margin: auto;
-}
-
-/* --- Relational Conflict --- */
-
-/* === SECTION #2: */
+/*****************************************************/
+              /* === TESTIMONIAL === */
+/*****************************************************/
 
 .testimonial-content {
   font-size: 12px;
@@ -1436,24 +1503,53 @@ footer p {
   height: 60vh;
 }
 
-/* --- Anxiety --- */
+/*****************************************************/
+            /* === EMOTIONAL TEXT === */
+/*****************************************************/
 
-/* SECTION #1: IS MY ANXIETY NORMAL? */
+.emotional_text {
+  font-size: 20px;
+}
 
-.circle {
-  height: 300px;
-  width: 300px;
+
+/*****************************************************/
+          /* === SECTION CONTENT === */
+/*****************************************************/
+
+.section-content-subtitle {
+  padding: 40px;
+}
+
+.section-content {
+  padding: 10px 25px;
 }
 
 .section-content {
   padding: 0 50px;
 }
 
+/*****************************************************/
+              /* ===  HEADER === */
+/*****************************************************/
 
-/* === SECTION #2: TYPES OF ANXIETY WE TREAT === */
+.header {
+  font-size: 1.5rem;
+}
 
-.emotional_text {
-  font-size: 20px;
+.header-white {
+  font-size: 2.2rem
+}
+
+.binge-list-5 {
+  margin: 1px;
+}
+
+/*****************************************************/
+                  /* === IMAGES === */
+/*****************************************************/
+
+.african {
+  height: 300px;
 }
 
 .anxiety-treatment-icons {
@@ -1461,37 +1557,21 @@ footer p {
   width: 120px;
 }
 
-/* === SECTION #3: WE CAN HELP WITH ANXIETY === */
-
-.african {
+.circle {
   height: 300px;
+  width: 300px;
 }
 
-
-.section-content-subtitle {
-  padding: 40px;
+.pictures {
+    padding: 0;
+    height: 250px;
+    width: 350px;
+    margin: 1em auto;
 }
 
-.header-white {
-  font-size: 2.2rem
-}
-
-/* === MISC. === */
-
-.header {
-  font-size: 1.5rem;
-}
-
-
-.section-content {
-  padding: 10px 25px;
-}
-
-.binge-list-5 {
-  margin: 1px;
-}
-
-  /* === FOOTER === */
+/*****************************************************/
+              /* === FOOTER === */
+/*****************************************************/
 
   .Details {
     font-size: 39px;
@@ -1518,11 +1598,16 @@ footer p {
 
 }
 
+/*****************************************************/
+                  /*=== 472px ===*/
+/*****************************************************/
 
 
 @media (max-width: 472px) {
 
-  /* --- Depression --- */
+/*****************************************************/
+              /* === GREETING === */
+/*****************************************************/
 
   .title-text-typesmaller h1 {
     font-size: 4rem;
@@ -1539,27 +1624,41 @@ footer p {
     font-size: 4rem;
   }
 
+  /*****************************************************/
+                /* === HEADER === */
+  /*****************************************************/
+
   .header {
     font-size: 1.5rem;
-  }
-
-  .emotional_text {
-    font-size: 20px;
-  }
-
-  .section-content-subtitle {
-    padding: 27px;
   }
 
   .header-white {
     font-size: 1.4rem
   }
 
+/*****************************************************/
+              /* === SECTION CONTENT === */
+/*****************************************************/
+
+  .section-content-subtitle {
+    padding: 27px;
+  }
+
+  .emotional_text {
+    font-size: 20px;
+  }
+
   .white-emotional_text {
     font-size: 24px;
   }
 
-  /* Eating Disorder */
+  .section-content {
+    padding: 10px;
+  }
+
+/*****************************************************/
+              /* === IMAGES === */
+/*****************************************************/
 
   .pictures {
     width: 300px;
@@ -1567,7 +1666,9 @@ footer p {
     height: 200px;
 }
 
-  /* SECTION #1 */
+/*****************************************************/
+              /* === CARD === */
+/*****************************************************/
 
   .card {
     background: var(--headerbackground);
@@ -1576,15 +1677,17 @@ footer p {
 }
 
 .scrabble {
-    /* float: right; */
     height: 150px;
     width: 280px;
 }
 
+.green-card {
+  width: 320px;
+}
 
-/* --- OCD --- */
-
-/* === SECTION #2: SPECIALISTS IN OCD TREATMENT === */
+/*****************************************************/
+              /* === QUOTATION === */
+/*****************************************************/
 
 .quoteonquote {
   padding: 0.2em;
@@ -1596,13 +1699,11 @@ footer p {
   height: 100px;
 }
 
-/* Relational Conflict */
 
-.green-card {
-  width: 320px;
-}
+/*****************************************************/
+              /* === TESTIMONIAL === */
+/*****************************************************/
 
-/* === SECTION #2: === */
 
 .cover-image {
   height: 50vh;
@@ -1641,7 +1742,10 @@ color: #fff;
 text-align: center;
 }
 
-/* Trauma */
+/*****************************************************/
+              /* === REFERENCE === */
+/*****************************************************/
+
 
 .section-list-ref {
   font-size: 13px;
@@ -1652,67 +1756,76 @@ text-align: center;
 }
 
 
-  /* === FOOTER === */
+/*****************************************************/
+              /* === FOOTER === */
+/*****************************************************/
 
-  .trademark {
-    text-align: center;
-  }
 
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
-  footer p {
-    font-size: 15px;
+.trademark {
+  text-align: center;
 }
 
-.section-content {
-  padding: 10px;
+.contact {
+  padding-top: 1rem;
+  padding-bottom: .4rem;
+}
+
+footer p {
+  font-size: 15px;
 }
 
 }
+
+/*****************************************************/
+              /* === 390px === */
+/*****************************************************/
 
 @media (max-width: 390px) {
 
+/*****************************************************/
+               /* === HEADER === */
+/*****************************************************/
+
   .header {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
 }
 
+/*****************************************************/
+              /* === 330px === */
+/*****************************************************/
+
 @media (max-width: 330px) {
 
-  /* --- Depression --- */
+  /*****************************************************/
+                /* === WELCOME SECTION === */
+  /*****************************************************/
 
   .title-text-typesmaller h1 {
     font-size: 4rem;
     margin-top: 4em;
   }
 
+/*****************************************************/
+              /* === EMOTIONAL TEXT === */
+/*****************************************************/
+
   .emotional_text {
     font-size: 20px;
   }
 
-  /* === Eating Disorders === */
+  /*****************************************************/
+                /* === CARD === */
+  /*****************************************************/
 
   .scrabble {
     max-width: 28ch;
   }
 
-  .section-content-1 {
-    max-width: 25ch;
-  }
-
   .card {
     width: 350px;
     padding: 1rem;
-  }
-
-  .pictures {
-  width: 280px;
-  height: 180px;
-  margin: auto;
   }
 
   .green-card {
@@ -1724,10 +1837,44 @@ text-align: center;
   }
 
 
-  /* Relational Conflict */
+/*****************************************************/
+              /* === SECTION-CONTENT === */
+/*****************************************************/
 
+  .section-content-1 {
+    max-width: 25ch;
+  }
 
-      /* === SECTION #2: === */
+  .section-title {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+
+  .section-content-subtitle {
+    padding: 25px;
+  }
+
+/*****************************************************/
+              /* === IMAGES === */
+/*****************************************************/
+
+  .pictures {
+  width: 280px;
+  height: 180px;
+  margin: auto;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+/*****************************************************/
+              /* === TESTIMONIAL === */
+/*****************************************************/
 
       .testimonial-content {
         font-size: 8.5px;
@@ -1747,33 +1894,10 @@ text-align: center;
         padding: 5px;
       }
 
-  /* === Anxiety === */
 
-  .emotional_text {
-    font-size: 20px;
-  }
-
-  .circle {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .section-title {
-    max-width: 100%;
-    font-size: 3rem;
-  }
-
-  /* --- Depression --- */
-
-  .section-content-subtitle {
-    padding: 25px;
-  }
-  /* --- OCD --- */
-
-  /* === SECTION #2: SPECIALISTS IN OCD TREATMENT === */
+/*****************************************************/
+              /* === QUOTE ON QUOTE === */
+/*****************************************************/
 
   .quoteonquote {
     padding: 0.2em;
@@ -1781,7 +1905,9 @@ text-align: center;
     font-size: 10px;
   }
 
-  /* === FOOTER === */
+/*****************************************************/
+              /* === FOOTER === */
+/*****************************************************/
 
   .Details {
     font-size: 40px;
