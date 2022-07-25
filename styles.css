@@ -222,6 +222,9 @@ p {
       box-shadow: 0 3px 6px rgb(0 0 0 / 23%), 0 3px 6px rgb(0 0 0 / 16%);
       flex-direction: column;
       background: var(--headerbackground);
+      max-height: 300px;
+      overflow-x: hidden;
+      overflow-y: scroll;
     }
 
 /***************************************/
