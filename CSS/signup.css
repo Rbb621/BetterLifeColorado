@@ -96,6 +96,30 @@ html,body{
   ;
 }
 
+.contactHeader {
+-webkit-appearance: none;
+background-color: transparent;
+border-radius: 300px;
+border: 2px solid #fafafa;
+color: #fafafa;
+cursor: pointer;
+letter-spacing: 2px;
+margin-left: auto;
+margin-right: auto;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+padding: 1em 1.25em;
+text-transform: uppercase;
+background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
+}
+
+.contactHeader:hover {
+  background: #fafafa;
+  color: var(--headerbackground);
+  transition: .2s;
+}
+
 
 
 /* ==== DROPDOWN-MENU ==== */
