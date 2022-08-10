@@ -290,7 +290,6 @@ margin-top: 20px;
   font-size: 30px;
   width: 100%;
   color: var(--black);
-  max-width: 70ch;
   font-weight: 500;
 }
 
@@ -639,6 +638,10 @@ footer p {
   .textbox-insurance {
     margin-top: 3em;
     margin-bottom: 5em;
+  }
+
+  .insurance_image {
+    margin: 20px 20px 0px 0;
   }
 }
 
