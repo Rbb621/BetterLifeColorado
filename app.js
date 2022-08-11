@@ -1,5 +1,14 @@
 'use strict';
 
+const express = require("express");
+const bodyParser = require("body-parser");
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
+
+
 show_image = (index);
 
 var index = 0;
@@ -124,3 +133,26 @@ AOS.init({
   duration: 3000,
   once: true,
 });
+<<<<<<< HEAD
+=======
+
+//**********************************************
+        //Submit Button from Signup
+//**********************************************
+
+app.post("/signup.html", function(req, res){
+
+//Destination
+  res.redirect("index.html");
+
+});
+
+
+//**********************************************
+              //app.listen
+//**********************************************
+
+app.listen(3000, function(){
+  console.log("Server started on port 3000");
+});
+>>>>>>> b0292ed90c6ea6041db3c12b05fc1a72510e1dc2

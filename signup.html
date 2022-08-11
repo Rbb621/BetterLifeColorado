@@ -122,49 +122,80 @@
       </nav>
   </header>
 
-      <!--Registration Form-->
+      <!-- REGISTRATION FORM -->
 
       <div class="container">
         <div class="content">
           <div class="left-side">
+
+            <!-- ADDRESS -->
             <div class="address details">
               <i class="fas fa-map-marker-alt"></i>
               <div class="topic">Address</div>
               <div class="text-one">950 Wadsworth Blvd. Suite #201</div>
               <div class="text-two">Lakewood, Colorado 80214</div>
             </div>
+
+            <!-- PHONE -->
             <div class="phone details">
               <i class="fas fa-phone-alt"></i>
               <div class="topic">Phone</div>
               <div class="text-one"><a class="link" href="tel:(720)-295-0530"><strong>(720) 295-0530</strong></a>,</div>
             </div>
+
+            <!-- EMAIL -->
             <div class="email details">
               <i class="fas fa-envelope"></i>
               <div class="topic">Email</div>
               <div class="text-one"><a class="link" href="mailto:betterlifecolorado@gmail.com">betterlifecolorado@gmail.com</a></div>
             </div>
           </div>
+
+          <!-- RIGHT SIDE -->
           <div class="right-side">
+
             <div class="topic-text">Send us a message</div>
-            <form action="#">
+
+            <form action="https://formsubmit.co/rbberliant@gmail.com" method="POST">
+
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+
+              <!-- Thank you page -->
+
+              <input type="hidden" name="_next" value="https://betterlifecolorado.com/thanks.html">
+
+              <!-- NAME BOX -->
               <div class="input-box">
-                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your name" required>
               </div>
+
+              <!-- INSURANCE BOX -->
               <div class="input-box">
-                <input type="text" placeholder="Insurance">
+                <input type="text" placeholder="Insurance" required>
               </div>
+
+              <!-- PHONE BOX -->
               <div class="input-box">
-                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Phone" required>
               </div>
+
+              <!-- EMAIL BOX -->
               <div class="input-box">
-                <input type="text" placeholder="Enter your email">
+                <input type="text" placeholder="Enter your email" required>
               </div>
+
+              <!-- MESSAGE BOX -->
               <div class="input-box message-box">
                   <textarea name="yourMessage" placeholder="Type Your Message Here" required rows="8" cols="29.5" maxlength='255'></textarea><br>
               </div>
+
+              <!-- SUBMIT BUTTON -->
               <div class="button">
                 <input type="button" value="Submit" onclick="window.open('mailto:rbberliant@gmail.com?subject=subject&body=body')";>
               </div>
+
+
             </form>
           </div>
         </div>
