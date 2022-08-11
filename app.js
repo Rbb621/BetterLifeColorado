@@ -95,8 +95,9 @@ $('.specialties-heading').click(function() {
         });
     });
 
-//Staff Info - fadeUp and fadeLeft/fadeRight
-
+//**********************************************
+  //Staff Info - fadeUp and fadeLeft/fadeRight
+//**********************************************
 
 
 observer.observe(document.querySelector(.profiles))
@@ -123,37 +124,3 @@ AOS.init({
   duration: 3000,
   once: true,
 });
-
-
-//Fade In Effects//
-
-
-// const faders = document.querySelectorAll('.fade-up');
-//
-// const appearOptions = {
-//   threshold: 1,
-//   rootMargin: "0px 0px -200px 0px"
-// };
-//
-// const appearOnScroll = new IntersectionObserver
-// (function(entries, appearOnScroll
-// ) {
-//   entries.forEach(entry => {
-//
-//   })
-// },
-// appearOptions);
-//
-// if (!entry.isIntersecting) {
-//       return;
-//     } else {
-//     entry.target.classList.add('appear');
-//     appearOnScroll.unobserve(entry.target);
-//   });
-// },
-// appearOptions);
-//
-//
-// faders.forEach(fader => {
-//   appearOnScroll.observe(fader);
-// })

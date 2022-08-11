@@ -174,7 +174,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px 100px;
+  margin: 100px 100px;
 }
 .container .content{
   display: flex;
@@ -285,7 +285,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 }
 @media (max-width: 820px) {
   .container{
-    margin: 40px 20px;
+    margin: 100px 20px;
     height: 100%;
   }
   .container .content{
