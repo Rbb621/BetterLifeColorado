@@ -1,5 +1,14 @@
 'use strict';
 
+const express = require("express");
+const bodyParser = require("body-parser");
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
+
+
 show_image = (index);
 
 var index = 0;
@@ -95,8 +104,9 @@ $('.specialties-heading').click(function() {
         });
     });
 
-//Staff Info - fadeUp and fadeLeft/fadeRight
-
+//**********************************************
+  //Staff Info - fadeUp and fadeLeft/fadeRight
+//**********************************************
 
 
 observer.observe(document.querySelector(.profiles))
@@ -124,36 +134,22 @@ AOS.init({
   once: true,
 });
 
+//**********************************************
+        //Submit Button from Signup
+//**********************************************
 
-//Fade In Effects//
+app.post("/signup.html", function(req, res){
+
+//Destination
+  res.redirect("index.html");
+
+});
 
 
-// const faders = document.querySelectorAll('.fade-up');
-//
-// const appearOptions = {
-//   threshold: 1,
-//   rootMargin: "0px 0px -200px 0px"
-// };
-//
-// const appearOnScroll = new IntersectionObserver
-// (function(entries, appearOnScroll
-// ) {
-//   entries.forEach(entry => {
-//
-//   })
-// },
-// appearOptions);
-//
-// if (!entry.isIntersecting) {
-//       return;
-//     } else {
-//     entry.target.classList.add('appear');
-//     appearOnScroll.unobserve(entry.target);
-//   });
-// },
-// appearOptions);
-//
-//
-// faders.forEach(fader => {
-//   appearOnScroll.observe(fader);
-// })
+//**********************************************
+              //app.listen
+//**********************************************
+
+app.listen(3000, function(){
+  console.log("Server started on port 3000");
+});
