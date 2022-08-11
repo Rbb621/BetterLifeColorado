@@ -128,6 +128,15 @@
         <h1>Send Us a Message</h1>
 
         <form class="row g-3" action="https://formsubmit.co/a4713675824c7832be9c50243d9fb34f" method="POST">
+
+          <!--Honeypot -->
+          <input type="text" name="_honey" value="display: none;">
+
+          <!-- Disable Captcha -->
+
+          <input type="hidden" name="_captcha" value="false">
+
+
           <div class="col-md-6">
             <input type="text" class="form-control" id="firstName" name="First Name" placeholder="First Name" required>
           </div>
