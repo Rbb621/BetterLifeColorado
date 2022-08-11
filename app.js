@@ -133,26 +133,3 @@ AOS.init({
   duration: 3000,
   once: true,
 });
-<<<<<<< HEAD
-=======
-
-//**********************************************
-        //Submit Button from Signup
-//**********************************************
-
-app.post("/signup.html", function(req, res){
-
-//Destination
-  res.redirect("index.html");
-
-});
-
-
-//**********************************************
-              //app.listen
-//**********************************************
-
-app.listen(3000, function(){
-  console.log("Server started on port 3000");
-});
->>>>>>> b0292ed90c6ea6041db3c12b05fc1a72510e1dc2
