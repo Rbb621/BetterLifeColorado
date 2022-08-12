@@ -109,7 +109,7 @@ $('.specialties-heading').click(function() {
 //**********************************************
 
 
-observer.observe(document.querySelector(.profiles))
+observer.observe(document.querySelector(profiles))
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
