@@ -39,10 +39,10 @@ section {
   min-height: 1000px;
 }
 
-hr {
+/* hr {
   width: 60%;
   margin: auto;
-}
+} */
 
 .default {
   width: 80%;
@@ -55,6 +55,11 @@ hr {
 
 .link {
   var(--white);
+  text-decoration: none;
+}
+
+.link-contact {
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -191,6 +196,16 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
     .title-substance {
       background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),
       url(https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+      -webkit-background-size: cover;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .title-resources {
+      background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),
+      url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80);
       -webkit-background-size: cover;
       background-size: cover;
       height: 100vh;
