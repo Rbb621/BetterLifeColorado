@@ -26,6 +26,7 @@ html,body{
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    background: #fbfbfb;
 }
 
 
@@ -284,14 +285,22 @@ margin: 0 auto;
             /* Footer */
 /***************************************/
 
-footer .container {
-max-width: 1170px;
-padding: 0 20px;
-margin: 0 auto;
+.link {
+  color: var(--white);
+  text-decoration: none;
 }
 
+.link:hover {
+  color: var(--contactinfohover);
+}
 
-footer p {
+footer .container {
+  max-width: 1170px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+footer .copyright {
   line-height: .8;
   font-family: "Poppins";
   font-weight: 500;
@@ -303,8 +312,28 @@ footer p {
   overflow: hidden;
   background: var(--headerbackground);
   color: var(--white);
-  font-family: 'Poppins';
   padding-top: 2em;
+  text-align: center;
+}
+
+.Footer-metaDivider {
+    color: #939598;
+    padding: 0 10px;
+}
+
+.Footer-info {
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14286;
+    color: #7a3526;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.copyright {
+  text-align: center;
 }
 
 /***************************************/
@@ -414,15 +443,22 @@ footer p {
 /* ==== GROUP THERAPY ==== */
 
 .header {
-  font-size: 4.5rem;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Poppins',sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  letter-spacing: 3px;
 }
 
 .header::before {
   content: "";
-  width: 50%;
+  width: 15rem;
   height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.5rem;
+  background-color: var(--signup);
+  bottom: 0.3rem;
   left: 50%;
   position: absolute;
   border-radius: 2rem;
@@ -452,18 +488,6 @@ footer p {
   font-size: 3.5rem;
 }
 
-.header::before {
-  content: "";
-  width: 50%;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.5rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
-
 /* === FOOTER === */
 
 .media-icons {
@@ -473,8 +497,6 @@ footer p {
 .Details {
   font-size: 46px;
 }
-
-
 
   }
 
@@ -493,26 +515,7 @@ footer p {
 
 
   .header {
-    text-transform: uppercase;
-    position: relative;
     font-size: 2.5rem;
-    letter-spacing: 4px;
-    display: block;
-    padding: 3rem;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .header::before {
-    content: "";
-    width: 15rem;
-    height: 5px;
-    background-color: var(--headerbackground);
-    bottom: 2.5rem;
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
   }
 
   .GTDetails {
@@ -548,27 +551,9 @@ font-size: 39px;
 }
 
 .header {
-  text-transform: uppercase;
-  position: relative;
   font-size: 2rem;
-  letter-spacing: 4px;
-  display: block;
-  padding: 3rem;
-  font-weight: 700;
-  text-align: center;
 }
 
-.header::before {
-  content: "";
-  width: 50%;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.5rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
 
 .container_group {
     max-width: 1170px;
@@ -620,22 +605,6 @@ footer p {
       -webkit-text-stroke: 3px #fff;
       font-size: 5rem;
       text-align: center;
-  }
-
-  .header {
-    font-size: 2rem;
-  }
-
-  .header::before {
-    content: "";
-    width: 50%;
-    height: 5px;
-    bottom: 2.5rem;
-    background-color: var(--headerbackground);
-    left: 50%;
-    position: absolute;
-    border-radius: 2rem;
-    transform: translateX(-50%);
   }
 
   #Photo {

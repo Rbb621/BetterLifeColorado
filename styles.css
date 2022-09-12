@@ -565,13 +565,14 @@ section {
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Poppins',sans-serif;
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
+  letter-spacing: 3px;
 }
 
 .section-title h2::after {
@@ -579,7 +580,7 @@ section {
   width: 12rem;
   height: 5px;
   display: block;
-  background: var(--darkgreen);
+  background: var(--signup);
   left: 50%;
   bottom: 0;
   position: absolute;
@@ -600,13 +601,13 @@ section {
 
 .section-bg::before {
   content: "";
-  background: var(--headerbackground);
+  background: #CFD2CF;
   position: absolute;
-  bottom: 60px;
-  top: 60px;
+  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  transform: skewY(-3deg);
+  /* transform: skewY(-3deg); */
 }
 
 #intro, img {
@@ -620,10 +621,11 @@ section {
 
 
 #Telehealth {
-  background-image: linear-gradient(90deg, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%), url(images/Telehealth.jpeg);
+  /* background-image: linear-gradient(90deg, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%), url(images/Telehealth.jpeg); */
   width: 100%;
   background-repeat: round;
   background-size: cover;
+  background: var(--limegreen);
 }
 
 .container_telehealth {
@@ -641,6 +643,13 @@ margin: 0 auto;
   font-weight: 700;
 }
 
+.card-background-limegreen {
+  background-color: var(--limegreen);
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  padding: 2em;
+}
+
 
 /***************************************/
         /* Office */
@@ -648,7 +657,7 @@ margin: 0 auto;
 
 
 #Office {
-  background-image: url(images/Building.jpg);
+  /* background-image: url(images/Building.jpg); */
   width: 100%;
   background-size: cover;
   background-repeat: round;
@@ -671,6 +680,45 @@ margin: 0 auto;
   font-weight: 900;
   font-family: 'Poppins',sans-serif;
 }
+
+.card-background {
+  background-color: var(--lightbrown);
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  padding: 2em;
+}
+
+.background-picture {
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.OfficeParagraph {
+  width: 100%;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+#Office p  {
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    width: 50ch;
+}
+
+#Telehealth p  {
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    width: 50ch;
+}
+
 
 
 /***************************************/
@@ -698,6 +746,27 @@ footer p {
   padding-top: 2em;
 }
 
+.Footer-metaDivider {
+    color: #939598;
+    padding: 0 10px;
+}
+
+.Footer-info {
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14286;
+    color: #7a3526;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
 /***************************************/
       /* Better Health Details */
 /***************************************/
@@ -711,7 +780,7 @@ footer p {
 
 .Details {
   font-family: 'Poppins', sans-serif;
-  font-size: 46px;
+  /* font-size: 46px; */
   font-weight: 600;
 }
 
@@ -797,10 +866,6 @@ footer p {
   .greeting {
     text-align: center;
     font-size: 9rem;
-  }
-
-  .media-icons  {
-    margin: 0px 1em;
   }
 
 }
@@ -964,6 +1029,17 @@ footer p {
   font-size: 28px;
 }
 
+#Telehealth p {
+  width: 29ch;
+}
+
+
+  /* ==== OFFICE 600px ==== */
+
+#Office p {
+  width: 33ch;
+}
+
 
   /* FOOTER */
 
@@ -1061,9 +1137,16 @@ display: block;
   margin: 0 22px;
 }
 
+#Telehealth p {
+  width: 35ch;
+}
+
 
   /* ==== OFFICE 600px ==== */
 
+#Office p {
+  width: 35ch;
+}
 
   .OfficeHeading {
     padding-bottom: 1rem;
@@ -1163,12 +1246,13 @@ display: block;
 
   /* === OFFICE === */
 
-  .OfficeParagraph {
+  /* .OfficeParagraph {
     width: 100%;
     font-size: 15px;
     padding: 0px 20px;
     margin: auto;
-  }
+  } */
+
 
   .OfficeHeading {
     padding: 0px 20px;

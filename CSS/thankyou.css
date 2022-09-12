@@ -1,0 +1,16 @@
+.container  {
+  padding: 10em;
+}
+
+html body {
+    background: #e2e2e3;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+h1, p {
+  text-align: center;
+}
