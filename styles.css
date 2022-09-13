@@ -1033,6 +1033,18 @@ footer p {
   width: 29ch;
 }
 
+/* ==== WORK WITH US STAFF 768px ==== */
+
+
+.team .member .member-info .profile__detail {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #4e4e51;
+    font-family: 'Poppins',sans-serif;
+    margin-right: 8px;
+}
+
 
   /* ==== OFFICE 600px ==== */
 
@@ -1093,6 +1105,21 @@ footer p {
 }
 
 /* ==== SPECIALTIES 600px ==== */
+
+/* ==== WORK WITH US STAFF 600px ==== */
+
+.member {
+  margin: auto;
+}
+
+.team .member .member-info .profile__detail {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #4e4e51;
+    font-family: 'Poppins',sans-serif;
+    margin: auto;
+}
 
 /* ==== INSURANCE ==== */
 .insurance-header {
