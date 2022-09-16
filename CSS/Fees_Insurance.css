@@ -210,8 +210,6 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
     transition: .1s;
   }
 
-
-
     .nav .nav-links .nav-item .dropdown-menu .nav-link {
         justify-content: flex-start;
         color: #a7b1c1;
@@ -291,6 +289,27 @@ margin-top: 20px;
   width: 100%;
   color: var(--black);
   font-weight: 500;
+}
+
+.section-list-3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+ul .section-list-3::before {
+  content: "\2022";
+  color: var(--signup);
+  font-weight: bold;
+  display: inline-block;
+  font-size: 25px;
+  width: 1em;
+  height: 7px;
+  margin-left: 0;
+  line-height: 1.8;
 }
 
 /***************************************/
@@ -599,45 +618,6 @@ footer .copyright {
   text-align: center;
 }
 
-/***************************************/
-            /* CONTACT */
-/***************************************/
-
-.phone-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-  transition: .5s;
-}
-
-.phone-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-.email-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
-/*Hover */
-
-.email-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
 
 /***************************************/
             /* Media */
@@ -797,6 +777,7 @@ footer .copyright {
     padding: 0;
 }
 
+
 /* === FOOTER === */
 
 .Details {
@@ -815,6 +796,10 @@ footer .copyright {
 
   #poilicies .title-box {
     margin: 0px auto 0;
+  }
+
+  .section-list-3 {
+    margin-left: 5em;
   }
 }
 
@@ -913,14 +898,17 @@ footer p {
 }
 
 #policies .textbox {
-    margin: 21px 3px 45px -15px;
-    line-height: 1.6;
-    font-weight: 300;
+    /* margin: 21px 3px 45px -15px; */
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     max-width: 100%;
     padding: 0;
+}
+
+.section-list-3 {
+  margin-left: 3em;
 }
 
 /* === FOOTER 600px === */

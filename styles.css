@@ -14,9 +14,19 @@
   --officedetails: #aeaeae;
 }
 
+/***************************************/
+        /* Lists */
+/***************************************/
+
 li {
   list-style: none;
   margin: auto;
+}
+
+.officeDetails {
+  list-style: disc;
+  font-size: 20px;
+  color: var(--darkgreen);
 }
 
 a {
@@ -328,9 +338,11 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 /* Heading */
 
 .AboutUs-2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   font-family: 'Poppins',sans-serif;
+  margin-top: 10px;
+  letter-spacing: 1px;
 }
 
 /* Background Image */
@@ -422,43 +434,6 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
     left: 0;
     right: 0;
     transform: skewY(-3deg);
-}
-
-#specialties .title-box {
-  max-width: 800px;
-  margin: 0 auto 1.8125em;
-  text-align: center;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
-}
-
-/* Header */
-
-.specialties-header {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 3.5rem;
-  letter-spacing: 6px;
-  display: block;
-  padding: 3rem;
-  font-weight: 700;
-  text-align: center;
-  font-family: 'Montserrat',sans-serif;
-  color: var(--white);
-}
-
-.specialties-header::before {
-  content: "";
-  width: 15rem;
-  height: 5px;
-  background-color: var(--headerbackground);
-  bottom: 2.2rem;
-  left: 50%;
-  position: absolute;
-  border-radius: 2rem;
-  transform: translateX(-50%);
 }
 
 /* Specialties Icons */
@@ -621,7 +596,6 @@ section {
 
 
 #Telehealth {
-  /* background-image: linear-gradient(90deg, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%), url(images/Telehealth.jpeg); */
   width: 100%;
   background-repeat: round;
   background-size: cover;
@@ -648,6 +622,14 @@ margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   color: var(--white);
   padding: 2em;
+}
+
+#Telehealth p  {
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    width: 50ch;
 }
 
 
@@ -701,23 +683,18 @@ margin: 0 auto;
   padding: 0;
   line-height: 1.6;
   font-weight: 500;
+  margin: 0;
 }
 
 #Office p  {
-    line-height: 1.4;
+    line-height: 1.6;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     letter-spacing: 0.1em;
     width: 50ch;
 }
 
-#Telehealth p  {
-    line-height: 1.4;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    width: 50ch;
-}
+
 
 
 
@@ -766,94 +743,6 @@ footer p {
 .copyright {
   text-align: center;
 }
-
-/***************************************/
-      /* Better Health Details */
-/***************************************/
-
-
-.footer-hours {
-  font-weight: 600;
-  line-height: 44;
-  padding-top: 1em;
-}
-
-.Details {
-  font-family: 'Poppins', sans-serif;
-  /* font-size: 46px; */
-  font-weight: 600;
-}
-
-
-/***************************************/
-        /* Logo Section */
-/***************************************/
-
-.bottomlogo {
-  height: 280px;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.trademark {
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-
-/***************************************/
-            /* Contact */
-/***************************************/
-
-
-.media-icons {
-  display: inline-block;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  margin: 3px;
-}
-
-.phone-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-  transition: .5s;
-}
-
-.phone-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-.email-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
-
-/*Hover */
-
-.email-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-
-
 
 /***************************************/
         /* Media */
@@ -912,26 +801,10 @@ footer p {
   position: relative;
 }
 
-
-/* =====  SPECIALTIES 1024px ===== */
-
-#specialties .circle {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 /* === TELEHEALTH 1024px === */
 
 .text-box  {
   padding: 9em 2em 12.1875em;
-}
-
-/* ==== FOOTER 1024px ==== */
-
-
-.Details {
-  font-size: 46px;
 }
 
 }
@@ -970,25 +843,12 @@ footer p {
   font-size: 14px;
 }
 
-#specialties .circle {
-    padding: 0;
-}
-
-.media-icons {
-  padding-bottom: 1rem;
-  }
-
 
 }
 
 
 
 @media only screen and (max-width: 900px) {
-  .specialties-header {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-  }
 
   .emotionals {
     margin: 20px 0;
@@ -998,8 +858,6 @@ footer p {
     margin: 20px 10px 80px 10px;
   }
 }
-
-
 
 
 /*768px */
@@ -1016,14 +874,6 @@ footer p {
 
 /* ==== SPECIALTIES 768px ==== */
 
-
-#specialties .circle {
-    margin-left: auto;
-    display: block;
-    margin-right: auto;
-    height: 170px;
-    width: 170px;
-}
 
 .emotional_text {
   font-size: 28px;
@@ -1046,26 +896,33 @@ footer p {
 }
 
 
-  /* ==== OFFICE 600px ==== */
+/* ==== OFFICE 600px ==== */
 
 #Office p {
-  width: 33ch;
+  width: 34ch;
 }
 
-
   /* FOOTER */
-
-  .Details {
-    font-size: 39px;
-  }
 
   footer p {
     font-size: 15px;
   }
 
-
 }
 
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .team .member {
+    margin: auto;
+  }
+
+  #Telehealth p {
+    width: 50ch;
+  }
+
+  #Office p {
+    width: 50ch;
+  }
+}
 
 
 /*600px */
@@ -1130,30 +987,6 @@ footer p {
   width: 9rem;
 }
 
-
-
-#specialties .circle {
-margin-left: auto;
-margin-right: auto;
-display: block;
-}
-
-.section-sp::before {
-  content: "";
-  background: var(--headerbackground);
-  position: absolute;
-  bottom: 75%;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  transform: skewX(-180deg);
-}
-
-#specialties .circle {
-  height: 150px;
-  width: 150px;
-}
-
 .emotional_text {
   font-size: 23.5px;
 }
@@ -1165,14 +998,14 @@ display: block;
 }
 
 #Telehealth p {
-  width: 35ch;
+  width: 34ch;
 }
 
 
   /* ==== OFFICE 600px ==== */
 
 #Office p {
-  width: 35ch;
+  width: 34ch;
 }
 
   .OfficeHeading {
@@ -1189,25 +1022,11 @@ display: block;
 
   /* ==== FOOTER 600px ==== */
 
-  .media-icons {
-      padding-bottom: 1rem;
-  }
-
   footer p {
     font-size: 13.9px;
 }
 
-.Details {
-  font-size: 39px;
-}
 
-
-}
-
-@media (max-width: 575px) {
-  .section-sp::before {
-    bottom: 85%;
-  }
 }
 
 
@@ -1216,13 +1035,6 @@ display: block;
   #client {
     height: 65vh;
   }
-
-
-.circle {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 
   .header {
     font-size: 2rem;
@@ -1240,73 +1052,24 @@ display: block;
     transform: translateX(-50%);
   }
 
-  /* === SPECIALTIES 472px === */
-
-.specialties-header {
-  font-size: 28px;
-}
-
-.specialties-header::before {
-  width: 11rem;
-}
 
 
-
-  /* === TELEHEALTH 472px === */
-
-#Telehealth {
-  background-repeat: round;
-}
-
-  .text-box  {
-    padding: 2em 0em 4.5em;
-  }
 
   /* === OFFICE 472px === */
-
-#Office {
-  background-repeat: round;
-}
   .text-box  {
     padding: 2em 0em 4.5em;
   }
 
-  /* === OFFICE === */
-
-  /* .OfficeParagraph {
-    width: 100%;
-    font-size: 15px;
-    padding: 0px 20px;
-    margin: auto;
-  } */
-
-
-  .OfficeHeading {
-    padding: 0px 20px;
-  }
+  /* === FOOTER === */
 
   footer p {
     font-size: 19px;
 }
 
-
 }
 
 
-
 @media (max-width: 412px) {
-
-  #client .button {
-    font-size: 12px;
-    top: 1em;
-    position: relative;
-  }
-
-  .profile_wrap {
-    margin: 0px 38px 0px 50px;
-  }
-
-
 
   .greeting {
       font-size: 2.5em;
@@ -1317,11 +1080,6 @@ display: block;
     padding: 0;
   }
 
-
-  .section-sp::before {
-    bottom: 85%;
-    top: 5%;
-  }
 
 .section-title h2 {
     font-size: 47px;
@@ -1340,7 +1098,6 @@ footer p {
     height: 75vh;
   }
 
-
   .wrap1 {
     bottom: 10em;
     left: 0;
@@ -1351,21 +1108,5 @@ footer p {
     top: 0em;
   }
 
-  .section-sp::before {
-    bottom: 85%;
-    top: 5%;
-  }
-
-.TelehealthHeading {
-  font-size: 3em;
-}
-
-.Details {
-  font-size: 40px;
-}
-
-.specialties-header {
-    font-size: 20px;
-}
 
 }
