@@ -58,6 +58,17 @@ function myFunction() {
 }
 
 //**********************************
+//     Circle Images Specialties
+//**********************************
+
+ const arr = ["specialties/agoraphobia.jpg", "specialties/generalizedanxiety.jpg"];
+ const circles = document.getElementsByClassName("circle");
+
+ for(let i = 0; i < circles.length; i++){
+   circles[i].value = arr[i];
+ }
+
+//**********************************
 //        Skeleton Loading
 //**********************************
 
