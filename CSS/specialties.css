@@ -277,6 +277,26 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   font-family: 'Poppins',sans-serif;
 }
 
+#emotional .section-list-3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: var(--white);
+  font-weight: 900;
+  font-family: 'Georgia',sans-serif;
+  letter-spacing: .50px;
+}
+
+#emotional .section-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: var(--white);
+  font-weight: 900;
+  font-family: 'Georgia',sans-serif;
+  letter-spacing: .50px;
+}
+
 #treatment .header {
   margin-left: auto;
   margin-right: auto;
@@ -287,7 +307,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 }
 
 
-.emotional_text {
+.emotional_text li {
   position: relative;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -297,6 +317,8 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   color: var(--white);
   text-transform: capitalize;
 }
+
+
 
 
 /*****************************************************/
@@ -319,11 +341,15 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 }
 
 .quote {
-  border:none; font-size:1.2em; font-style:italic; padding:0; vertical-align:middle;
+  border: none;
+  font-size: 1.2em;
+  font-style: italic;
+  padding:0;
+  vertical-align: middle;
 }
 
 /*****************************************************/
-      /* Background Diagonal Container */
+      /* Background Container */
 /*****************************************************/
 
 #emotional {
@@ -333,9 +359,10 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 
 #emotional .container {
   padding: 0;
-  color: var(--black);
+  color: white;
   max-width: 1170px;
   margin: 0 auto;
+  font-family: "Poppins",sans-serif;
 }
 
 .container {
@@ -352,23 +379,8 @@ margin: 0 auto;
 #emotional, img {
   max-width: 100%;
   display: block;
-}
-
-.african {
   margin-left: auto;
   margin-right: auto;
-  display: block;
-}
-
-.circle  {
-  height: 400px;
-  width: 400px;
-  position: relative;
-  border-radius: 50%;
-  background: var(--darkgreen);
-  margin: auto;
-  display: block;
-  overflow: hidden;
 }
 
 .pictures {
@@ -381,6 +393,22 @@ margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
 }
+
+.circle {
+  width: 275px;
+  height: 275px;
+  line-height: 275px;
+  border-radius: 50%;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(../specialties/depression3.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+}
+
 
 
 /*****************************************************/
@@ -443,10 +471,10 @@ margin: 0 auto;
 }
 
 .section-content {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Georgia',sans-serif;
   padding: 0px;
   line-height: 1.7;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .section-content-3 {
@@ -454,7 +482,7 @@ margin: 0 auto;
   position: relative;
   line-height: 1.7;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: left;
@@ -465,7 +493,7 @@ margin: 0 auto;
   position: relative;
   line-height: 1.7;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -480,7 +508,11 @@ margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 20px;
+  /* font-size: 20px; */
+}
+
+.section-content i {
+  font-size: 1.5rem;
 }
 
 /*****************************************************/
@@ -496,10 +528,12 @@ margin: 0 auto;
 
 .white-emotional_text {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Georgia", sans-serif;
   text-align: center;
   font-size: 31px;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 1em;
   text-align: center;
   color: var(--white);
   text-transform: capitalize;
@@ -530,37 +564,7 @@ margin: 0 auto;
   z-index: -1;
 }
 
-/*****************************************************/
-    /* BINGE CONTENT Section-5 - Eating Disorders  */
-/*****************************************************/
 
-.binge-content-5 {
-  color: var(--white);
-  position: relative;
-  line-height: 1.7;
-  padding: 0px 50px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.binge-list-5 {
-    color: var(--white);
-    position: relative;
-    list-style: disc;
-    font-size: 1.2rem;
-    margin: 20px 8em;
-}
-
-.binge-title-5 {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  color: var(--white);
-  font-weight: 900;
-  font-family: 'Poppins',sans-serif;
-  letter-spacing: 3px;
-}
 
 .wp-block-columns {
   margin-bottom: 0;
@@ -569,17 +573,6 @@ margin: 0 auto;
   overflow-wrap: break-word;
 }
 
-
-.binge-content-sub-5 {
-    color: var(--white);
-    position: relative;
-    line-height: 1.7;
-    padding: 20px 50px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-}
 
 /*****************************************************/
       /* Depression Section 4 */
@@ -591,7 +584,7 @@ margin: 0 auto;
   background-repeat: round;
   background-size: cover;
   color: var(--white);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   padding: 3em 0 3.1875em;
 }
 
@@ -627,7 +620,7 @@ margin: 0 auto;
 /*****************************************************/
 
 .section-list-3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   margin-bottom: 1em;
   font-size: 1em;
   margin-left: -1em;
@@ -642,7 +635,7 @@ ul .section-list-3::before {
   color: var(--signup);
   font-weight: bold;
   display: inline-block;
-  font-size: 25px;
+  /* font-size: 25px; */
   width: 1em;
   height: 7px;
   margin-left: 0;
@@ -746,7 +739,7 @@ section {
 
 .section-content-card {
   color: var(--white);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   letter-spacing: 1.2px;
   margin-top: 1em;
   text-align: center;
@@ -757,7 +750,7 @@ section {
   position: relative;
   line-height: 1.7;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -770,7 +763,7 @@ section {
 }
 
 .section-content-1 {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Georgia',sans-serif;
   padding: 10px;
   line-height: 1.7;
   float: right;
@@ -779,7 +772,7 @@ section {
 
 .section-content-question {
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   padding: 1em;
 }
 
@@ -793,7 +786,7 @@ section {
 
 .card-background {
   background-color: var(--lightbrown);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', sans-serif;
   color: var(--white);
   padding: 1em;
 }
@@ -1013,27 +1006,6 @@ footer p {
 }
 
   /*****************************************************/
-          /* === BETTER HEALTH INFO === */
-  /*****************************************************/
-
-  .location {
-    font-weight: 700;
-    line-height: 2;
-  }
-
-  .footer-hours {
-    font-weight: 700;
-    line-height: 44;
-    padding-top: 1em;
-  }
-
-  .Details {
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-  }
-
-  /*****************************************************/
                 /* === LOGO SECTION === */
   /*****************************************************/
 
@@ -1044,59 +1016,6 @@ footer p {
     margin-right: auto;
     display: block;
   }
-
-
-  .trademark {
-    padding-bottom: 1rem;
-    text-align: center;
-  }
-
-/***************************************/
-            /* CONTACT */
-/***************************************/
-
-  .media-icons {
-    display: inline-block;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-    margin: 3px;
-  }
-
-  .phone-icon {
-    border: 2px solid var(--white);
-    color: var(--white);
-    border-radius: 55%;
-    font-size: 30px;
-    list-style: none;
-    padding: 20px 20px;
-    transition: .5s;
-  }
-
-  .phone-icon:hover {
-    color: var(--contactinfohover);
-    border: 2px solid var(--contactinfohover);
-    transition: .2s;
-  }
-
-  .email-icon {
-    border: 2px solid var(--white);
-    color: var(--white);
-    border-radius: 55%;
-    font-size: 30px;
-    list-style: none;
-    padding: 20px 20px;
-
-    /*effects*/
-    transition: .5s;
-  }
-
-  .email-icon:hover {
-    color: var(--contactinfohover);
-    border: 2px solid var(--contactinfohover);
-    transition: .2s;
-  }
-
-
 
 /*****************************************************/
               /* Media Queries */
@@ -1241,19 +1160,6 @@ footer p {
 }
 
 /*****************************************************/
-              /* === FOOTER === */
-/*****************************************************/
-
-
-.Details {
-  font-size: 46px;
-}
-
-.binge-list-5 {
-    margin: 20px 2em;
-}
-
-/*****************************************************/
               /* === CARD === */
 /*****************************************************/
 
@@ -1305,10 +1211,6 @@ footer p {
 /*****************************************************/
               /* === IMAGES === */
 /*****************************************************/
-
-.paperbag {
-  margin: auto;
-}
 
 .pictures {
   padding: 0;
@@ -1430,14 +1332,6 @@ footer p {
                 /* === IMAGES === */
 /*****************************************************/
 
-.african {
-  height: 300px;
-}
-
-.anxiety-treatment-icons {
-  height: 150px;
-  width: 150px;
-}
 
 .pictures {
     padding: 0;
@@ -1459,11 +1353,6 @@ footer p {
 /*****************************************************/
               /* === FOOTER === */
 /*****************************************************/
-
-
-.Details {
-  font-size: 39px;
-}
 
 footer p {
   font-size: 15px;
@@ -1594,9 +1483,9 @@ footer p {
   padding: 10px 25px;
 }
 
-.section-content {
+/* .section-content {
   padding: 0 50px;
-}
+} */
 
 /*****************************************************/
               /* ===  HEADER === */
@@ -1610,27 +1499,16 @@ footer p {
   font-size: 2.2rem
 }
 
-.binge-list-5 {
-  margin: 1px;
-}
-
 /*****************************************************/
                   /* === IMAGES === */
 /*****************************************************/
-
-.african {
-  height: 300px;
-}
 
 .anxiety-treatment-icons {
   height: 120px;
   width: 120px;
 }
 
-.circle {
-  height: 300px;
-  width: 300px;
-}
+
 
 .pictures {
     padding: 0;
@@ -1643,23 +1521,10 @@ footer p {
               /* === FOOTER === */
 /*****************************************************/
 
-  .Details {
-    font-size: 39px;
-  }
-
   .bottomlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .trademark {
-    text-align: center;
-  }
-
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
   }
 
   footer p {
@@ -1831,15 +1696,6 @@ text-align: center;
 /*****************************************************/
 
 
-.trademark {
-  text-align: center;
-}
-
-.contact {
-  padding-top: 1rem;
-  padding-bottom: .4rem;
-}
-
 footer p {
   font-size: 15px;
 }
@@ -1934,13 +1790,6 @@ footer p {
   margin: auto;
   }
 
-  .circle {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
 
 /*****************************************************/
               /* === TESTIMONIAL === */
@@ -1978,10 +1827,6 @@ footer p {
 /*****************************************************/
               /* === FOOTER === */
 /*****************************************************/
-
-  .Details {
-    font-size: 40px;
-  }
 
   footer p {
     font-size: 15px;
