@@ -163,6 +163,13 @@ p {
             /* Navbar */
   /***************************************/
 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
 .logo {
   width: 190px;
   margin-right: 1em;
@@ -183,13 +190,6 @@ p {
   outline-color: none;
   outline-style: none;
   outline-width: 0;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
 }
 
 .contactHeader {
@@ -338,7 +338,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 /* Heading */
 
 .AboutUs-2 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900;
   font-family: 'Poppins',sans-serif;
   margin-top: 10px;
@@ -403,8 +403,6 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   padding: 9em 0 12.1875em;
 }
 
-
-
 /***************************************/
         /* Specialities */
 /***************************************/
@@ -413,7 +411,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 /* Container-Specialties */
 
 #specialties {
-  background: var(--limegreen)
+  background: var(--white);
 }
 
 .container-specialties {
@@ -452,14 +450,14 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   height: 260px;
   width: 260px;
   border-radius: 50%;
-  filter: grayscale(100%);
+  filter: grayscale(0);
   cursor: pointer;
   transition: 400ms;
   margin-top: 3em;
 }
 
 .emotional:hover .emotional-img {
-  filter: grayscale(0);
+  filter: grayscale(100%);
 }
 
 /* Specialties Text */
@@ -467,13 +465,19 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 .emotional_text {
   margin-top: 15px;
   text-align: center;
+  color: var(--black);
+  font-family: 'Georgia', sans-serif;
+  font-weight: 700;
+}
+
+.emotional_text:hover {
+  color: var(--darkgreen);
+  transition: .4s;
 }
 
 /***************************************/
         /* Work With Us - Staff */
 /***************************************/
-
-
 
 .skeleton {
   opacity: .7;
@@ -639,7 +643,6 @@ margin: 0 auto;
 
 
 #Office {
-  /* background-image: url(images/Building.jpg); */
   width: 100%;
   background-size: cover;
   background-repeat: round;
@@ -691,12 +694,8 @@ margin: 0 auto;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     letter-spacing: 0.1em;
-    width: 50ch;
+    /* width: 50ch; */
 }
-
-
-
-
 
 /***************************************/
             /* Footer */
@@ -896,17 +895,11 @@ footer p {
 }
 
 
-/* ==== OFFICE 600px ==== */
+/* ==== OFFICE 768px ==== */
 
 #Office p {
   width: 34ch;
 }
-
-  /* FOOTER */
-
-  footer p {
-    font-size: 15px;
-  }
 
 }
 
@@ -961,8 +954,6 @@ footer p {
   transform: translateX(-50%);
 }
 
-/* ==== SPECIALTIES 600px ==== */
-
 /* ==== WORK WITH US STAFF 600px ==== */
 
 .member {
@@ -993,8 +984,12 @@ footer p {
 
 /* === TELEHEALTH 600px === */
 
-.text-box {
+/* .text-box {
   margin: 0 22px;
+} */
+
+.text-box  {
+  padding: 3em 0em 3.1875em;
 }
 
 #Telehealth p {
@@ -1018,14 +1013,6 @@ footer p {
     font-size: 16px;
     padding: 0;
   }
-
-
-  /* ==== FOOTER 600px ==== */
-
-  footer p {
-    font-size: 13.9px;
-}
-
 
 }
 
@@ -1053,18 +1040,10 @@ footer p {
   }
 
 
-
-
   /* === OFFICE 472px === */
   .text-box  {
     padding: 2em 0em 4.5em;
   }
-
-  /* === FOOTER === */
-
-  footer p {
-    font-size: 19px;
-}
 
 }
 
@@ -1083,10 +1062,6 @@ footer p {
 
 .section-title h2 {
     font-size: 47px;
-}
-
-footer p {
-  font-size: 15px;
 }
 
 

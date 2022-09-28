@@ -403,34 +403,18 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%);
+  /* background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%); */
   font-size: 25px;
+  /* filter: brightness(90%); */
   text-align: center;
   font-family: 'Poppins',sans-serif;
   background-size: cover;
   margin: auto;
 }
 
-.circle:hover:after {
-  opacity: 0.5;
-}
-
-.circle:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: 1;
-  transition: opacity 300ms;
-}
-
 .circle__text {
   padding: 10px;
+  color: var(--white);
 }
 
 
@@ -644,8 +628,9 @@ margin: 0 auto;
 
 .section-list-3 {
   font-family: 'Georgia', sans-serif;
-  margin-bottom: 1em;
   font-size: 1em;
+  letter-spacing: 1.2px;
+  margin-bottom: 1em;
   margin-left: -1em;
 }
 
@@ -656,13 +641,12 @@ ul {
 ul .section-list-3::before {
   content: "\2022";
   color: var(--signup);
-  font-weight: bold;
   display: inline-block;
-  /* font-size: 25px; */
-  width: 1em;
+  font-weight: bold;
   height: 7px;
-  margin-left: 0;
   line-height: 1.8;
+  margin-left: 0;
+  width: 1em;
 }
 
 /*****************************************************/
@@ -670,11 +654,11 @@ ul .section-list-3::before {
 /*****************************************************/
 
 .section-list-ref {
-  margin-top: 25px;
-  line-height: 1.8;
-  position: relative;
-  list-style: disc;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  list-style: disc;
+  margin-top: 25px;
+  position: relative;
 }
 
 

@@ -1,72 +1,25 @@
 'use strict';
 
-const express = require("express");
-const bodyParser = require("body-parser");
-
-const app = express();
-
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
-
-
-show_image = (index);
-
-var index = 0;
-
-function show_image(i){
-  index += i;
-
-  var images = document.getElementsByClassName
-  ("image");
-
-  var dots = document.getElementsByClassName
-  ("dot");
-
-  for(i = 0;i < images.length;i++)
-  images[i].style.display = "none";
-
-  for(i = 0;i < dots.length;i++)
-  dots[i].className = dots[i].className.replace
-  (" active", "");
-
-  if(index > images.length - 1)
-  index = 0;
-
-  if(index < 0)
-  index = images.length - 1;
-
-  images[index].style.display = "block";
-  dots[index].className += "  active";
-}
-
-//**********************************
-//        Sticky Navbar
-//**********************************
-
-
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 //**********************************
 //     Circle Images Specialties
 //**********************************
 
- const arr = ["specialties/agoraphobia.jpg", "specialties/generalizedanxiety.jpg"];
+ const arr = ["specialties/agoraphobia.jpg", "specialties/generalizedanxiety.jpg",
+ "specialties/panicattacks.jpg", "specialties/panic_disorder.jpg", "specialties/COVID19.jpg",
+"specialties/phobias.jpg", "specialties/social_anxiety.jpg"];
  const circles = document.getElementsByClassName("circle");
 
  for(let i = 0; i < circles.length; i++){
-   circles[i].value = arr[i];
+   circles[i].style.backgroundImage = `url(${arr[i]})`;
  }
+
+
+ //**********************************
+ //     Thank you Email
+ //**********************************
+const fullName = document.getElementsByClassName("fullName").value;
+
+document.getElementsByClassName("thankYou").value = `Thank you for signup BetterLifeColorado ${fullName[0]}`;
 
 //**********************************
 //        Skeleton Loading
@@ -119,26 +72,6 @@ $('.specialties-heading').click(function() {
   //Staff Info - fadeUp and fadeLeft/fadeRight
 //**********************************************
 
-
-observer.observe(document.querySelector(profiles))
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      document.querySelectorAll(".profile")[0].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[1].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[2].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[3].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[4].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[5].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[6].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[7].classList.add("fadeInLeft")
-      document.querySelectorAll(".profile")[8].classList.add("fadeInLeft")
-    }
-  })
-})
-
-observer.observe(document.querySelector(".profiles"))
 
 AOS.init({
   duration: 3000,

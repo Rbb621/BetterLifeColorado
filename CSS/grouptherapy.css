@@ -13,6 +13,10 @@
   --officedetails: #aeaeae;
 }
 
+/***************************************/
+        /* Lists */
+/***************************************/
+
 li {
   list-style: none;
   margin: auto;
@@ -337,92 +341,6 @@ footer .copyright {
 }
 
 /***************************************/
-      /* Better Health Info */
-/***************************************/
-.location {
-  font-weight: 700;
-  line-height: 2;
-}
-
-.footer-hours {
-  font-weight: 700;
-  line-height: 44;
-  padding-top: 1em;
-}
-
-.Details {
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-/***************************************/
-            /* Logo */
-/***************************************/
-
-.bottomlogo {
-  height: 280px;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.trademark {
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-/***************************************/
-          /* CONTACT */
-/***************************************/
-
-.media-icons {
-  display: inline-block;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  margin: 3px;
-}
-
-.phone-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-  transition: .5s;
-}
-
-.phone-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-.email-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
-
-/*Hover */
-
-
-.email-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-/***************************************/
             /* Media */
 /***************************************/
 
@@ -432,10 +350,6 @@ footer .copyright {
     text-align: center;
   }
 
-  .media-icons  {
-    margin: 0px 1em;
-    padding-bottom: 1rem;
-  }
 }
 
 @media (max-width: 1450px) {
@@ -488,17 +402,7 @@ footer .copyright {
   font-size: 3.5rem;
 }
 
-/* === FOOTER === */
-
-.media-icons {
-  margin: 0;
 }
-
-.Details {
-  font-size: 46px;
-}
-
-  }
 
 
 /*768px */
@@ -507,10 +411,7 @@ footer .copyright {
 @media (max-width: 768px) {
 
   .title-text h1 {
-      color: transparent;
-      -webkit-text-stroke: 3px #fff;
       font-size: 10rem;
-      text-align: center;
   }
 
 
@@ -526,12 +427,6 @@ footer .copyright {
     font-size: 1.2rem;
 }
 
-
-/* === FOOTER === */
-
-.Details {
-font-size: 39px;
-}
 
 }
 
@@ -568,31 +463,6 @@ font-size: 39px;
 }
 
 
-/* === FOOTER === */
-
-.Details {
-  font-size: 39px;
-}
-
-.bottomlogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.trademark {
-  text-align: center;
-}
-
-.contact {
-  padding-top: 1rem;
-  padding-bottom: .4rem;
-}
-
-footer p {
-  font-size: 13.9px;
-}
-
 }
 
 
@@ -601,37 +471,8 @@ footer p {
 @media (max-width: 472px) {
 
   .title-text h1 {
-      color: transparent;
-      -webkit-text-stroke: 3px #fff;
       font-size: 5rem;
-      text-align: center;
   }
-
-  #Photo {
-    background-position: center center;
-    padding: 0;
-  }
-
-  /*Footer*/
-
-  .trademark {
-    text-align: center;
-  }
-
-  .contact {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-  }
-
-  /* === FOOTER === */
-
-  .Details {
-    font-size: 40px;
-  }
-
-  footer p {
-    font-size: 15px;
-}
 
 }
 
@@ -642,10 +483,6 @@ footer p {
 
   .grouptherapy {
     background-position: center;
-  }
-
-  #Photo {
-    background-position: center center;
   }
 
   .GT1 {
@@ -670,16 +507,5 @@ footer p {
     bottom: 2.5rem;
     width: 8rem;
   }
-
-  /* === FOOTER === */
-
-  .Details {
-    font-size: 40px;
-  }
-
-  footer p {
-    font-size: 15px;
-}
-
 
 }

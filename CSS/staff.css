@@ -284,87 +284,6 @@ footer .copyright {
 }
 
 /***************************************/
-      /* Better Health Info */
-/***************************************/
-
-.location {
-  font-weight: 700;
-  line-height: 2;
-}
-
-.footer-hours {
-  font-weight: 700;
-  line-height: 44;
-  padding-top: 1em;
-}
-
-.Details {
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-/***************************************/
-          /* Logo Section*/
-/***************************************/
-
-.bottomlogo {
-  height: 280px;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/***************************************/
-          /* Contact */
-/***************************************/
-
-.media-icons {
-  display: inline-block;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  margin: 3px;
-}
-
-.phone-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-  transition: .5s;
-}
-
-.phone-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-.email-icon {
-  border: 2px solid var(--white);
-  color: var(--white);
-  border-radius: 55%;
-  font-size: 30px;
-  list-style: none;
-  padding: 20px 20px;
-
-  /*effects*/
-  transition: .5s;
-}
-
-
-/*Hover */
-
-.email-icon:hover {
-  color: var(--contactinfohover);
-  border: 2px solid var(--contactinfohover);
-  transition: .2s;
-}
-
-/***************************************/
               /* Media */
 /***************************************/
 
@@ -373,10 +292,6 @@ footer .copyright {
 #about-intro .box img {
   right: 0px;
   max-width: 320px;
-}
-
-.Details {
-  font-size: 46px;
 }
 
 }
@@ -406,19 +321,6 @@ footer .copyright {
 
 }
 
-@media (max-width: 768px) {
-  /* Footer */
-
-.Details {
-  font-size: 39px;
-}
-
-footer p {
-  font-size: 15px;
-}
-}
-
-
 
 @media (max-width: 600px) {
     #about-intro {
@@ -443,40 +345,4 @@ footer p {
     padding-top: 8em;
 }
 
-/* === FOOTER === */
-
-.Details {
-  font-size: 39px;
-}
-
-.bottomlogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.trademark {
-  text-align: center;
-}
-
-.contact {
-  padding-top: 1rem;
-  padding-bottom: .4rem;
-}
-
-footer p {
-  font-size: 13.9px;
-}
-
-
-}
-
-@media (max-width: 320px) {
-  .Details {
-    font-size: 40px;
-  }
-
-  footer p {
-    font-size: 15px;
-}
 }
