@@ -218,6 +218,11 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
         padding: 15px 20px;
     }
 
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
 /***************************************/
           /* HEADER SECTION */
 /***************************************/
@@ -623,7 +628,7 @@ footer .copyright {
             /* Media */
 /***************************************/
 
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
 
   .header-section {
     font-size: 60px;
@@ -658,7 +663,7 @@ footer .copyright {
   }
 
   .insurance_image {
-    margin: 20px 20px 0px 0;
+    margin: 20px 40px 0px 20px;
   }
 }
 

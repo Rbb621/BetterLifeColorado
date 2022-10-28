@@ -189,6 +189,11 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
         padding: 15px 20px;
     }
 
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
 
     /***************************************/
             /* Header Section */

@@ -250,6 +250,11 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
       text-align: center;
     }
 
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
 
 
 
@@ -275,10 +280,6 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 
   /* === FOOTER === */
 
-.Details {
-  font-size: 39px;
-}
-
 footer p {
   font-size: 14px;
 }
@@ -298,31 +299,6 @@ footer p {
   font-size: 0.79rem;
 }
 
-/* === FOOTER === */
-
-.Details {
-  font-size: 39px;
-}
-
-.bottomlogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.trademark {
-  text-align: center;
-}
-
-.contact {
-  padding-top: 1rem;
-  padding-bottom: .4rem;
-}
-
-footer p {
-  font-size: 13.9px;
-}
-
 }
 
 @media (max-width: 390px) {
@@ -330,14 +306,4 @@ footer p {
 .faq-container {
   padding: 0;
 }
-
-  /* === FOOTER === */
-
-  .Details {
-    font-size: 40px;
-  }
-
-  footer p {
-    font-size: 15px;
-  }
 }
