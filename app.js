@@ -28,9 +28,9 @@ for (i = 0; i < faq.length; i++) {
 //     Circle Images Specialties
 //**********************************
 
- const arr = ["specialties/agoraphobia.jpg", "specialties/generalizedanxiety.jpg",
- "specialties/panicattacks.jpg", "specialties/panic_disorder.jpg", "specialties/COVID19.jpg",
-"specialties/phobias.jpg", "specialties/social_anxiety.jpg"];
+ const arr = ["specialties/anxiety/agoraphobia.jpg", "specialties/anxiety/generalizedanxiety.jpg",
+ "specialties/anxiety/panicattacks.jpg", "specialties/anxiety/panic_disorder.jpg", "specialties/anxiety/COVID19.jpg",
+"specialties/anxiety/phobias.jpg", "specialties/anxiety/social_anxiety.jpg"];
  const circles = document.getElementsByClassName("circle");
 
  for(let i = 0; i < circles.length; i++){

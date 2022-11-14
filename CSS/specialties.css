@@ -220,13 +220,18 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
     }
 
     .title {
-      background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+      background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),
+      url(../specialties/buildingcover.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center center;
       height: 100vh;
       overflow: hidden;
       position: relative;
+    }
+
+    #subtitle {
+      color: var(--white);
     }
 
     .effect{
@@ -591,7 +596,7 @@ margin: 0 auto;
 /*****************************************************/
 
 #symptoms-section-4 {
-  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(../specialties/depression3.jpg);
+  background-image: linear-gradient(359deg, var(--headerbackground)  2%, rgba(0,255,66,0) 200%), url(../specialties/depression/depression3.jpg);
   width: 100%;
   background-repeat: round;
   background-size: cover;
