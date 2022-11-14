@@ -80,7 +80,7 @@ section {
   .header-section {
     text-transform: uppercase;
     position: relative;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     display: block;
     padding: 3rem;
     font-weight: 700;
@@ -266,56 +266,44 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
             /* INSURANCE */
 /***************************************/
 
+.container {
+  margin: 50px 50px auto;
+}
+
+.grey-textbox {
+  box-shadow: 0px 1px 4px #888888;
+  background-color: #e7e7e7;
+  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-left: 1.37em;
+}
+
 .insurance_image {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-content: center;
 align-items: center;
-margin-top: 20px;
+margin: 5px;
 }
 
 .textbox-insurance {
-  text-align: center;
   margin: auto;
   font-family: 'Montserrat',sans-serif;
   font-size: 17px;
   width: 100%;
   color: var(--black);
-  max-width: 70ch;
   font-weight: 700;
 }
 
 .caption {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-family: 'Montserrat',sans-serif;
   font-size: 30px;
   width: 100%;
   color: var(--black);
   font-weight: 500;
 }
 
-.section-list-3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-}
 
-ul {
-  list-style: none;
-}
-
-ul .section-list-3::before {
-  content: "\2022";
-  color: var(--signup);
-  font-weight: bold;
-  display: inline-block;
-  font-size: 25px;
-  width: 1em;
-  height: 7px;
-  margin-left: 0;
-  line-height: 1.8;
-}
 
 /***************************************/
           /* STAFF INFO */
@@ -486,7 +474,6 @@ ul .section-list-3::before {
 #GFE .title-box {
   max-width: 800px;
   margin: 0 auto 1.8125em;
-  text-align: center;
   line-height: 1.5;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -508,26 +495,28 @@ ul .section-list-3::before {
         /* Bullet Points */
 /***************************************/
 
-#GFE .textbox ul li {
-    position: relative;
-    margin-bottom: 1.5em;
-  }
 
-#GFE ul li:before {
-    content: '\f101';
-    font-family: FontAwesome;
-    display: inline-block;
-    padding: 0 25px 0 0;
-    position: relative;
-    color: inherit;;
-  }
+.section-list-3 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.2px;
+  margin-bottom: 1em;
+}
 
-  .contact {
-    font-size: 17px;
-    margin: 31px 29px;
-    max-width: 50ch;
-    line-height: 1.5;
-  }
+ul {
+  list-style: none;
+}
+
+ul .section-list-3::before {
+  content: "\2022";
+  color: var(--signup);
+  display: inline-block;
+  font-weight: bold;
+  height: 7px;
+  line-height: 1.8;
+  margin-left: 0;
+  width: 1em;
+}
 
 /***************************************/
             /* FOOTER */
@@ -584,44 +573,7 @@ footer .copyright {
   text-align: center;
 }
 
-/***************************************/
-        /* BETTER HEALTH INFO */
-/***************************************/
 
-.location {
-  font-weight: 700;
-  line-height: 2;
-}
-
-.footer-hours {
-  font-weight: 700;
-  line-height: 44;
-  padding-top: 1em;
-}
-
-.Details {
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-/***************************************/
-            /* LOGO */
-/***************************************/
-
-.bottomlogo {
-  height: 280px;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-
-.trademark {
-  padding-bottom: 1rem;
-  text-align: center;
-}
 
 
 /***************************************/
@@ -631,7 +583,6 @@ footer .copyright {
 @media (min-width: 1450px) {
 
   .header-section {
-    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Poppins',sans-serif;
@@ -662,9 +613,7 @@ footer .copyright {
     margin-bottom: 5em;
   }
 
-  .insurance_image {
-    margin: 20px 40px 0px 20px;
-  }
+
 }
 
 @media (max-width: 1450px) {
@@ -677,7 +626,6 @@ footer .copyright {
   }
 
   .header-section {
-    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Poppins',sans-serif;
@@ -702,15 +650,6 @@ footer .copyright {
   .textbox-insurance {
     margin: 50px auto;
   }
-
-  .insurance_image {
-    margin: 20px 20px 0px 0;
-  }
-
-  .contact {
-    margin: 31px 120px;
-  }
-
 }
 
 @media only screen and (max-width: 1150px) {
@@ -753,6 +692,7 @@ footer .copyright {
 
 @media (max-width 1024px) {
 
+
   /* === TITLE SECTION === */
 
   .title-text h1 {
@@ -766,13 +706,6 @@ footer .copyright {
     max-width: 71ch;
   }
 
-  /* === INSURANCE === */
-
-  .insurance_image {
-    margin: 0;
-    padding: 0;
-  }
-
   .textbox-insurance {
     margin: 50px 120px;
   }
@@ -782,12 +715,6 @@ footer .copyright {
     padding: 0;
 }
 
-
-/* === FOOTER === */
-
-.Details {
-  font-size: 46px;
-}
 
 }
 
@@ -801,10 +728,6 @@ footer .copyright {
 
   #poilicies .title-box {
     margin: 0px auto 0;
-  }
-
-  .section-list-3 {
-    margin-left: 5em;
   }
 }
 
@@ -825,27 +748,11 @@ footer .copyright {
     text-align: center;
   }
 
-  /* ===Policies === */
-
-#policies .title-box {
-    max-width: 940px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-  }
 
   .textbox {
       font-size: 15px;
       padding: 0px;
       margin: 15px 0px;
-    }
-
-    .contact{
-        max-width: 60ch;
     }
 
 /*Insurance*/
@@ -873,15 +780,6 @@ footer .copyright {
     transform: translateX(-50%);
   }
 
-  /* === FOOTER === */
-
-.Details {
-  font-size: 39px;
-}
-
-footer p {
-  font-size: 15px;
-}
 
 }
 
@@ -897,32 +795,17 @@ footer p {
       font-size: 5rem;
   }
 
-#policies .title-box {
-  font-size: 10px;
-  padding: 0;
-}
+  .grey-textbox {
+  box-shadow: 0px 1px 4px #888888;
+  background-color: #e7e7e7;
+  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-left: 0.37em;
+  }
 
-#policies .textbox {
-    /* margin: 21px 3px 45px -15px; */
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    max-width: 100%;
-    padding: 0;
-}
-
-.section-list-3 {
-  margin-left: 3em;
-}
-
-/* === FOOTER 600px === */
-
-.contact {
-    max-width: 60ch;
-    padding: 0;
-    margin: 0px;
-}
+/* .section-list-3 {
+  margin-left: 1em;
+} */
 
   /* === GOODFAITHESTIMATE 600px === */
 
@@ -956,42 +839,10 @@ ul {
   padding: 0;
 }
 
-/* === FOOTER === */
-
-.Details {
-  font-size: 39px;
-}
-
-.bottomlogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.trademark {
-  text-align: center;
-}
-
-.contact {
-  padding-top: 1rem;
-  padding-bottom: .4rem;
-}
-
-footer p {
-  font-size: 13.9px;
-}
-
 }
 
 @media (max-width: 472px) {
 
-
-  /* === INSURANCE 472px === */
-
-  .insurance_image {
-    padding: 0;
-    margin: 10px 15px;
-  }
 
   .header-section {
   font-size: 2.5rem;
@@ -1010,17 +861,6 @@ footer p {
     position: absolute;
     border-radius: 2rem;
     transform: translateX(-50%);
-  }
-
-  /* === FOOTER 472px === */
-
-  .trademark {
-    text-align: center;
-  }
-
-  .connect {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
   }
 
   .textbox-insurance {
@@ -1051,6 +891,10 @@ footer p {
   #GFE .textbox ul li {
     padding-left: 15px;
 }
+
+.container {
+  margin: 50px 0px auto;
+}
 }
 
 
@@ -1061,35 +905,9 @@ footer p {
     font-size: 3.5rem;
     }
 
-  #policies .textbox {
-      margin: 25px 4px 30px -20px;
-      line-height: 1.6;
-      font-weight: 300;
-      -webkit-font-smoothing: antialiased;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 15px;
-      max-width: 100%;
-      padding: 0;
-    }
-
-  .contact{
-  max-width: 25ch;
-  width: 100%;
-  }
-
 .textbox-insurance {
   margin: 30px auto;
   max-width: 28ch;
-  font-size: 15px;
-}
-
-/* === FOOTER === */
-
-.Details {
-  font-size: 40px;
-}
-
-footer p {
   font-size: 15px;
 }
 
