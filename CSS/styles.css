@@ -591,12 +591,12 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  /* transform: skewY(-3deg); */
 }
 
 #intro, img {
    max-width: 100%;
    display: block;
+   margin: auto;
  }
 
  /***************************************/
