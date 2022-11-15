@@ -551,7 +551,7 @@ margin: 0 auto;
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--white);
-  text-transform: capitalize;
+  margin-top: 1rem;
 }
 
 /*****************************************************/
@@ -1368,7 +1368,13 @@ footer p {
 
 /* 767px*/
 
-@media(max-width: 767px) {
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+
+
+.title-text h1{
+  margin-top: 2em;
+  font-size: 3.5rem;
+}
 
 /*****************************************************/
               /* === TESTIMONIAL === */

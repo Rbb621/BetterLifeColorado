@@ -786,7 +786,6 @@ footer .copyright {
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   .header-text h1 {
     font-size: 5rem;
-    margin-top: 3em;
 }
 
 .insurance_image {
