@@ -30,12 +30,41 @@ for (i = 0; i < faq.length; i++) {
 
  const arr = ["specialties/anxiety/agoraphobia.jpg", "specialties/anxiety/generalizedanxiety.jpg",
  "specialties/anxiety/panicattacks.jpg", "specialties/anxiety/panic_disorder.jpg", "specialties/anxiety/COVID19.jpg",
-"specialties/anxiety/phobias.jpg", "specialties/anxiety/social_anxiety.jpg"];
+"specialties/anxiety/phobias.jpg", "specialties/anxiety/social_anxiety.jpg", "specialties/anxiety/CBT.jpg", "specialties/anxiety/DBT.jpg", "specialties/anxiety/ACT.jpg"];
  const circles = document.getElementsByClassName("circle");
 
  for(let i = 0; i < circles.length; i++){
    circles[i].style.backgroundImage = `url(${arr[i]})`;
+   circles[i].style.marginBottom = "20px";
+   circles[i].style.marginTop = "30px";
  }
+
+ //**********************************
+ //     Container
+ //**********************************
+
+ const box = document.getElementsByClassName("infobox")
+
+ for(let i = 0; i < box.length; i++){
+   box[i].style.backgroundColor = "white";
+   box[i].style.boxShadow = "0px 0px 2px rgb(0 0 0 / 25%)";
+   box[i].style.paddingBottom = "100px";
+   box[i].style.marginBottom = "1.5em";
+   box[i].style.marginTop = "1.5em";
+ }
+
+const greenBox = document.getElementsByClassName("infobox_green")
+
+for(let i = 0; i < greenBox.length; i++){
+  greenBox[i].style.backgroundColor = "var(--grey)";
+  greenBox[i].style.color = "var(--white)";
+  greenBox[i].style.padding = "4.0625em 50px";
+  greenBox[i].style.maxWidth = "1170px";
+  greenBox[i].style.fontFamily = "Poppins,sans-serif";
+  greenBox[i].style.boxShadow = "0px 0px 2px rgb(0 0 0 / 25%)";
+  greenBox[i].style.marginBottom = "1.5em";
+  greenBox[i].style.maxWidth = "100%";
+}
 
 
  //**********************************

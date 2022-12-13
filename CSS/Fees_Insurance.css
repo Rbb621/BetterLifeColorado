@@ -314,7 +314,7 @@ margin: 5px;
 /***************************************/
 
 #staff {
-  background: var(--limegreen)
+  background: var(--limegreen);
 }
 
 .container-staff {
@@ -580,7 +580,17 @@ footer .copyright {
             /* Media */
 /***************************************/
 
+@media only screen and (min-width: 1500px){
+  .container {
+    display: block;
+    margin: auto;
+  }
+}
+
+
+
 @media (min-width: 1450px) {
+
 
   .header-section {
     font-weight: bold;
