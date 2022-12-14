@@ -119,12 +119,16 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
     color: var(--darkgreen);
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-weight: 700;
+    font-weight: 400;
   }
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: var(--white);
-    font-weight: 700;
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {

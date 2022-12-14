@@ -161,18 +161,23 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
           /* DROPDOWN-MENU */
 /***************************************/
 
-  .nav-link {
-    display: block;
-    padding: 1rem 1rem;
-    color: var(--darkgreen);
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-weight: 700;
-  }
+.nav-link {
+  display: block;
+  padding: 1rem 1rem;
+  color: var(--darkgreen);
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  font-weight: 400;
+  border: none;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: var(--white);
-    font-weight: 700;
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
@@ -237,7 +242,6 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   position: relative;
 }
 
-
 .effect{
   position: absolute;
   bottom: 0;
@@ -245,21 +249,21 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
   left: 0;
 }
 
-.header-text {
+.title-text h1 {
+font-family: "Poppins", sans-serif;
+font-weight: 900;
+color: white;
+font-size: 5.5rem;
+margin-top: 3em;
+letter-spacing: .1rem;
+text-transform: uppercase;
+text-align: center;
+}
+
+.title-text {
   display: grid;
   place-items: center;
   height: 70vh;
-  font-family: 'Poppins',serif;
-  text-transform: capitalize;
-  font-size: 50px;
-}
-
-.header-text h1 {
-  color: transparent;
-  -webkit-text-stroke: 3px #fff;
-  font-size: 10rem;
-  text-align: center;
-  margin-top: 1em;
 }
 
 /***************************************/

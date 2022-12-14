@@ -131,18 +131,23 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 
 
 
-  .nav-link {
-    display: block;
-    padding: 1rem 1rem;
-    color: var(--darkgreen);
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-weight: 700;
-  }
+.nav-link {
+  display: block;
+  padding: 1rem 1rem;
+  color: var(--darkgreen);
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  font-weight: 400;
+  border: none;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: var(--white);
-    font-weight: 700;
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover {
@@ -221,7 +226,7 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 
     .title {
       background-image: linear-gradient(to bottom, rgb(67 151 152) 10%, rgba(0,255,66,0) 100%,transparent),
-      url(../specialties/buildingcover.png);
+      url(../images/buildingcover.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center center;

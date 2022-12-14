@@ -32,7 +32,7 @@ html,body{
 
 .faq-heading{
   border-bottom: #777;
-  padding: 20px 60px;
+  padding: 40px 60px;
   text-align: center;
 }
 .faq-container{
@@ -40,6 +40,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 padding: 20px;
+margin-bottom: 100px;
 }
 
 .hr-line{
@@ -99,6 +100,44 @@ p {
 
 li {
   list-style: none;
+}
+
+/***************************************/
+          /* HEADER SECTION */
+/***************************************/
+
+.header {
+  background-image: linear-gradient(to bottom, rgb(117 155 109) 10%, rgba(0,255,66,0) 100%,transparent),url(../images/faq_background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.effect{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.title-text h1 {
+font-family: "Poppins", sans-serif;
+font-weight: 900;
+color: white;
+font-size: 5.5rem;
+margin-top: 3em;
+letter-spacing: .1rem;
+text-transform: uppercase;
+text-align: center;
+}
+
+.title-text {
+  display: grid;
+  place-items: center;
+  height: 70vh;
 }
 
 
@@ -163,18 +202,23 @@ background-color: .1s 0s ease-in-out,color .1s 0s ease-in-out;
 /* ==== DROPDOWN-MENU ==== */
 
 
-  .nav-link {
-    display: block;
-    padding: 1rem 1rem;
-    color: var(--darkgreen);
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-weight: 700;
-  }
+.nav-link {
+  display: block;
+  padding: 1rem 1rem;
+  color: var(--darkgreen);
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  font-weight: 400;
+  border: none;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: var(--white);
-    font-weight: 700;
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 .navbar-dark .navbar-nav .nav-link.current, .navbar-dark .navbar-nav .show>.nav-link:hover {
