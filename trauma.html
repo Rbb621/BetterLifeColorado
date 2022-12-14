@@ -18,8 +18,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
 
-
-
   <!-- Bootstrap Scripts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -41,7 +39,10 @@
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-221888374-1');
@@ -51,37 +52,27 @@
 <body>
 
 
-  <!--NavBar -->
-
   <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
       <div class="container-fluid">
-
-
-        <!-- LOGO -->
-
+        <!--****************************
+                       LOGO
+           ****************************-->
         <a href="/"><img class="logo" src="images/Logo_horizontal.png" alt="betterhealthimg"></a>
-
-        <!-- NAVBAR -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-            <!-- HOME -->
-
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-
-
-            <!-- STAFF DROPDOWN -->
-
+            <!--****************************
+                           HOME
+               ****************************-->
+            <li><a class="nav-link" href="/">Home</a></li>
+            <!--****************************
+                       STAFF DROPDOWN
+               ****************************-->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Staff
               </a>
               <div class="dropdown-menu Staffdropdown">
@@ -104,45 +95,38 @@
                 <a class="nav-link" href="taylor.html">Taylor Palen</a>
               </div>
             </li>
-
-
-            <!-- SPECIALTIES DROPDOWN -->
-
+            <!--****************************
+                        SPECIALTIES DROPDOWN
+                  ****************************-->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Specialties
               </a>
               <div class="dropdown-menu Staffdropdown">
                 <a class="nav-link" href="anxiety.html">Anxiety</a>
                 <a class="nav-link" href="depression.html">Depression</a>
-                <a class="nav-link" href="foodeatingdisorder.html">Eating Disorders</a>
+                <a class="nav-link" aria-current="page" href="eating-disorder.html">Eating Disorder</a>
                 <a class="nav-link" href="ocd.html">OCD</a>
-                <a class="nav-link" href="relational_conflict.html">Relational Conflict</a>
+                <a class="nav-link" href="relational-conflict.html">Relational Conflict</a>
                 <a class="nav-link active" aria-current="page" href="trauma.html">Trauma</a>
-                <a class="nav-link" href="substance_abuse.html">Substance Abuse</a>
+                <a class="nav-link" href="substance-abuse.html">Substance Abuse</a>
                 <a class="nav-link" href="grouptherapy.html">Group Therapy</a>
               </div>
-
-              <!-- MENU -->
-
-            <li><a class="nav-link" href="FAQ.html">FAQ</a></li>
-            <li><a class="nav-link" href="fees_insurance.html">Fees and Insurance</a></li>
+              <!--****************************
+                                   MENU
+                     ****************************-->
+            <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="fees-insurance.html">Fees and Insurance</a></li>
             <li><a class="nav-link" href="resources.html">Resources</a></li>
-            <li><a class="contactHeader" href="signup.html">Contact</a></li>
+            <li><a class="contactHeader" href="contact.html">Contact</a></li>
         </div>
-
         </ul>
         </li>
-
       </div>
     </nav>
   </header>
 
-
-
   <!-- TITLE COVER -->
-
-
   <div class="title">
     <div class="title-text">
       <h1>Trauma</h1>
@@ -151,59 +135,43 @@
             treatment for individuals with trauma.</em></h5>
       </div>
     </div>
-
-
-
     <svg class="effect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
   </div>
 
-
-
   <div class="row">
-    <div class="col-xl-6" style= "padding-right: 0;">
-  <div class="card-background">
-    <h2 class="section-content-question">Do you have trouble sleeping due to a racing mind?</h2>
-    <h2 class="section-content-question">
-      Are you paranoid or on guard at all times?
-    </h2>
-    <h2 class="section-content-question">
-      Do you have flashbacks to intense experiences?
-    </h2>
-    <h2 class="section-content-question">
-      Have you witnessed or been involved with violent occurrences?
-    </h2>
-  </div>
-  </div>
-  <div class="col-xl-6" style="padding-left: 0;">
-    <img class="background-picture" src="specialties/trauma/trauma_questions.jpg" alt="">
-  </div>
+    <div class="col-xl-6" style="padding-right: 0;">
+      <div class="card-background">
+        <h2 class="section-content-question">Do you have trouble sleeping due to a racing mind?</h2>
+        <h2 class="section-content-question">
+          Are you paranoid or on guard at all times?
+        </h2>
+        <h2 class="section-content-question">
+          Do you have flashbacks to intense experiences?
+        </h2>
+        <h2 class="section-content-question">
+          Have you witnessed or been involved with violent occurrences?
+        </h2>
+      </div>
+    </div>
+    <div class="col-xl-6" style="padding-left: 0;">
+      <img class="background-picture" src="specialties/trauma/trauma_questions.jpg" alt="">
+    </div>
   </div>
 
   <!-- EMPTY BLOCK -->
-
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-  </div>
-
-
+  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer"></div>
 
   <!-- ************************************ -->
-              <!-- SECTION #1 -->
+  <!-- SECTION #1 -->
   <!-- ************************************ -->
+  <div class="container infobox">
     <h1 class="header">What is trauma? </h1>
-
-
-  <div class="container">
-
-
     <div class="row">
-
       <div class="col-lg-8 col-md-6">
 
         <h4>
           <strong><em>70.4% of percent of people have experienced some kind of trauma.</em></strong>
         </h4>
-
 
         <p class="section-content">
           Trauma is a broad term describing terrifying experiences that overwhelm
@@ -214,23 +182,21 @@
           happens to a group of people, such as a natural disaster or genocide.
           According to one international study, death of a loved one is the most common trauma.
         </p>
-
       </div>
-
 
       <div class="col-lg-4 col-md-6">
         <img class="pictures" src="specialties/trauma/trauma1.jpg" alt="">
       </div>
+    </div>
+  </div>
 
-      <!-- EMPTY BLOCK -->
+  <!-- EMPTY BLOCK -->
+  <div style="height:50px;" aria-hidden="true" class="wp-block-spacer"></div>
 
-      <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-      </div>
-
-      <!-- Part 2 -->
-
-<div class="header">How does trauma affect the brain?</div>
+  <!-- Part 2 -->
+  <div class="container infobox">
+    <div class="row">
+      <div class="header">How does trauma affect the brain?</div>
 
       <div class="col-lg-4 col-md-6">
         <img class="pictures" src="specialties/trauma/traumabrain.jpg" alt="">
@@ -251,18 +217,20 @@
           difficult for those who have had childhood trauma than those who have not.
         </p>
       </div>
+    </div>
+  </div>
 
-      <!-- EMPTY BLOCK -->
+  <!-- EMPTY BLOCK -->
+  <div style="height:50px;" aria-hidden="true" class="wp-block-spacer">
 
-      <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
+  </div>
 
-      </div>
-
-      <!-- Part 3 -->
-
-      <h1 class="header">
-        What common responses to trauma?
-      </h1>
+  <!-- Part 3 -->
+  <div class="container infobox">
+    <h1 class="header">
+      What common responses to trauma?
+    </h1>
+    <div class="row">
 
       <div class="col-lg-8 col-md-6">
 
@@ -293,147 +261,120 @@
         <img class="pictures" src="specialties/trauma/trauma3.jpg" alt="">
       </div>
 
-
     </div>
   </div>
 
+
   <!-- EMPTY BLOCK -->
 
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-  </div>
+  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer"></div>
 
 
   <!-- Trauma Related Disorders -->
 
   <div id="emotional" class="Anxiety">
     <div class="container">
-
-      <h1 class="header">Trauma Related Disorders </h1>
-
-      <h4 class="section-content-3-name">
+      <h5 class="header">Trauma Related Disorders </h5>
+      <h4 class="white-emotional_text" style="text-align:center;">
         There are 7 types of trauma related disorders:
       </h4>
 
       <!-- Posttraumatic Stress Disorder (PTSD) -->
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4 col-md-6">
           <img class="ocd-treatment-icon" src="specialties/trauma/stress.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;" >Posttraumatic Stress Disorder (PTSD):</h1>
-          <p class="section-content-center">
+          <h5 class="white-emotional_text" style="text-align: center;">Posttraumatic Stress Disorder</h5>
+          <p class="white-emotional_text" style="text-align: center;">
             You may experience symptoms including flashbacks, increased heart rate,
             sadness, irritability, avoidance of the location or thoughts related to
             the traumatic event, and dissociation8. The symptoms appear during the
             first month and last longer than one month following the trauma.
           </p>
         </div>
-      </div>
 
       <!-- Adjustment Disorder (AD): -->
-      <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4 col-md-6">
 
           <img class="ocd-treatment-icon" src="specialties/trauma/Reactive.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;" >Adjustment Disorder (AD):</h1>
-          <p class="section-content-center">
+          <h5 class="white-emotional_text" style="text-align: center;">Adjustment Disorder</h5>
+          <p class="white-emotional_text" style="text-align: center;">
             Lasts up to 6 months (with symptoms starting within center months of the event)
             that include events such as a breakup or job loss. These symptoms relate
             to sadness, worry, and avoiding social activities, school or work.
           </p>
-
         </div>
-      </div>
 
-      <!-- Unspecified Trauma and Stressor-Related Disorders (UTSRD): -->
-      <div class="row">
-        <div class="col-lg-12">
+      <!-- Stressor-Related Disorders (UTSRD): -->
+        <div class="col-lg-4 col-md-6">
           <img class="ocd-treatment-icon" src="specialties/trauma/adjustment.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;">Unspecified Trauma and Stressor-Related Disorders (UTSRD):</h1>
+          <h5 class="white-emotional_text" style="text-align: center;">Stressor-Related Disorders</h5>
 
-          <p class="section-content-center">
+          <p class="white-emotional_text" style="text-align: center;">
             Show symptoms of the above disorder but do not meet the full diagnosis.
           </p>
         </div>
-      </div>
 
       <!-- Acute Stress Disorder -->
-      <div class="row">
-        <div class="col-lg-12">
 
-          <img class="ocd-treatment-icon" src="specialties/trauma/Acute.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;">Acute Stress Disorder (ACD):</h1>
-          <p class="section-content-center">
-            You experience the same symptoms as in PTSD, but the symptoms last a month.
-          </p>
-        </div>
+      <div class="col-lg-4 col-md-6">
+
+        <img class="ocd-treatment-icon" src="specialties/trauma/Posttraumatic.png" height="200" width="200" alt="">
+        <h5 class="white-emotional_text" style="text-align: center;">Other Trauma and Stressor-Related Disorders</h5>
+        <p class="white-emotional_text" style="text-align: center;">
+          Show symptoms of the above disorder but do not meet the full diagnosis.
+        </p>
       </div>
 
       <!-- Disinhibited Social Engagement Disorder (DSED): -->
-      <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4 col-md-6">
           <img class="ocd-treatment-icon" src="specialties/trauma/DSED.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;">Disinhibited Social Engagement Disorder (DSED) (in children):</h1>
-          <p class="section-content-center">
+          <h5 class="white-emotional_text" style="text-align: center;">Disinhibited Social Engagement Disorder (in children):</h5>
+          <p class="white-emotional_text" style="text-align: center;">
             This is a diagnosis for children whose symptoms are such that they want
             to physically and emotionally close to adults that are unfamiliar.
             This is diagnosed when symptoms last for 9+ months.
           </p>
         </div>
-      </div>
 
       <!-- Reactive Attachment Disorder (RAD): -->
-      <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4 col-md-6">
 
           <img class="ocd-treatment-icon" src="specialties/trauma/RAD.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;">Reactive Attachment Disorder (RAD) (in children):</h1>
-          <p class="section-content-center">
+          <h5 class="white-emotional_text" style="text-align: center;">Reactive Attachment Disorder (in children):</h5>
+          <p class="white-emotional_text" style="text-align: center;">
             This is another diagnosis only given to children. Children have difficulty
             regulating their emotions with outbursts of anger or sadness.
             Further, they might seem inconsolable. This is diagnosed when symptoms last 12+ months.
           </p>
         </div>
-      </div>
-
-
+        </div>
 
       <!-- Other Trauma and Stressor-Related Disorders (OTSRD): -->
       <div class="row">
-        <div class="col-lg-12">
 
-          <img class="ocd-treatment-icon" src="specialties/trauma/Posttraumatic.png" height="200" width="200" alt="">
-          <h1 class="white-emotional_text" style= "text-align: center;">Other Trauma and Stressor-Related Disorders (OTSRD):</h1>
-          <p class="section-content-center">
-            Show symptoms of the above disorder but do not meet the full diagnosis.
+        <div class="col-lg-4 col-md-6">
+
+
+          <img class="ocd-treatment-icon" src="specialties/trauma/Acute.png" height="200" width="200" alt="">
+          <h5 class="white-emotional_text" style="text-align: center;">Acute Stress Disorder</h5>
+          <p class="white-emotional_text" style="text-align: center;">
+            You experience the same symptoms as in PTSD, but the symptoms last a month.
           </p>
         </div>
+
+
       </div>
-
-
     </div>
-
-
-
-  </div>
-  </div>
-
   </div>
 
   <!-- EMPTY BLOCK -->
+  <div style="height:50px;" aria-hidden="true" class="wp-block-spacer"></div>
 
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-  </div>
-
-
-  <div class="container">
-
+  <div class="container infobox">
     <div class="header">What is the impact of trauma?</div>
 
     <div class="row">
       <div class="col-lg-8 col-md-6">
-
-
         <p class="section-content">
           These disorders affect a person individually and socially with friends,
           family members, at work or at school. People show signs of isolation due
@@ -446,9 +387,6 @@
           to failing grades or difficulty completing deadlines at work.
         </p>
       </div>
-
-
-
       <!--- QUOTE --->
 
       <div class="col-lg-4 col-md-6">
@@ -478,33 +416,26 @@
   </div>
   <!-- EMPTY BLOCK -->
 
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
+  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer"></div>
 
-  </div>
-
-
-  <section id="emotional" class="eatingdisorders section-bg">
-    <div class="container">
+    <div class="container infobox">
       <div class="row">
         <h1 class="header">
           Managing Trauma Symptoms
         </h1>
 
-
         <div class="col-12">
-          <h4 class="section-content-3-name">
+          <p class="section-content">
             In order to manage these symptoms, therapy helps to make living life easier.
             People can learn to decrease the amount the traumatic or stressful
             event affects them, remain calmer throughout their reactions, socialize
             with friends more, focus on work and school and feel more comfortable
             leaving their house.
-          </h4>
+          </p>
 
-          <h4 class="section-content-3-name">
-            Some common therapies that are used to treat these diagnoses:
-          </h4>
+          <strong><h4>Some common therapies that are used to treat these diagnoses:</h4></strong>
 
-          <p class="section-content-3">
+          <p class="section-content">
             CBT or Cognitive Behavioral Therapy works with one’s negative beliefs,
             thoughts, emotions, and behaviors. Further, it targets how thoughts
             can form into cognitive distortions. This creates thinking patterns
@@ -515,122 +446,97 @@
             themselves better, understand what is within their control, and
             create goals to change their thinking.
           </p>
-          <p class="section-content-3">
+          <p class="section-content">
             ACT or Acceptance and Commitment Therapy helps people through recognizing
             that distress is a part of life, and people can change their relationship
             to their thoughts and feelings. Core components include mindfulness-based
             practices, value work, and instilling actions that reinforce their values.
           </p>
-          <p class="section-content-3">
+          <p class="section-content">
             DBT or Dialectical Behavioral Therapy is a type of therapy that involves
             recognizing harmful strategies to cope with stress and trauma in healthier
             ways. The therapy includes mindfulness strategies, skills to manage distress,
             and understanding how stress affects your actions with others.
           </p>
 
-          <p class="section-content-3">
+          <p class="section-content">
             Through the process of grief and loss, people can develop ways to cope
             and mourn. Everyone processes trauma differently. Whether that be
             listening to music of a loved one, avoiding, focusing on the present
             and future, talking to other supportive people and religious practices.
           </p>
-
         </div>
-
       </div>
-
     </div>
-  </section>
-
 
 
   <!-- EMPTY BLOCK -->
-
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-  </div>
+  <div style="height:50px;" aria-hidden="true" class="wp-block-spacer"></div>
 
   <div class="refference-container">
-  <div class="container">
-    <div class="row">
+    <div class="container infobox">
+      <div style="height:50px;" aria-hidden="true" class="wp-block-spacer"></div>
+      <h2 class="section-content">
+        <strong>
+          <u>
+            References:
+          </u>
+        </strong>
+      </h2>
+      <ul>
+        <li class="section-list-3">
+          <a href="https://www.scripts.com">www.scripts.com.</a> Blue Jasmine. 2013. <a href="https://www.scripts.com/script/blue_jasmine_4368">https://www.scripts.com/script/blue_jasmine_4368</a>
+        </li>
 
-    </div>
+        <li class="section-list-3">
+          <em>Carey B. Can we really inherit trauma? The New York Times.</em> <a href="https://www.nytimes.com/2018/12/10/health/mind-epigenetics-genes.html">https://www.nytimes.com/2018/12/10/health/mind-epigenetics-genes.html</a>
+          Published December 10, 2018. Accessed March 15, 2022.
+        </li>
 
+        <li class="section-list-3">
+          <em>Kleber RJ. Trauma and public mental health: A focused review. Frontiers in Psychiatry. 2019;10. doi:10.3389/fpsyt.2019.00451</em>
+        </li>
 
+        <li class="section-list-3">
+          <em>Mice can inherit learned sensitivity to a smell. ScienceDaily.</em> <a href="https://www.sciencedaily.com/releases/2013/12/131202121544.html">https://www.sciencedaily.com/releases/2013/12/131202121544.html</a>
+          Published December 2, 2013. Accessed March 15, 2022.
+        </li>
 
+        <li class="section-list-3">
+          <em>Trauma and Stressor-related disorders - virginia.</em> <a href="http://vcoy.virginia.gov/documents/collection/018%20Trauma2.pdf">http://vcoy.virginia.gov/documents/collection/018%20Trauma2.pdf</a> Accessed March 16, 2022.
+        </li>
 
-    <h2 class="section-content">
-      <strong>
-        <u>
-          References:
-        </u>
-      </strong>
-    </h2>
-<ul>
-    <li class="section-list-3">
-      <a href="https://www.scripts.com">www.scripts.com.</a> Blue Jasmine. 2013. <a href="https://www.scripts.com/script/blue_jasmine_4368">https://www.scripts.com/script/blue_jasmine_4368</a>
-    </li>
+        <li class="section-list-3">
+          Weissman DG, Lambert HK, Rodman AM, Peverill M, Sheridan MA, McLaughlin KA.
+          Reduced hippocampal and amygdala volume as a mechanism underlying stress sensitization to depression following childhood trauma.
+          Depression and Anxiety. 2020;37(9):916-925. doi:10.1002/da.23062
+        </li>
 
-    <li class="section-list-3">
-      <em>Carey B. Can we really inherit trauma? The New York Times.</em> <a href="https://www.nytimes.com/2018/12/10/health/mind-epigenetics-genes.html">https://www.nytimes.com/2018/12/10/health/mind-epigenetics-genes.html</a>
-      Published December 10, 2018. Accessed March 15, 2022.
-    </li>
+        <li class="section-list-3">
+          Carli V, Mandelli L, Zaninotto L, et al. A protective genetic variant for adverse environments?
+          The role of childhood traumas and serotonin transporter gene on resilience and depressive severity
+          in a high-risk population. European Psychiatry. 2011;26(8):471-478. doi:10.1016/j.eurpsy.2011.04.008
+        </li>
 
-    <li class="section-list-3">
-      <em>Kleber RJ. Trauma and public mental health: A focused review. Frontiers in Psychiatry. 2019;10. doi:10.3389/fpsyt.2019.00451</em>
-    </li>
-
-    <li class="section-list-3">
-      <em>Mice can inherit learned sensitivity to a smell. ScienceDaily.</em> <a href="https://www.sciencedaily.com/releases/2013/12/131202121544.html">https://www.sciencedaily.com/releases/2013/12/131202121544.html</a>
-      Published December 2, 2013. Accessed March 15, 2022.
-    </li>
-
-    <li class="section-list-3">
-      <em>Trauma and Stressor-related disorders - virginia.</em> <a href="http://vcoy.virginia.gov/documents/collection/018%20Trauma2.pdf">http://vcoy.virginia.gov/documents/collection/018%20Trauma2.pdf</a> Accessed March 16, 2022.
-    </li>
-
-    <li class="section-list-3">
-      Weissman DG, Lambert HK, Rodman AM, Peverill M, Sheridan MA, McLaughlin KA.
-      Reduced hippocampal and amygdala volume as a mechanism underlying stress sensitization to depression following childhood trauma.
-      Depression and Anxiety. 2020;37(9):916-925. doi:10.1002/da.23062
-    </li>
-
-    <li class="section-list-3">
-      Carli V, Mandelli L, Zaninotto L, et al. A protective genetic variant for adverse environments?
-      The role of childhood traumas and serotonin transporter gene on resilience and depressive severity
-      in a high-risk population. European Psychiatry. 2011;26(8):471-478. doi:10.1016/j.eurpsy.2011.04.008
-    </li>
-
-    <li class="section-list-3">
-      Fenn K, Byrne M. The key principles of cognitive behavioural therapy. InnovAiT. 2013;6(9):579-585. doi:10.1177/1755738012471029
-    </li>
-    <li class="section-list-3">
-      The Six Core Processes of Act | Association for contextual ... <a href="https://contextualscience.org/the_six_core_processes_of_act">https://contextualscience.org/the_six_core_processes_of_act</a> Accessed March 16, 2022.
-    </li>
-    <li class="section-list-3">
-      About Us. Behavioral Research Therapy Clinics. <a href="https://depts.washington.edu/uwbrtc/about-us/dialectical-behavior-therapy/ ">https://depts.washington.edu/uwbrtc/about-us/dialectical-behavior-therapy/ </a> Accessed March 15, 2022.
-    </li>
-  </ul>
-    <div class="container">
-      <div class="row">
-
-      </div>
+        <li class="section-list-3">
+          Fenn K, Byrne M. The key principles of cognitive behavioural therapy. InnovAiT. 2013;6(9):579-585. doi:10.1177/1755738012471029
+        </li>
+        <li class="section-list-3">
+          The Six Core Processes of Act | Association for contextual ... <a href="https://contextualscience.org/the_six_core_processes_of_act">https://contextualscience.org/the_six_core_processes_of_act</a> Accessed March 16, 2022.
+        </li>
+        <li class="section-list-3">
+          About Us. Behavioral Research Therapy Clinics. <a href="https://depts.washington.edu/uwbrtc/about-us/dialectical-behavior-therapy/ ">https://depts.washington.edu/uwbrtc/about-us/dialectical-behavior-therapy/ </a> Accessed March 15, 2022.
+        </li>
+      </ul>
     </div>
   </div>
-  </div>
+
   <!-- EMPTY BLOCK -->
-
-  <div style="height:100px;" aria-hidden="true" class="wp-block-spacer">
-
-  </div>
-
+  <div style="height:50px;" aria-hidden="true" class="wp-block-spacer"></div>
 
   <!-- FOOTER -->
-
-
   <footer class="footer">
     <div id="footer">
-
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -638,34 +544,22 @@
             <p class="fixed-empty-p" data-pw-in-article="true">&nbsp;</p>
             <p class="copyright">BETTER LIFE THERAPY LLC ©2022</p>
           </div>
-
-
         </div>
-
-          <div class="Footer-info">
-            <span class="Blog-categories">
-              <a class="link" href="signup.html" data-unsp-sanitized="clean">CONTACT</a>
-              <span class="Footer-metaDivider">|</span>
+        <div class="Footer-info">
+          <span class="Blog-categories">
+            <a class="link" href="contact.html" data-unsp-sanitized="clean">CONTACT</a>
+            <span class="Footer-metaDivider">|</span>
             <a class="link" href="resources.html" data-unsp-sanitized="clean">RESOURCES</a>
             <span class="Footer-metaDivider">|</span>
           </span>
-            <span class="Blog-commentCount">
-              <a class="link" href="FAQ.html" data-unsp-sanitized="clean">FAQ</a> <span class="Footer-metaDivider">|</span>
-            </span>
-            <a class="link" href="fees_insurance.html" data-unsp-sanitized="clean">Fees and Insurance</a>
-          </div>
-
-
-
-
-
+          <span class="Blog-commentCount">
+            <a class="link" href="faq.html" data-unsp-sanitized="clean">FAQ</a> <span class="Footer-metaDivider">|</span>
+          </span>
+          <a class="link" href="fees-insurance.html" data-unsp-sanitized="clean">Fees and Insurance</a>
+        </div>
       </div>
-
     </div>
   </footer>
-
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js"></script>
