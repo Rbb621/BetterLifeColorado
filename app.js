@@ -8,19 +8,19 @@ var faq = document.getElementsByClassName("faq-page");
 var i;
 
 for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+  faq[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
-        var body = this.nextElementSibling;
-        if (body.style.display === "block") {
-            body.style.display = "none";
-        } else {
-            body.style.display = "block";
-        }
-    });
+    /* Toggle between hiding and showing the active panel */
+    var body = this.nextElementSibling;
+    if (body.style.display === "block") {
+      body.style.display = "none";
+    } else {
+      body.style.display = "block";
+    }
+  });
 }
 
 
@@ -28,34 +28,35 @@ for (i = 0; i < faq.length; i++) {
 //     Circle Images Specialties
 //**********************************
 
- const arr = ["specialties/anxiety/agoraphobia.jpg", "specialties/anxiety/generalizedanxiety.jpg",
- "specialties/anxiety/panicattacks.jpg", "specialties/anxiety/panic_disorder.jpg", "specialties/anxiety/COVID19.jpg",
-"specialties/anxiety/phobias.jpg", "specialties/anxiety/social_anxiety.jpg", "specialties/anxiety/CBT.jpg", "specialties/anxiety/DBT.jpg", "specialties/anxiety/ACT.jpg"];
- const circles = document.getElementsByClassName("circle");
+const arr = ["specialties/anxiety/agoraphobia.jpg", "specialties/anxiety/generalizedanxiety.jpg",
+  "specialties/anxiety/panicattacks.jpg", "specialties/anxiety/panic_disorder.jpg", "specialties/anxiety/COVID19.jpg",
+  "specialties/anxiety/phobias.jpg", "specialties/anxiety/social_anxiety.jpg", "specialties/anxiety/CBT.jpg", "specialties/anxiety/DBT.jpg", "specialties/anxiety/ACT.jpg"
+];
+const circles = document.getElementsByClassName("circle");
 
- for(let i = 0; i < circles.length; i++){
-   circles[i].style.backgroundImage = `url(${arr[i]})`;
-   circles[i].style.marginBottom = "20px";
-   circles[i].style.marginTop = "30px";
- }
+for (let i = 0; i < circles.length; i++) {
+  circles[i].style.backgroundImage = `url(${arr[i]})`;
+  circles[i].style.marginBottom = "20px";
+  circles[i].style.marginTop = "30px";
+}
 
- //**********************************
- //     Container
- //**********************************
+//**********************************
+//     Container
+//**********************************
 
- const box = document.getElementsByClassName("infobox")
+const box = document.getElementsByClassName("infobox")
 
- for(let i = 0; i < box.length; i++){
-   box[i].style.backgroundColor = "white";
-   box[i].style.boxShadow = "0px 0px 2px rgb(0 0 0 / 25%)";
-   box[i].style.paddingBottom = "100px";
-   box[i].style.marginBottom = "1.5em";
-   box[i].style.marginTop = "1.5em";
- }
+for (let i = 0; i < box.length; i++) {
+  box[i].style.backgroundColor = "white";
+  box[i].style.boxShadow = "0px 0px 2px rgb(0 0 0 / 25%)";
+  box[i].style.paddingBottom = "100px";
+  box[i].style.marginBottom = "1.5em";
+  box[i].style.marginTop = "1.5em";
+}
 
 const greenBox = document.getElementsByClassName("infobox_green")
 
-for(let i = 0; i < greenBox.length; i++){
+for (let i = 0; i < greenBox.length; i++) {
   greenBox[i].style.backgroundColor = "var(--grey)";
   greenBox[i].style.color = "var(--white)";
   greenBox[i].style.padding = "4.0625em 50px";
@@ -67,9 +68,9 @@ for(let i = 0; i < greenBox.length; i++){
 }
 
 
- //**********************************
- //     Thank you Email
- //**********************************
+//**********************************
+//     Thank you Email
+//**********************************
 const fullName = document.getElementsByClassName("fullName").value;
 
 document.getElementsByClassName("thankYou").value = `Thank you for signup BetterLifeColorado ${fullName[0]}`;
@@ -92,37 +93,36 @@ document.getElementsByClassName("thankYou").value = `Thank you for signup Better
 
 
 $('.Staff').hover(function() {
-  $(".dropdown-menu.Staffdropdown").toggle();})
+  $(".dropdown-menu.Staffdropdown").toggle();
+})
 
 $('.specialties-heading').hover(function() {
-  $(".dropdown-menu.Specialtiesdropdown").show(function() {
-  });
+  $(".dropdown-menu.Specialtiesdropdown").show(function() {});
 });
 
 $('.specialties-heading').click(function() {
-  $(".dropdown-menu.Specialtiesdropdown").hide(function() {
-  });
+  $(".dropdown-menu.Specialtiesdropdown").hide(function() {});
 });
 
 //active page highlight
 
-    $(function() {
-        // this will get the full URL at the address bar
-        var url = window.location.href;
+$(function() {
+  // this will get the full URL at the address bar
+  var url = window.location.href;
 
-        // passes on every "a" tag
-        $(".topmenu a").each(function() {
-            // checks if its the same on the address bar
-            if (url == (this.href)) {
-                $(this).closest("li").addClass("active");
-                //for making parent of submenu active
-               $(this).closest("li").parent().parent().addClass("active");
-            }
-        });
-    });
+  // passes on every "a" tag
+  $(".topmenu a").each(function() {
+    // checks if its the same on the address bar
+    if (url == (this.href)) {
+      $(this).closest("li").addClass("active");
+      //for making parent of submenu active
+      $(this).closest("li").parent().parent().addClass("active");
+    }
+  });
+});
 
 //**********************************************
-  //Staff Info - fadeUp and fadeLeft/fadeRight
+//Staff Info - fadeUp and fadeLeft/fadeRight
 //**********************************************
 
 
